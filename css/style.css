@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Josefin Sans";
+}
+
+.wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  background: #fefefe;
+}
+body #header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+body #header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+body #header .inner > h1 {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+body #header .inner > h1 > a {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+body #header .inner > h1 > a img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+}
+body #header .inner > h1 > a span {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+  padding-top: 35px;
+}
+body #header .inner .menuWeb #gnb {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+body #header .inner .menuWeb #gnb li {
+  float: left;
+}
+body #header .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+body #header .inner .menuWeb #gnb li a:hover {
+  background-color: #555;
+  color: #fff;
+}
+body #header .inner .menuWeb .util {
+  position: absolute;
+  top: 20%;
+  right: 40px;
+}
+body #header .inner .menuWeb .util li {
+  float: left;
+  margin-left: 20px;
+}
+body #header .inner .menuWeb .util li a {
+  font: 12px/1 "arial";
+  color: #999;
+}
+body #visual {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 121px);
+  background: #000;
+}
+body #visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+body #visual .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #visual .inner h2 {
+  font-size: 100px;
+  font-weight: normal;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 20px;
+}
+body #visual .inner p {
+  font-size: 16px;
+  font-family: "arial";
+  font-weight: normal;
+  color: #888;
+  margin-bottom: 80px;
+}
+body #visual .inner a {
+  display: block;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #bbb;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+body #visual .inner a:hover {
+  background-color: #fff;
+  color: #555;
+}
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50vw;
+  height: 800px;
+  top: 100vh;
+  right: 0;
+  background: #04ADBF;
+  z-index: -10;
+}
+body #event {
+  width: 100%;
+  padding: 120px 0;
+}
+body #event .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+body #event .inner div.left {
+  width: 35%;
+}
+body #event .inner div.left h3 {
+  margin-bottom: 40px;
+}
+body #event .inner div.left h2 {
+  margin-bottom: 60px;
+}
+body #event .inner div.left p {
+  margin-bottom: 40px;
+}
+body #event .inner div.left a {
+  display: block;
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+body #event .inner div.left a.btnPrev {
+  margin-right: 2vw;
+}
+body #event .inner div.right {
+  border: 1px solid green;
+  width: 68%;
+}
+body #event .inner div.right h3 span {
+  display: block;
+  margin-bottom: 40px;
+}
+body #event .inner div.right article {
+  border: 1px solid red;
+  width: 300px;
+  margin-right: 20px;
+  float: left;
+}
+body #event .inner div.right article a {
+  display: block;
+}
+body #event .inner div.right article a img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
