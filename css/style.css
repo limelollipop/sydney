@@ -17,6 +17,7 @@ a {
 
 body {
   font-family: "Josefin Sans";
+  color: #0d0d0d;
 }
 
 .wrap::after {
@@ -78,8 +79,7 @@ body #header .inner .menuWeb #gnb li {
 body #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 14px 30px;
-  font-size: 18px;
-  font-weight: bold;
+  font: bold 18px/1 "Josefin Sans";
   color: #fff;
   text-shadow: 0px 0px 10px #000;
 }
@@ -113,17 +113,13 @@ body #visual .inner {
   transform: translate(-50%, -50%);
 }
 body #visual .inner h2 {
-  font-size: 70px;
-  font-weight: normal;
-  line-height: 1;
+  font: normal 70px/1 "Josefin Sans";
   color: #fff;
   margin-bottom: 20px;
   text-shadow: 0px 0px 10px #000;
 }
 body #visual .inner p {
-  font-size: 20px;
-  font-family: "arial";
-  font-weight: normal;
+  font: normal 20px/1 "arial";
   color: #ddd;
   margin-bottom: 80px;
 }
@@ -132,9 +128,7 @@ body #visual .inner a {
   width: 160px;
   height: 40px;
   border-left: 15px solid #04ADBF;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 40px;
+  font: bold 18px/40px "Josefin Sans";
   color: #fff;
   margin: 0 auto;
   text-align: center;
@@ -147,7 +141,7 @@ body::after {
   content: "";
   display: block;
   position: absolute;
-  width: 50vw;
+  width: 50%;
   height: 800px;
   top: 100vh;
   right: 0;
@@ -174,7 +168,7 @@ body #event .inner div.left {
 body #event .inner div.left h3 {
   font-size: 28px;
   margin-bottom: 40px;
-  color: #222;
+  color: #0d0d0d;
 }
 body #event .inner div.left h2 {
   font-size: 100px;
@@ -211,8 +205,8 @@ body #event .inner div.right .wrap {
   position: relative;
 }
 body #event .inner div.right .wrap article {
-  width: 300px;
-  margin-right: 20px;
+  width: 24%;
+  margin-right: 16px;
   float: left;
 }
 body #event .inner div.right .wrap article a {
@@ -220,17 +214,51 @@ body #event .inner div.right .wrap article a {
 }
 body #event .inner div.right .wrap article a img {
   width: 300px;
-  height: 175px;
+  height: 245px;
   object-fit: cover;
 }
 body #event .inner div.right .wrap article:nth-of-type(4) {
   margin-right: 0px;
 }
-body #accommodation {
-  border: 1px solid red;
+body #banner {
   width: 100%;
-  margin-top: 120px;
   position: relative;
+  padding: 100px 0;
+  margin: 20px 0;
+  background: url(../img/accommodationBg.jpg) no-repeat left center fixed;
+  background-size: 50%;
+}
+body #banner .inner {
+  border: 1px solid blue;
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+body #banner .inner .wrap {
+  float: right;
+  width: 50%;
+  height: 400px;
+  padding: 90px;
+  background: #fff;
+  text-align: right;
+}
+body #banner .inner .wrap h2 {
+  font: bold 30px/1 "Josefin Sans";
+  padding-bottom: 25px;
+}
+body #banner .inner .wrap p {
+  font: normal;
+}
+body #banner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: #f5f5f5;
+  z-index: -10;
 }
 
 /*# sourceMappingURL=style.css.map */
