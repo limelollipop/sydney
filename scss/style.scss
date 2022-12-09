@@ -2,25 +2,31 @@
 @import "reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
 // #04ADBF
+// #F2E30F
+// #F22727
+
 
 
 body {
-    background: #fefefe;
-
+    background: #fff;
     // header menu etc
     #header{
         width: 100%;
-        border-bottom: 1px solid #ddd;
+        height: 100px;
+        position: relative;
+        background: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgba(51, 51, 51, 1));
+        z-index: 10;
 
         // 모든 inner 한번에 설정하고 싶음
         .inner{
             width: 1180px;
-            height: 120px;
+            height: 100px;
             margin: 0 auto;
             position: relative;
             z-index: 10;
             >h1{
                 position: absolute;
+                width: 140px;
                 left: 0;
                 bottom: 10px;
                 >a{
@@ -32,16 +38,14 @@ body {
                         height: 70px;
                         float: left;
                         margin-right: 10px;
+                        filter: invert(100%);
                     }
                     span{
                         display: inline-block;
-                        position: relative;
-                        width: 130px;
-                        height: 40px;
-                        font-size: 16px;
-                        font-weight: 300;
-                        color: #888;
-                        padding-top: 35px;
+                        font-size: 18px;
+                        position: absolute;
+                        top: 35px;
+                        color: #fff;
                     }
                 }
             }
@@ -54,27 +58,16 @@ body {
                         float: left;
                         a{
                             display: block;
-                            padding: 14px 40px;
+                            padding: 14px 30px;
                             font-size: 18px;
                             font-weight: bold;
-                            color: #555;
+                            color: #fff;
+                            text-shadow: 0px 0px 10px #000;
                             &:hover{
-                                background-color: #555;
-                                color: #fff;
+                                background-color: #fff;
+                                color: #333;
+                                text-shadow: none;
                             }
-                        }
-                    }
-                }
-                .util{
-                    position: absolute;
-                    top: 20%;
-                    right: 40px;
-                    li{
-                        float: left;
-                        margin-left: 20px;
-                        a{
-                            font: 12px/1 'arial';
-                            color: #999;
                         }
                     }
                 }
@@ -85,52 +78,55 @@ body {
     // figure visual
     #visual{
         position: relative;
-        top: 0;
+        top: -100px;
         left: 0;
         width: 100%;
-        height: calc(100vh - 121px);
+        height: 100vh;
         background: #000;
-        video{
+        img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-            // 비디오 윗부분을 더 보이게 위치하고 싶어요
-            opacity: 0.4;
+            object-position: center 80%;
+            opacity: 0.8;
         }
         .inner{
             width: 1180px;
             margin: 0 auto;
             position: absolute;
+            text-align: center;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             h2{
-                font-size: 100px;
+                font-size: 70px;
                 font-weight: normal;
                 line-height: 1;
                 color: #fff;
                 margin-bottom: 20px;
+                text-shadow: 0px 0px 10px #000;
             }
             p{
-                font-size: 16px;
+                font-size: 20px;
                 font-family: 'arial';
                 font-weight: normal;
-                color: #888;
+                color: #ddd;
                 margin-bottom: 80px;
             }
             a{
                 display: block;
-                width: 400px;
+                width: 160px;
                 height: 40px;
-                border: 1px solid #bbb;
+                border-left: 15px solid #04ADBF;
                 font-weight: bold;
                 font-size: 18px;
                 line-height: 40px;
                 color: #fff;
+                margin: 0 auto;
                 text-align: center;
+                transition: 0.3s;
                 &:hover{
-                    background-color: #fff;
-                    color: #555;
+                    border-left: 15px solid #fff;
                 }
             }
         }
@@ -144,29 +140,43 @@ body {
         height: 800px;
         top: 100vh;
         right: 0;
-        background: #04ADBF;
+        background: rgba(4, 173, 191, 0.3);
         z-index: -10;
     }
 
     // event
     #event{
         width: 100%;
-        padding: 120px 0;
+        padding: 20px 0 120px;
+        position: relative;
+        overflow: hidden;
         .inner{
             width: 1180px;
             margin: 0 auto;
             position: relative;
             display: flex;
             justify-content: space-between;
+            // overflow: hidden;
             div{
                 &.left{
-                    width: 35%;
-                    h3{margin-bottom: 40px;}
+                    width: 480px;
+                    margin-right: 20px;
+                    h3{
+                        font-size: 28px;
+                        margin-bottom: 40px;
+                        color: #222;
+                    }
                     h2{
+                        font-size: 100px;
                         margin-bottom: 60px;
+                        color: #04ADBF;
                     }
                     p{
+                        width: 20vw;
                         margin-bottom: 40px;
+                        font-size: 18px;
+                        line-height: 1.4;
+                        color: #888;
                     }
                     a{
                         display: block;
@@ -181,25 +191,31 @@ body {
                     }
                 }
                 &.right{
-                    border: 1px solid green;
-                    width: 68%;
+                    width: 680px;
                     h3{
+
                         span{
                             display: block;
                             margin-bottom: 40px;
                         }
                     }
-                    article{
-                        border: 1px solid red;
-                        width: 300px;
-                        margin-right: 20px;
-                        float: left;
-                        a{
-                            display: block;
-                            img{
-                                width: 100%;
-                                height: 250px;
-                                object-fit: cover;
+                    .wrap{
+                        width: 1260px;
+                        position: relative;
+                        article{
+                            width: 300px;
+                            margin-right: 20px;
+                            float: left;
+                            a{
+                                display: block;
+                                img{
+                                    width: 300px;
+                                    height: 175px;
+                                    object-fit: cover;
+                                }
+                            }
+                            &:nth-of-type(4){
+                                margin-right: 0px;
                             }
                         }
                     }
@@ -207,5 +223,13 @@ body {
             }
             
         }
+    }
+
+    // accomodation
+    #accommodation{
+        border: 1px solid red;
+        width: 100%;
+        margin-top: 120px;
+        position: relative;
     }
 }
