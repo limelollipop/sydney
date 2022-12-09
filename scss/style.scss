@@ -2,6 +2,7 @@
 @import "reset.scss";
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
 // #04ADBF
+// #b3e6ec
 // #F2E30F
 // #F22727
 
@@ -87,7 +88,7 @@ body {
             height: 100%;
             object-fit: cover;
             object-position: center 80%;
-            opacity: 0.8;
+            opacity: 0.9;
         }
         .inner{
             width: 1180px;
@@ -130,17 +131,17 @@ body {
         display: block;
         position: absolute;
         width: 50%;
-        height: 800px;
+        height: 1200px;
         top: 100vh;
         right: 0;
-        background: rgba(4, 173, 191, 0.3);
+        background: #b3e6ec;
         z-index: -10;
     }
 
     // event
     #event{
         width: 100%;
-        padding: 20px 0 120px;
+        padding: 50px 0 150px;
         position: relative;
         overflow: hidden;
         .inner{
@@ -216,25 +217,24 @@ body {
         }
     }
 
-    // accomodation
+    // banner
     #banner{
         width: 100%;
         position: relative;
-        padding: 100px 0;
+        padding: 150px 0;
         margin: 20px 0;
-        background: url(../img/accommodationBg.jpg) no-repeat left center fixed;
+        background: url(../img/bannerBg.jpg) no-repeat left center fixed;
         background-size: 50%;
         .inner{
-            border: 1px solid blue;
             width: 1180px;
             margin: 0 auto;
             position: relative;
             .wrap{
                 float: right;
                 width: 50%;
-                height: 400px;
-                padding: 90px 0 90px 90px;
+                padding: 100px 80px 100px 100px;
                 background: #fff;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
                 h2{
                     font: bold 30px/1 'Josefin Sans';
                     padding-bottom: 25px;
@@ -242,6 +242,9 @@ body {
                 p{
                     font: normal 18px/1.4 'Josefin Sans';
                     color: #888;
+                    &:nth-of-type(1){
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
@@ -255,6 +258,31 @@ body {
             height: 100%;
             background: #f5f5f5;
             z-index: -10;
+        }
+    }
+
+    // accommodation
+    #accommodation{
+        width: 100%;
+        padding: 150px 0;
+        .inner{
+            width: 1180px;
+            margin: 0 auto;
+            position: relative;
+            border: 1px solid blue;
+            h2{
+                text-align: center;
+                font: bold 30px/1 'Josefin Sans';
+                margin-bottom: 40px;
+            }
+            .wrap{
+                border: 1px solid red;
+                width: 100%;
+                
+                article{
+                    border: 1px solid green;
+                }
+            }
         }
     }
 }
