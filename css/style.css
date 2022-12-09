@@ -168,7 +168,6 @@ body #event .inner div.left {
 body #event .inner div.left h3 {
   font-size: 28px;
   margin-bottom: 40px;
-  color: #0d0d0d;
 }
 body #event .inner div.left h2 {
   font-size: 100px;
@@ -238,16 +237,16 @@ body #banner .inner .wrap {
   float: right;
   width: 50%;
   height: 400px;
-  padding: 90px;
+  padding: 90px 0 90px 90px;
   background: #fff;
-  text-align: right;
 }
 body #banner .inner .wrap h2 {
   font: bold 30px/1 "Josefin Sans";
   padding-bottom: 25px;
 }
 body #banner .inner .wrap p {
-  font: normal;
+  font: normal 18px/1.4 "Josefin Sans";
+  color: #888;
 }
 body #banner::after {
   content: "";

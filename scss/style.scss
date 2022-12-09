@@ -156,7 +156,6 @@ body {
                     h3{
                         font-size: 28px;
                         margin-bottom: 40px;
-                        color: #0d0d0d;
                     }
                     h2{
                         font-size: 100px;
@@ -234,15 +233,15 @@ body {
                 float: right;
                 width: 50%;
                 height: 400px;
-                padding: 90px;
+                padding: 90px 0 90px 90px;
                 background: #fff;
-                text-align: right;
                 h2{
                     font: bold 30px/1 'Josefin Sans';
                     padding-bottom: 25px;
                 }
                 p{
-                    font: normal ;
+                    font: normal 18px/1.4 'Josefin Sans';
+                    color: #888;
                 }
             }
         }
