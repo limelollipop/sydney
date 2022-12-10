@@ -211,10 +211,25 @@ body #event .inner div.right .wrap article {
 body #event .inner div.right .wrap article a {
   display: block;
 }
-body #event .inner div.right .wrap article a img {
+body #event .inner div.right .wrap article a .wrap {
+  position: relative;
+}
+body #event .inner div.right .wrap article a .wrap img {
   width: 300px;
   height: 245px;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #event .inner div.right .wrap article a .wrap h4 {
+  width: 128px;
+  height: 65px;
+  position: absolute;
+  top: 180px;
+  left: 0;
+  background: #333;
+  color: #fff;
 }
 body #event .inner div.right .wrap article:nth-of-type(4) {
   margin-right: 0px;

@@ -200,10 +200,25 @@ body {
                             float: left;
                             a{
                                 display: block;
-                                img{
-                                    width: 300px;
-                                    height: 245px;
-                                    object-fit: cover;
+                                .wrap{
+                                    position: relative;
+                                    img{
+                                        width: 300px;
+                                        height: 245px;
+                                        object-fit: cover;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                    }
+                                    h4{
+                                        width: 128px;
+                                        height: 65px;
+                                        position: absolute;
+                                        top: 180px;
+                                        left: 0;
+                                        background: #333;
+                                        color: #fff;
+                                    }
                                 }
                             }
                             &:nth-of-type(4){
