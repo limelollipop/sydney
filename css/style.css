@@ -168,11 +168,13 @@ body #event .inner div.left {
 body #event .inner div.left h3 {
   font-size: 28px;
   margin-bottom: 40px;
+  color: #555;
 }
 body #event .inner div.left h2 {
   font-size: 100px;
   margin-bottom: 60px;
   color: #04ADBF;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 body #event .inner div.left p {
   width: 20vw;
@@ -195,41 +197,48 @@ body #event .inner div.left a.btnPrev {
 body #event .inner div.right {
   width: 680px;
 }
-body #event .inner div.right h3 span {
-  display: block;
-  margin-bottom: 40px;
+body #event .inner div.right > p {
+  width: 100%;
+  padding: 0px 0px 35px 180px;
+  font-size: 30px;
+  font-weight: bold;
 }
 body #event .inner div.right .wrap {
+  border: 1px solid blue;
   width: 1260px;
   position: relative;
 }
 body #event .inner div.right .wrap article {
+  border: 1px solid red;
   width: 24%;
+  height: 400px;
   margin-right: 16px;
   float: left;
 }
 body #event .inner div.right .wrap article a {
+  border: 1px solid green;
   display: block;
+  width: 100%;
+  height: 100%;
 }
-body #event .inner div.right .wrap article a .wrap {
-  position: relative;
+body #event .inner div.right .wrap article a .imgEvent {
+  width: 100%;
+  height: 280px;
 }
-body #event .inner div.right .wrap article a .wrap img {
-  width: 300px;
-  height: 245px;
+body #event .inner div.right .wrap article a .imgEvent img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
-body #event .inner div.right .wrap article a .wrap h4 {
-  width: 128px;
-  height: 65px;
-  position: absolute;
-  top: 180px;
-  left: 0;
-  background: #333;
+body #event .inner div.right .wrap article a .imgEvent span {
+  position: relative;
+  font-size: 40px;
+  font-weight: bold;
   color: #fff;
+  text-shadow: 0px 0px 5px #0d0d0d;
+  padding: 10px 10px;
+  left: 0;
+  top: -50px;
 }
 body #event .inner div.right .wrap article:nth-of-type(4) {
   margin-right: 0px;
