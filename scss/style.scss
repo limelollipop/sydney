@@ -83,12 +83,32 @@ body {
         width: 100%;
         height: 100vh;
         background: #000;
-        img{
+        overflow: hidden;
+        div:nth-of-type(1){
+            border: 1px solid red;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            object-position: center 80%;
-            opacity: 0.9;
+            position: absolute;
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 80%;
+                opacity: 0.9;
+                animation: visualAni 5s infinite;
+                &:nth-child(1){
+                    // display: none;
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+            }
         }
         .inner{
             width: 1180px;
@@ -381,5 +401,11 @@ body {
                 }
             }
         }
+    }
+
+    // animation
+    @keyframes visualAni {
+        0%{scale: 1;}
+        100%{scale: 1.2}
     }
 }

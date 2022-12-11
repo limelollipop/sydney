@@ -1,8 +1,8 @@
-const eventSlide = document.querySelector("#event");
-const slideWrap = eventSlide.querySelector("div .wrap")
-const lis = slideWrap.querySelectorAll(".right .wrap article");
-const prev = eventSlide.querySelector(".left .btnPrev");
-const next = eventSlide.querySelector(".left .btnNext");
+// const eventSlide = document.querySelector("#event");
+// const slideWrap = eventSlide.querySelector("div .wrap")
+// const lis = slideWrap.querySelectorAll(".right .wrap article");
+// const prev = eventSlide.querySelector(".left .btnPrev");
+// const next = eventSlide.querySelector(".left .btnNext");
 
 
 // let len = lis.length;
