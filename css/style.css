@@ -325,7 +325,6 @@ body #banner::after {
   z-index: -10;
 }
 body #accommodation {
-  border: 1px solid purple;
   width: 100%;
   padding: 150px 0;
 }
@@ -443,12 +442,95 @@ body #accommodation .inner .wrap article:nth-of-type(4) {
   height: 300px;
   margin-top: 20px;
 }
-body #spotlight {
-  border: 1px solid blue;
+body #deals {
   width: 100%;
   position: relative;
-  padding: 150px 0;
+  margin-bottom: 150px;
+}
+body #deals::before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  background: #b3e6ec;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+body #deals::after {
+  content: "";
+  display: block;
+  width: 65%;
+  height: 100%;
+  position: absolute;
   background: #f5f5f5;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+body #deals .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+body #deals .inner div {
+  position: relative;
+}
+body #deals .inner div:nth-of-type(1) {
+  float: left;
+  width: 300px;
+  height: 100%;
+  padding: 100px 0px;
+  background: #b3e6ec;
+}
+body #deals .inner div:nth-of-type(1) span {
+  display: inline-block;
+  font: bold 20px/1.4 "Josefin Sans";
+  margin-bottom: 20px;
+}
+body #deals .inner div:nth-of-type(1) h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+body #deals .inner div:nth-of-type(1) p {
+  font-size: 18px;
+}
+body #deals .inner div:nth-of-type(2) {
+  float: left;
+  width: 880px;
+  height: 100%;
+  padding: 100px 0px 100px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+body #deals .inner div:nth-of-type(2) article {
+  width: 50%;
+}
+body #deals .inner div:nth-of-type(2) article span {
+  display: inline-block;
+  font: normal 14px/1 "arial";
+  color: #555;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+body #deals .inner div:nth-of-type(2) article h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #04ADBF;
+}
+body #deals .inner div:nth-of-type(2) article p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  color: #0d0d0d;
+}
+body #deals .inner div:nth-of-type(2) article span {
+  font-size: 12px;
+}
+body #deals .inner div:nth-of-type(2) article:nth-of-type(1) {
+  margin-right: 10%;
 }
 @keyframes visualAni {
   0% {
