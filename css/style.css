@@ -174,7 +174,7 @@ body #event .inner div.left h2 {
   font-size: 100px;
   margin-bottom: 60px;
   color: #04ADBF;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
 body #event .inner div.left p {
   width: 20vw;
@@ -204,22 +204,21 @@ body #event .inner div.right > p {
   font-weight: bold;
 }
 body #event .inner div.right .wrap {
-  border: 1px solid blue;
-  width: 1260px;
+  width: 1280px;
+  height: 340px;
   position: relative;
 }
 body #event .inner div.right .wrap article {
-  border: 1px solid red;
-  width: 24%;
-  height: 400px;
-  margin-right: 16px;
+  width: 300px;
+  height: 100%;
+  margin-right: 20px;
   float: left;
 }
 body #event .inner div.right .wrap article a {
-  border: 1px solid green;
   display: block;
   width: 100%;
   height: 100%;
+  transition: 0.3s;
 }
 body #event .inner div.right .wrap article a .imgEvent {
   width: 100%;
@@ -240,8 +239,31 @@ body #event .inner div.right .wrap article a .imgEvent span {
   left: 0;
   top: -50px;
 }
-body #event .inner div.right .wrap article:nth-of-type(4) {
-  margin-right: 0px;
+body #event .inner div.right .wrap article a .txtEvent {
+  background: #fff;
+  position: relative;
+  padding: 20px;
+  color: #0d0d0d;
+}
+body #event .inner div.right .wrap article a .txtEvent h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+body #event .inner div.right .wrap article a .txtEvent p {
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.2;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+body #event .inner div.right .wrap article a:hover .txtEvent {
+  background: #fff;
+}
+body #event .inner div.right .wrap article a:hover .txtEvent p {
+  overflow: visible;
+  max-height: 100vh;
+  background: #fff;
 }
 body #banner {
   width: 100%;
