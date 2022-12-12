@@ -1,5 +1,5 @@
 // const eventSlide = document.querySelector("#event");
-// const slideWrap = eventSlide.querySelector("div .wrap")
+// const slideWrap = eventSlide.querySelector("div .wrap");
 // const lis = slideWrap.querySelectorAll(".right .wrap article");
 // const prev = eventSlide.querySelector(".left .btnPrev");
 // const next = eventSlide.querySelector(".left .btnNext");
@@ -37,7 +37,7 @@
 // function nextSlide(){
 //     new Anim(slideWrap,{
 //         prop : 'left',
-//         value : '-100%',
+//         value : '25%',
 //         duration : speed,
 
 //         callback : ()=>{
@@ -50,7 +50,7 @@
 // function prevSlide(){
 //     new Anim(slideWrap,{
 //         prop : 'left',
-//         value : '0%',
+//         value : '-25%',
 //         duration : speed,
 
 //         callback : ()=>{
