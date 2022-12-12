@@ -572,131 +572,138 @@ body {
                 display: block;
                 clear: both;
             }
-            h1{
-                width: 140px;
-                height: 70px;
-                float: left;
-                margin-right: 50px;
-                a{
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    img{
-                        width: 70px;
+            .footNavWrap{
+                position: relative;
+                h1{
+                    width: 140px;
+                    height: 70px;
+                    float: left;
+                    margin-right: 80px;
+                    a{
+                        display: block;
+                        width: 100%;
                         height: 100%;
-                        float: left;
-                        margin-right: 10px;
-                        filter: invert(100%);
-                    }
-                    span{
-                        display: inline-block;
-                        font-size: 18px;
-                        position: absolute;
-                        top: 35px;
-                        color: #fff;
+                        img{
+                            width: 70px;
+                            height: 100%;
+                            float: left;
+                            margin-right: 10px;
+                            filter: invert(100%);
+                        }
+                        span{
+                            display: inline-block;
+                            font-size: 18px;
+                            position: absolute;
+                            top: 35px;
+                            color: #fff;
+                        }
                     }
                 }
-            }
-            nav{
-                float: left;
-                width: 68%;
-                display: flex;
-                justify-content: space-between;
-                padding: 16px 0;
-                color: #fff;
-                div{
-                    h4{
-                        font-size: 14px;
-                        margin-bottom: 20px;
-                    }
-                    &:nth-of-type(1){
+                nav{
+                    float: left;
+                    width: 67%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 0;
+                    color: #fff;
+                    div{
                         width: 33.33%;
-                        span{
-                            margin-right: 10px;
-                            display: inline-block;
-                            margin-bottom: 3px;
-                            font-size: 12px;
-                            &:nth-of-type(1){
-                                font-size: 20px;
-                                font-weight: bold;
-                                margin-bottom: 14px;
+                        h4{
+                            font-size: 14px;
+                            margin-bottom: 20px;
+                        }
+                        &:nth-of-type(1){
+                            span{
+                                margin-right: 10px;
+                                display: inline-block;
+                                margin-bottom: 3px;
+                                font-size: 12px;
+                                &:nth-of-type(1){
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    margin-bottom: 14px;
+                                }
+                            }
+                            >p{
+                                margin-top: 20px;
+                                font-size: 12px;
+                                padding-right: 30px;
+                                color: #eee;
                             }
                         }
-                        >p{
-                            margin-top: 20px;
-                            font-size: 12px;
-                            padding-right: 30px;
-                            color: #eee;
-                        }
-                    }
-                    &:nth-of-type(2),
-                    &:nth-of-type(3){
-                        width: 33.33%;
-                        ul{
-                            width: 100%;
-                            padding: 0;
-                            li{
+                        &:nth-of-type(2),
+                        &:nth-of-type(3){
+                            ul{
                                 width: 100%;
-                                margin-left: 0;
-                                a{
-                                    display: block;
-                                    font-size: 14px;
-                                    margin-bottom: 10px;
+                                padding: 0;
+                                li{
+                                    width: 100%;
+                                    margin-left: 0;
+                                    a{
+                                        display: block;
+                                        font-size: 14px;
+                                        color: #fff;
+                                        margin-bottom: 10px;
+                                    }
                                 }
                             }
                         }
-                    }
-                    &:nth-of-type(2){
-                        padding-left: 50px;
-                        margin-right: 50px;                        
+                        &:nth-of-type(2){
+                            padding-left: 50px;
+                            margin-right: 20px;                        
+                        }
                     }
                 }
-            }
-
-            ul{
-                float: right;
-                padding: 15px 0;
-                li{
-                    float: left;
-                    margin-left: 20px;
-                    a{
-                        font-size: 25px;
-                        color: #fff;
-                    }                
+    
+                >ul{
+                    float: right;
+                    padding: 15px 0;
+                    li{
+                        float: left;
+                        margin-left: 20px;
+                        a{
+                            font-size: 25px;
+                            color: #fff;
+                        }                
+                    }
                 }
             }
             
-            address{
-                border: 1px solid red;
-                float: left;
+            .footAddWrap{
+                width: 80%;
                 margin: 0 auto;
-                padding: 20px 0;
-                font-size: 14px;
-                letter-spacing: 1px;
-                color: #eee;
-                text-align: center;
-                &::after{
-                    border: 1px solid blue;
-                    content: '';
-                    display: block;
-                    position: absolute;
+                position: relative;
+                address{
+                    position: relative;
                     margin: 0 auto;
-                    width: 100%;
-                    height: 1px;
-                    background: #fff;
-                    margin-bottom: 20px;
+                    padding: 30px 0 10px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: #eee;
+                    text-align: center;
+                    &::after{
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        margin: 10px auto;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 0.5px;
+                        background: #fff;
+                    }
                 }
-            }
-            >p{
-                float: left;
-                width: 100%;
-                font-size: 12px;
-                line-height: 1.4;
-                font-family: 'arial';
-                color: #fff;
-                letter-spacing: 1px;
-                text-align: center;
-            }
+                >p{
+                    float: left;
+                    width: 100%;
+                    font-size: 12px;
+                    line-height: 1.4;
+                    font-family: 'arial';
+                    color: #fff;
+                    letter-spacing: 1px;
+                    text-align: center;
+                }
+            }            
         }
     }
 
@@ -709,6 +716,10 @@ body {
 
     // media
     @media screen and (max-width: $tablet){
-        
+        body{
+            #header{
+
+            }
+        }
     }
 }

@@ -547,117 +547,122 @@ body #footer .inner::after {
   display: block;
   clear: both;
 }
-body #footer .inner h1 {
+body #footer .inner .footNavWrap {
+  position: relative;
+}
+body #footer .inner .footNavWrap h1 {
   width: 140px;
   height: 70px;
   float: left;
-  margin-right: 50px;
+  margin-right: 80px;
 }
-body #footer .inner h1 a {
+body #footer .inner .footNavWrap h1 a {
   display: block;
   width: 100%;
   height: 100%;
 }
-body #footer .inner h1 a img {
+body #footer .inner .footNavWrap h1 a img {
   width: 70px;
   height: 100%;
   float: left;
   margin-right: 10px;
   filter: invert(100%);
 }
-body #footer .inner h1 a span {
+body #footer .inner .footNavWrap h1 a span {
   display: inline-block;
   font-size: 18px;
   position: absolute;
   top: 35px;
   color: #fff;
 }
-body #footer .inner nav {
+body #footer .inner .footNavWrap nav {
   float: left;
-  width: 68%;
+  width: 67%;
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 20px 0;
   color: #fff;
 }
-body #footer .inner nav div h4 {
+body #footer .inner .footNavWrap nav div {
+  width: 33.33%;
+}
+body #footer .inner .footNavWrap nav div h4 {
   font-size: 14px;
   margin-bottom: 20px;
 }
-body #footer .inner nav div:nth-of-type(1) {
-  width: 33.33%;
-}
-body #footer .inner nav div:nth-of-type(1) span {
+body #footer .inner .footNavWrap nav div:nth-of-type(1) span {
   margin-right: 10px;
   display: inline-block;
   margin-bottom: 3px;
   font-size: 12px;
 }
-body #footer .inner nav div:nth-of-type(1) span:nth-of-type(1) {
+body #footer .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(1) {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 14px;
 }
-body #footer .inner nav div:nth-of-type(1) > p {
+body #footer .inner .footNavWrap nav div:nth-of-type(1) > p {
   margin-top: 20px;
   font-size: 12px;
   padding-right: 30px;
   color: #eee;
 }
-body #footer .inner nav div:nth-of-type(2), body #footer .inner nav div:nth-of-type(3) {
-  width: 33.33%;
-}
-body #footer .inner nav div:nth-of-type(2) ul, body #footer .inner nav div:nth-of-type(3) ul {
+body #footer .inner .footNavWrap nav div:nth-of-type(2) ul, body #footer .inner .footNavWrap nav div:nth-of-type(3) ul {
   width: 100%;
   padding: 0;
 }
-body #footer .inner nav div:nth-of-type(2) ul li, body #footer .inner nav div:nth-of-type(3) ul li {
+body #footer .inner .footNavWrap nav div:nth-of-type(2) ul li, body #footer .inner .footNavWrap nav div:nth-of-type(3) ul li {
   width: 100%;
   margin-left: 0;
 }
-body #footer .inner nav div:nth-of-type(2) ul li a, body #footer .inner nav div:nth-of-type(3) ul li a {
+body #footer .inner .footNavWrap nav div:nth-of-type(2) ul li a, body #footer .inner .footNavWrap nav div:nth-of-type(3) ul li a {
   display: block;
   font-size: 14px;
+  color: #fff;
   margin-bottom: 10px;
 }
-body #footer .inner nav div:nth-of-type(2) {
+body #footer .inner .footNavWrap nav div:nth-of-type(2) {
   padding-left: 50px;
-  margin-right: 50px;
+  margin-right: 20px;
 }
-body #footer .inner ul {
+body #footer .inner .footNavWrap > ul {
   float: right;
   padding: 15px 0;
 }
-body #footer .inner ul li {
+body #footer .inner .footNavWrap > ul li {
   float: left;
   margin-left: 20px;
 }
-body #footer .inner ul li a {
+body #footer .inner .footNavWrap > ul li a {
   font-size: 25px;
   color: #fff;
 }
-body #footer .inner address {
-  border: 1px solid red;
-  float: left;
+body #footer .inner .footAddWrap {
+  width: 80%;
   margin: 0 auto;
-  padding: 20px 0;
+  position: relative;
+}
+body #footer .inner .footAddWrap address {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 0 10px;
   font-size: 14px;
   letter-spacing: 1px;
   color: #eee;
   text-align: center;
 }
-body #footer .inner address::after {
-  border: 1px solid blue;
+body #footer .inner .footAddWrap address::after {
   content: "";
   display: block;
   position: absolute;
-  margin: 0 auto;
+  margin: 10px auto;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 1px;
+  height: 0.5px;
   background: #fff;
-  margin-bottom: 20px;
 }
-body #footer .inner > p {
+body #footer .inner .footAddWrap > p {
   float: left;
   width: 100%;
   font-size: 12px;
