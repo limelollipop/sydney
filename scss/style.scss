@@ -8,6 +8,7 @@
 
 // 변수선언
 $tablet: 1179px;
+$tablet2: 1079px;
 $mobile: 539px;
 
 
@@ -57,12 +58,12 @@ body {
                 #gnb{
                     position: absolute;
                     right: 0;
-                    bottom: 0;
+                    bottom: 18px;
                     li{
                         float: left;
                         a{
                             display: block;
-                            padding: 14px 30px;
+                            padding: 12px 30px;
                             font: bold 18px/1 'Josefin Sans';
                             color: #fff;
                             text-shadow: 0px 0px 10px #000;
@@ -88,7 +89,6 @@ body {
         background: #000;
         overflow: hidden;
         div:nth-of-type(1){
-            border: 1px solid red;
             position: absolute;
             top: 0;
             left: 0;
@@ -118,7 +118,7 @@ body {
             margin: 0 auto;
             position: absolute;
             text-align: center;
-            top: 50%;
+            top: 55%;
             left: 50%;
             transform: translate(-50%, -50%);
             h2{
@@ -129,26 +129,43 @@ body {
             }
             p{
                 font: normal 20px/1 'arial';
-                color: #ddd;
+                color: #eee;
                 margin-bottom: 80px;
             }
             a{
                 display: block;
-                width: 160px;
+                position: relative;
+                width: 200px;
                 height: 40px;
-                border-left: 15px solid #04ADBF;
+                // border-left: 15px solid #04ADBF;
                 font: bold 18px/40px 'Josefin Sans';
                 color: #fff;
                 margin: 0 auto;
                 text-align: center;
-                transition: 0.3s;
+                transition: 0.3;
                 &:hover{
-                    border-left: 15px solid #fff;
+                    color: #04ADBF;
                 }
+
+                &::before{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 15px;
+                    height: 40px;
+                    background: #04ADBF;
+                    transition: 0.3s;
+                    z-index: -1;
+                }  
+                &:hover::before{
+                    background: #fff;
+                    width: 200px;
+                }              
             }
+            
         }
     }
-
+    // visual bg
     &::after{
         content: '';
         display: block;
@@ -258,6 +275,7 @@ body {
 
                                     h3{
                                     font-weight: bold;
+                                    line-height: 1;
                                     margin-bottom: 10px;
                                     }
                                     p{
@@ -430,14 +448,25 @@ body {
                             margin: 0 auto;
                             font: bold 18px/30px 'Josefin Sans';
                             color: #0d0d0d;
-                            border-left: 15px solid #04ADBF;
                             transition: 0.3s;
-
+                            z-index: 5;
                             &:hover{
-                                border-color: #fff;
                                 color: #fff;
-                                text-shadow: 0px 0px 5px #000;
                             }
+                            &::before{
+                                content: '';
+                                display: block;
+                                position: absolute;
+                                width: 15px;
+                                height: 30px;
+                                background: #04ADBF;
+                                transition: 0.3s;
+                                z-index: 1;
+                            } 
+                            &:hover::before{
+                                background: #04ADBF;
+                                width: 150px;
+                            } 
                         }
                     }
                     &:nth-of-type(2){
@@ -712,13 +741,161 @@ body {
         0%{scale: 1;}
         100%{scale: 1.2}
     }
+}
 
+// media 1179px
+@media screen and (max-width: $tablet){
+    body{
+        // header
+        #header{
+            .inner{                
+                width: 100%;
+                height: 100px;
+                >h1{
+                    left: 50px;
+                }
+                .menuWeb{
+                    #gnb{
+                        right: 20px;
+                        li{
+                            a{
+                                padding: 12px 30px;
+                                font: bold 14px/1 'arial';
+                                text-shadow: 0px 0px 5px #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // visual
+        #visual{
+            .inner{
+                width: 80vw;
+                h2{
+                    font: normal 50px/1 'Josefin Sans';
+                    text-shadow: 0px 0px 5px #000;
+                }
+                p{
+                    font: normal 16px/1 'arial';
+                }
+                a{
+                    height: 30px;
+                    font: bold 16px/30px 'Josefin Sans'; 
+                    &::before{
+                        height: 30px;
+                    }
+                }
+            }
+        }
+        &::after{
+            height: 800px;
+        }
 
-    // media
-    @media screen and (max-width: $tablet){
-        body{
-            #header{
+        // event
+        #event{
+            padding: 20px 0 100px;
+            .inner{
+                width: 80%;
+                div{
+                    &.left{
+                        width: 36%;
+                        h3{
+                            font-size: 18px;
+                            margin-bottom: 30px;
+                        }
+                        h2{
+                            font-size: 80px;
+                            margin-bottom: 30px;
+                        }
+                        p{
+                            width: 25vw;
+                            margin-bottom: 30px;
+                            font-size: 14px;
+                        }
+                    }
+                    &.right{
+                        width: 64%;
+                        >p{
+                            font-size: 20px;
+                        }
+                        .wrap{
+                            width: 840px;
+                            height: 250px;
+                            margin-left: 40px;
+                            article{
+                                width: 200px;
+                                margin-right: 10px;
+                                a{
+                                    .imgEvent{
+                                        height: 200px;
+                                        span{
+                                            font-size: 25px;
+                                            top: -40px;
+                                        }
+                                    }
+                                    .txtEvent{
+                                        padding: 20px 10px;
+                                        h3{
+                                            margin-bottom: 10px;
+                                            font-size: 15px;
+                                        }
+                                        p{
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
+        // banner
+        #banner{
+            padding: 100px 0px;
+            margin: 0px 0px;
+            .inner{
+                width: 80%;
+                .wrap{
+                    padding: 70px 50px 70px 60px;
+                    h2{
+                        font: bold 25px/1 'Josefin Sans';
+                    }
+                    p{
+                        font: normal 14px/1.4 'Josefin Sans';
+                    }
+                }
+            }
+        }
+
+        // accommodation
+        #accommodation{
+            .inner{
+                width: 80%;
+                h2{
+                    font: bold 25px/1 'Josefin Sans';
+                }
+                .wrap{
+                    article{
+                        &:nth-of-type(1){
+                            width: 300px;
+                            height: 540px;
+                            padding: 80px 50px;
+
+                            h3{
+                                font-size: 20px;
+                            }
+                            p{
+                                font: normal 14px/1.4 'Josefin Sans';
+                            }
+                            a{
+
+                            }
+                        }
+                    }
+                }
             }
         }
     }
