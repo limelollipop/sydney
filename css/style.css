@@ -515,6 +515,7 @@ body #deals .inner div:nth-of-type(1) span {
   display: inline-block;
   font: bold 20px/1.4 "Josefin Sans";
   margin-bottom: 20px;
+  color: #555;
 }
 body #deals .inner div:nth-of-type(1) h2 {
   font-size: 30px;
@@ -523,8 +524,10 @@ body #deals .inner div:nth-of-type(1) h2 {
 }
 body #deals .inner div:nth-of-type(1) p {
   font-size: 18px;
+  color: #666;
 }
 body #deals .inner div:nth-of-type(2) {
+  position: relative;
   float: left;
   width: 880px;
   height: 100%;
@@ -533,9 +536,9 @@ body #deals .inner div:nth-of-type(2) {
   justify-content: space-between;
 }
 body #deals .inner div:nth-of-type(2) article {
-  width: 50%;
+  width: 46%;
 }
-body #deals .inner div:nth-of-type(2) article span {
+body #deals .inner div:nth-of-type(2) article b {
   display: inline-block;
   font: normal 14px/1 "arial";
   color: #555;
@@ -554,10 +557,8 @@ body #deals .inner div:nth-of-type(2) article p {
   color: #0d0d0d;
 }
 body #deals .inner div:nth-of-type(2) article span {
-  font-size: 12px;
-}
-body #deals .inner div:nth-of-type(2) article:nth-of-type(1) {
-  margin-right: 10%;
+  font-size: 14px;
+  color: #888;
 }
 body #footer {
   width: 100%;
@@ -858,6 +859,33 @@ body #footer .inner .footAddWrap > p {
     width: calc(100% - 320px);
     height: 170px;
     margin-top: 0px;
+  }
+  body #deals .inner {
+    width: 80%;
+  }
+  body #deals .inner div:nth-of-type(1) {
+    width: 33.33%;
+    padding: 80px 0px 140px;
+  }
+  body #deals .inner div:nth-of-type(2) {
+    width: 66.66%;
+    padding: 80px 0px 80px 80px;
+  }
+  body #deals .inner div:nth-of-type(2) article {
+    width: 46%;
+  }
+  body #deals .inner div:nth-of-type(2) article h3 {
+    font-size: 17px;
+  }
+  body #deals .inner div:nth-of-type(2) article p {
+    font-size: 14px;
+  }
+  body #deals .inner div:nth-of-type(2) article span {
+    font-size: 12px;
+  }
+  body #deals .inner div:nth-of-type(2) article:nth-of-type(1) {
+    margin-right: 0;
+    padding-right: 0;
   }
 }
 

@@ -537,6 +537,7 @@ body {
                         display: inline-block;
                         font: bold 20px/1.4 'Josefin Sans';
                         margin-bottom: 20px;
+                        color: #555;
                     }
                     h2{
                         font-size: 30px;
@@ -545,9 +546,11 @@ body {
                     }
                     p{
                         font-size: 18px;
+                        color: #666;
                     }
                 }
                 &:nth-of-type(2){
+                    position: relative;
                     float: left;
                     width: calc(1180px - 300px);
                     height: 100%;
@@ -556,8 +559,8 @@ body {
                     justify-content: space-between;
                     article{
                         // border: 1px solid blue;
-                        width: 50%;
-                        span{
+                        width: 46%;
+                        b{
                             display: inline-block;
                             font: normal 14px/1 'arial';
                             color: #555;
@@ -576,11 +579,12 @@ body {
                             color: #0d0d0d;
                         }
                         span{
-                            font-size: 12px;
+                            font-size: 14px;
+                            color: #888;
                         }
-                        &:nth-of-type(1){
-                            margin-right: 10%;
-                        }
+                        // &:nth-of-type(1){
+                        //     margin-right: 10%;
+                        // }
                     }
                 }
             }
@@ -922,6 +926,42 @@ body {
                             width: calc(100% - 320px);
                             height: calc(510px / 3);
                             margin-top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // deal & packages
+        #deals{
+            // &::before{
+            //     width: 33%;
+            // }
+            .inner{
+                width: 80%;
+                div{
+                    &:nth-of-type(1){
+                        width: 33.33%;
+                        padding: 80px 0px 140px;
+                    }
+                    &:nth-of-type(2){
+                        width: 66.66%;
+                        padding: 80px 0px 80px 80px;
+                        article{
+                            width: 46%;
+                            h3{
+                                font-size: 17px;
+                            }
+                            p{
+                                font-size: 14px;
+                            }
+                            span{
+                                font-size: 12px;
+                            }
+                            &:nth-of-type(1){
+                                margin-right: 0;
+                                padding-right: 0;
+                            }
                         }
                     }
                 }
