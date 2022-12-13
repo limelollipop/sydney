@@ -887,6 +887,25 @@ body #footer .inner .footAddWrap > p {
     margin-right: 0;
     padding-right: 0;
   }
+  body #footer {
+    padding: 60px 0px;
+  }
+  body #footer .inner {
+    width: 80%;
+  }
+  body #footer .inner .footNavWrap h1 {
+    margin-right: 60px;
+  }
+  body #footer .inner .footNavWrap nav {
+    width: 60%;
+  }
+  body #footer .inner .footNavWrap nav div {
+    width: 25%;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(2) {
+    padding-left: 10px;
+    margin-right: 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

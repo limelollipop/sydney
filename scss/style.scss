@@ -967,5 +967,28 @@ body {
                 }
             }
         }
+
+        // footer
+        #footer{
+            padding: 60px 0px;
+            .inner{
+                width: 80%;
+                .footNavWrap{
+                    h1{
+                        margin-right: 60px;
+                    }
+                    nav{
+                        width: 60%;
+                        div{
+                            width: 25%;
+                            &:nth-of-type(2){
+                                padding-left: 10px;
+                                margin-right: 0px;
+                            }
+                        }
+                    }                  
+                }
+            }
+        }
     }
 }
