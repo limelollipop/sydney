@@ -1,3 +1,14 @@
+const btnMenu = document.querySelector(".btnMenu");
+const menuMo = document.querySelector(".menuMo");
+
+btnMenu.addEventListener("click",(e)=>{
+    e.preventDefault();
+    menuMo.classList.add("on");
+});
+
+
+
+
 // const eventSlide = document.querySelector("#event");
 // const slideWrap = eventSlide.querySelector("div .wrap");
 // const lis = slideWrap.querySelectorAll(".right .wrap article");

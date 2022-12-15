@@ -13,6 +13,7 @@ li {
 
 a {
   text-decoration: none;
+  outline: 0;
 }
 
 body {
@@ -107,10 +108,13 @@ body #header .inner .menuMo {
   height: 100vh;
   background: #b3e6ec;
   padding: 0 2vh;
-  transition: 0.3s;
+  left: -27vw;
+  transition: 0.5s;
+}
+body #header .inner .menuMo.on {
+  left: 0vw;
 }
 body #header .inner .menuMo > h1 {
-  border: 1px solid red;
   position: relative;
   width: 100%;
   height: 10vh;
@@ -119,7 +123,6 @@ body #header .inner .menuMo > h1 {
   margin-bottom: 2.5vh;
 }
 body #header .inner .menuMo > h1 > a {
-  border: 1px solid blue;
   display: block;
   position: relative;
   width: 100%;
@@ -154,6 +157,10 @@ body #header .inner .menuMo #gnbMo li a {
   font-weight: bold;
   line-height: 1;
   color: #0d0d0d;
+}
+body #header .inner .menuMo #gnbMo li a b {
+  float: right;
+  padding-right: 1vw;
 }
 body #visual {
   position: relative;
