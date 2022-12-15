@@ -144,7 +144,6 @@ body #header .inner .btnMenu span {
   transition: all 0.5s;
 }
 body #header .inner .menuMo {
-  border: 1px solid salmon;
   display: none;
   position: fixed;
   top: 0;
@@ -625,7 +624,6 @@ body #deals .inner div {
   position: relative;
 }
 body #deals .inner div:nth-of-type(1) {
-  border: 1px solid red;
   float: left;
   width: 18%;
   height: 100%;
@@ -647,7 +645,6 @@ body #deals .inner div:nth-of-type(1) p {
   color: #666;
 }
 body #deals .inner div:nth-of-type(2) {
-  border: 1px solid blue;
   position: relative;
   float: left;
   width: 80%;
@@ -1044,6 +1041,21 @@ body #footer .inner .footAddWrap > p {
   }
   body #header .inner .menuMo {
     display: block;
+  }
+  body #visual .inner h2 {
+    font: normal 50px/1 "Josefin Sans";
+    padding: 0px 120px 100px;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
+  }
+  body #visual .inner p {
+    display: none;
+  }
+  body #visual .inner a {
+    height: 50px;
+    font: bold 20px/50px "Josefin Sans";
+  }
+  body #visual .inner a::before {
+    height: 50px;
   }
 }
 

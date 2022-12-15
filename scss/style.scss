@@ -76,7 +76,9 @@ body {
                     }
                 }
             }
+
             // 모바일 메뉴
+            // 디자인 참고 사이트주소 : https://webclub.tistory.com/448
             .btnMenu{
                 // border: 1px solid red;
                 display: none;
@@ -97,7 +99,8 @@ body {
                         margin-bottom: -2px;
                         transform: rotate(-45deg);
                     }
-                    span{
+                    span{                        
+                        // transform: translateZ(-100%);
                         opacity: 0;
                     }
                 }
@@ -133,11 +136,11 @@ body {
                     margin-top: -2px;
                     text-indent: -99999px;
                     border-radius: 4px;
+                    // transform: translateZ(100%);
                     transition: all 0.5s;
                 }
             }
             .menuMo{
-                border: 1px solid salmon;
                 display: none;
                 position: fixed;
                 top: 0;
@@ -652,7 +655,6 @@ body {
             div{
                 position: relative;
                 &:nth-of-type(1){
-                    border: 1px solid red;
                     float: left;
                     width: 18%;
                     height: 100%;
@@ -674,7 +676,6 @@ body {
                     }
                 }
                 &:nth-of-type(2){
-                    border: 1px solid blue;
                     position: relative;
                     float: left;
                     width: 80%;
@@ -878,7 +879,7 @@ body {
 // media 1179px
 @media screen and (max-width: $tablet){
     body{
-        // header
+        // 1179px header
         #header{
             .inner{                
                 width: 100%;
@@ -899,7 +900,7 @@ body {
                 }
             }
         }
-        // visual
+        // 1179px visual
         #visual{
             .inner{
                 width: 100%;
@@ -923,7 +924,7 @@ body {
             height: 800px;
         }
 
-        // event
+        // 1179px event
         #event{
             padding: 20px 0 100px;
             .inner{
@@ -984,7 +985,7 @@ body {
             }
         }
 
-        // banner
+        // 1179px banner
         #banner{
             padding: 100px 0px;
             margin: 0px 0px;
@@ -1003,7 +1004,7 @@ body {
             }
         }
 
-        // accommodation
+        // 1179px accommodation
         #accommodation{
             padding: 130px 0;
             .inner{
@@ -1061,7 +1062,7 @@ body {
             }
         }
 
-        // deal & packages
+        // 1179px deal & packages
         #deals{
             // &::before{
             //     width: 33%;
@@ -1097,7 +1098,7 @@ body {
             }
         }
 
-        // footer
+        // 1179px footer
         #footer{
             padding: 60px 0px;
             .inner{
@@ -1126,7 +1127,7 @@ body {
 // media 1079px
 @media screen and (max-width: $tablet2){
     body{
-        // header
+        // 1079px header
         #header{
             .inner{
                 .menuWeb{
@@ -1141,5 +1142,30 @@ body {
                 }
             }
         }
+        // 1079px visual
+        #visual{
+            .inner{
+                h2{
+                    font: normal 50px/1 'Josefin Sans';
+                    padding: 0px 120px 100px;
+                    text-shadow: 0px 0px 15px rgba(0,0,0,0.4);
+                }
+                p{
+                    display: none;
+                }
+                a{
+                    height: 50px;
+                    font: bold 20px/50px 'Josefin Sans';
+                    &::before{
+                        height: 50px;
+                    }
+                }
+            }
+        }
+        // 1079px event
+        #event{
+            
+        }
+
     }
 }
