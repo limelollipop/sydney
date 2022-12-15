@@ -90,37 +90,81 @@ body #header .inner .menuWeb #gnb li a:hover {
   text-shadow: none;
 }
 body #header .inner .btnMenu {
-  border: 1px solid red;
   display: none;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 40px;
   position: absolute;
   top: 50%;
   right: 5%;
-  transform: translateY(-30%);
+  transform: translateY(-50%);
+}
+body #header .inner .btnMenu.on::before {
+  top: 50%;
+  margin-top: -2px;
+  transform: rotate(45deg);
+}
+body #header .inner .btnMenu.on::after {
+  bottom: 50%;
+  margin-bottom: -2px;
+  transform: rotate(-45deg);
+}
+body #header .inner .btnMenu.on span {
+  opacity: 0;
+}
+body #header .inner .btnMenu::before, body #header .inner .btnMenu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+}
+body #header .inner .btnMenu::before {
+  top: 0;
+  transition: top 0.5s;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+body #header .inner .btnMenu::after {
+  bottom: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+body #header .inner .btnMenu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  text-indent: -99999px;
+  border-radius: 4px;
+  transition: all 0.5s;
 }
 body #header .inner .menuMo {
   border: 1px solid salmon;
   display: none;
   position: fixed;
   top: 0;
-  width: 27%;
+  width: 270px;
   height: 100vh;
   background: #b3e6ec;
   padding: 0 2vh;
-  left: -27vw;
+  left: -270px;
   transition: 0.5s;
 }
 body #header .inner .menuMo.on {
-  left: 0vw;
+  left: 0px;
 }
 body #header .inner .menuMo > h1 {
   position: relative;
   width: 100%;
-  height: 10vh;
-  padding-top: 2vw;
-  padding-left: 5vw;
-  margin-bottom: 2.5vh;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 50px;
+  margin-bottom: 25px;
 }
 body #header .inner .menuMo > h1 > a {
   display: block;
@@ -129,17 +173,17 @@ body #header .inner .menuMo > h1 > a {
   height: 100%;
 }
 body #header .inner .menuMo > h1 > a img {
-  width: 7vw;
-  height: 7vw;
+  width: 70px;
+  height: 70px;
   float: left;
   margin-right: 10px;
 }
 body #header .inner .menuMo > h1 > a span {
   display: inline-block;
-  font-size: 1.8vw;
+  font-size: 18px;
   line-height: 1;
   position: absolute;
-  top: 3.5vw;
+  top: 35px;
   color: #0d0d0d;
 }
 body #header .inner .menuMo #gnbMo {
@@ -322,7 +366,6 @@ body #event .inner div.right .wrap article a {
   display: block;
   width: 100%;
   height: 100%;
-  transition: 0.3s;
 }
 body #event .inner div.right .wrap article a .imgEvent {
   width: 100%;
@@ -360,7 +403,7 @@ body #event .inner div.right .wrap article a .txtEvent p {
   line-height: 1.2;
   max-height: 0;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 body #event .inner div.right .wrap article a:hover .txtEvent {
   background: #fff;

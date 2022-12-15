@@ -3,7 +3,8 @@ const menuMo = document.querySelector(".menuMo");
 
 btnMenu.addEventListener("click",(e)=>{
     e.preventDefault();
-    menuMo.classList.add("on");
+    btnMenu.classList.toggle("on");
+    menuMo.classList.toggle("on");
 });
 
 
