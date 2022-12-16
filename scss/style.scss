@@ -994,7 +994,7 @@ body {
             margin: 0px 0px;
             .inner{
                 width: 100%;
-                padding: 0% 10%;
+                // padding: 0% 10%;
                 .wrap{
                     padding: 70px 50px 70px 60px;
                     h2{
@@ -1190,7 +1190,6 @@ body {
                         >p{
                             opacity: 0;
                             padding: 0px;
-                            line-height: 30px;
                         }
                         .wrap{
                             margin-left: 0px;
@@ -1198,7 +1197,7 @@ body {
                             article{
                                 width: 49%;
                                 margin-right: 2%;
-                                margin-bottom: 5vh;
+                                margin-bottom: 3vh;
                                 box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
                                 &:nth-of-type(even){
                                     margin-right: 0%;
@@ -1212,6 +1211,16 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+        // 1079px banner
+        #banner{
+            padding: 0px 0px;
+            background-size: 100%;
+            .inner{
+                .wrap{
+
                 }
             }
         }

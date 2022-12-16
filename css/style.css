@@ -926,7 +926,6 @@ body #footer .inner .footAddWrap > p {
   }
   body #banner .inner {
     width: 100%;
-    padding: 0% 10%;
   }
   body #banner .inner .wrap {
     padding: 70px 50px 70px 60px;
@@ -1084,7 +1083,6 @@ body #footer .inner .footAddWrap > p {
   body #event .inner div.right > p {
     opacity: 0;
     padding: 0px;
-    line-height: 30px;
   }
   body #event .inner div.right .wrap {
     margin-left: 0px;
@@ -1093,7 +1091,7 @@ body #footer .inner .footAddWrap > p {
   body #event .inner div.right .wrap article {
     width: 49%;
     margin-right: 2%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
   }
   body #event .inner div.right .wrap article:nth-of-type(even) {
@@ -1104,6 +1102,10 @@ body #footer .inner .footAddWrap > p {
   }
   body #event .inner div.right .wrap article a .txtEvent p {
     display: none;
+  }
+  body #banner {
+    padding: 0px 0px;
+    background-size: 100%;
   }
 }
 
