@@ -621,63 +621,69 @@ body #deals .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-body #deals .inner div {
+body #deals .inner section {
   position: relative;
 }
-body #deals .inner div:nth-of-type(1) {
-  float: left;
+body #deals .inner section:nth-of-type(1) {
   width: 18%;
   height: 100%;
-  padding: 100px 0px;
+  padding: 100px 0px 100px 0px;
 }
-body #deals .inner div:nth-of-type(1) span {
+body #deals .inner section:nth-of-type(1) span {
   display: inline-block;
   font: bold 1.4vw/1.4 "Josefin Sans";
   margin-bottom: 20px;
   color: #555;
 }
-body #deals .inner div:nth-of-type(1) h2 {
+body #deals .inner section:nth-of-type(1) > h2 {
   font-size: 2vw;
   margin-bottom: 20px;
   line-height: 1.4;
 }
-body #deals .inner div:nth-of-type(1) p {
+body #deals .inner section:nth-of-type(1) > p {
   font-size: 1.3vw;
   color: #666;
 }
-body #deals .inner div:nth-of-type(2) {
+body #deals .inner section:nth-of-type(1) > p > span {
+  font-size: 1.3vw;
+  font-weight: normal;
+  color: #666;
+  display: hide;
+}
+body #deals .inner section:nth-of-type(2) {
   position: relative;
-  float: left;
   width: 80%;
   height: 100%;
   padding: 100px 0px;
   display: flex;
   justify-content: flex-end;
 }
-body #deals .inner div:nth-of-type(2) article {
+body #deals .inner section:nth-of-type(2) article {
   padding-left: 5%;
   width: 44%;
 }
-body #deals .inner div:nth-of-type(2) article b {
+body #deals .inner section:nth-of-type(2) article b {
   display: inline-block;
-  font: normal 14px/1 "arial";
+  font: normal 1.3vw/1 "arial";
   color: #555;
   margin-bottom: 30px;
   letter-spacing: 1px;
 }
-body #deals .inner div:nth-of-type(2) article h3 {
+body #deals .inner section:nth-of-type(2) article h3 {
   font-size: 1.4vw;
   margin-bottom: 20px;
   color: #04ADBF;
 }
-body #deals .inner div:nth-of-type(2) article p {
+body #deals .inner section:nth-of-type(2) article p {
   font-size: 1.2vw;
   line-height: 1.4;
   margin-bottom: 30px;
   color: #0d0d0d;
 }
-body #deals .inner div:nth-of-type(2) article span {
+body #deals .inner section:nth-of-type(2) article span {
   font-size: 1vw;
   color: #888;
 }
@@ -699,6 +705,8 @@ body #footer .inner::after {
 }
 body #footer .inner .footNavWrap {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 body #footer .inner .footNavWrap h1 {
   width: 140px;
@@ -989,26 +997,18 @@ body #footer .inner .footAddWrap > p {
     width: 100%;
     padding: 0% 10%;
   }
-  body #deals .inner div:nth-of-type(1) {
+  body #deals .inner section:nth-of-type(1) {
     width: 33.33%;
-    padding: 80px 80px 0px;
+    padding: 80px 80px 0px 0px;
   }
-  body #deals .inner div:nth-of-type(2) {
+  body #deals .inner section:nth-of-type(2) {
     width: 66.67%;
+    padding: 80px 0px;
   }
-  body #deals .inner div:nth-of-type(2) article {
+  body #deals .inner section:nth-of-type(2) article {
     width: 46%;
   }
-  body #deals .inner div:nth-of-type(2) article h3 {
-    font-size: 1.4vw;
-  }
-  body #deals .inner div:nth-of-type(2) article p {
-    font-size: 1.1vw;
-  }
-  body #deals .inner div:nth-of-type(2) article span {
-    font-size: 12px;
-  }
-  body #deals .inner div:nth-of-type(2) article:nth-of-type(1) {
+  body #deals .inner section:nth-of-type(2) article:nth-of-type(1) {
     margin-right: 0;
     padding-right: 0;
   }
@@ -1023,7 +1023,7 @@ body #footer .inner .footAddWrap > p {
     margin-right: 60px;
   }
   body #footer .inner .footNavWrap nav {
-    width: 60%;
+    width: 50%;
   }
   body #footer .inner .footNavWrap nav div {
     width: 25%;
@@ -1123,13 +1123,14 @@ body #footer .inner .footAddWrap > p {
     width: 100%;
     height: 100%;
     margin-right: 0px;
-    padding: 30px 50px;
+    padding: 40px 100px 30px;
+    margin-bottom: 20px;
   }
   body #accommodation .inner .wrap article:nth-of-type(1) h3 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   body #accommodation .inner .wrap article:nth-of-type(1) p {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   body #accommodation .inner .wrap article:nth-of-type(1) p span {
     display: none;
@@ -1142,6 +1143,38 @@ body #footer .inner .footAddWrap > p {
   }
   body #accommodation .inner .wrap article:nth-of-type(4) {
     width: 100%;
+  }
+  body #deals::before {
+    width: 40%;
+  }
+  body #deals::after {
+    width: 60%;
+  }
+  body #deals .inner {
+    display: block;
+  }
+  body #deals .inner section:nth-of-type(1) {
+    width: 100%;
+  }
+  body #deals .inner section:nth-of-type(1) span {
+    width: 15%;
+    float: left;
+  }
+  body #deals .inner section:nth-of-type(1) > h2 {
+    float: left;
+    width: 40%;
+  }
+  body #deals .inner section:nth-of-type(1) p {
+    display: none;
+  }
+  body #deals .inner section:nth-of-type(2) {
+    width: 100%;
+    padding: 2vw 0vw 8vw 0vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body #deals .inner section:nth-of-type(2) article b {
+    margin-bottom: 1.5vw;
   }
 }
 
