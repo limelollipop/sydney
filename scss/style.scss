@@ -232,7 +232,7 @@ body {
                 object-fit: cover;
                 object-position: center 80%;
                 opacity: 0.9;
-                animation: visualAni 5s infinite;
+                // animation: visualAni 5s infinite;
                 // &:nth-child(1){
                 //     display: none;
                 // }
@@ -877,10 +877,10 @@ body {
     }
 
     // animation
-    @keyframes visualAni {
-        0%{scale: 1;}
-        100%{scale: 1.2}
-    }
+    // @keyframes visualAni {
+    //     0%{scale: 1;}
+    //     100%{scale: 1.2}
+    // }
 }
 
 // media 1179px
@@ -1355,5 +1355,11 @@ body {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: $mobile){
+    body{
+
     }
 }

@@ -231,7 +231,6 @@ body #visual div:nth-of-type(1) img {
   object-fit: cover;
   object-position: center 80%;
   opacity: 0.9;
-  animation: visualAni 5s infinite;
 }
 body #visual div:nth-of-type(1) img:nth-child(2) {
   display: none;
@@ -826,14 +825,6 @@ body #footer .inner .footAddWrap > p {
   color: #fff;
   letter-spacing: 1px;
   text-align: center;
-}
-@keyframes visualAni {
-  0% {
-    scale: 1;
-  }
-  100% {
-    scale: 1.2;
-  }
 }
 
 @media screen and (max-width: 1179px) {
