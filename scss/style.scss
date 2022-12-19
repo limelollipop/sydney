@@ -749,7 +749,6 @@ body {
                 h1{
                     width: 140px;
                     height: 70px;
-                    float: left;
                     margin-right: 80px;
                     a{
                         display: block;
@@ -772,7 +771,6 @@ body {
                     }
                 }
                 nav{
-                    float: left;
                     width: 67%;
                     display: flex;
                     justify-content: space-between;
@@ -828,8 +826,7 @@ body {
                 }
     
                 >ul{
-                    float: right;
-                    padding: 15px 0;
+                    padding: 15px 0px;
                     li{
                         float: left;
                         margin-left: 20px;
@@ -1302,6 +1299,58 @@ body {
                             }
                         }
                         
+                    }
+                }
+            }
+        }
+        // 1079px footer
+        #footer{
+            .inner{
+                .footNavWrap{
+                    display: block;
+                    h1{
+                        margin: 0 auto;
+                    }
+                    nav{
+                        width: 100%;
+                        padding: 20px 0px 0px;
+                        div{
+                            width: 100%;
+                            h4{
+                                text-align: center;
+                            }
+                            &:nth-of-type(1){
+                                span{
+                                    width: 100%;
+                                    margin-right: 0px;
+                                    text-align: center;
+                                    &:nth-of-type(2){
+                                        display: none;
+                                    }
+                                    &:nth-of-type(3){
+                                        display: none;
+                                    }
+                                }
+                                >p{
+                                    display: none;
+                                }
+                            }
+                            &:nth-of-type(2),
+                            &:nth-of-type(3){
+                                display: none;
+                            }
+                        }
+                    }
+                    >ul{
+                        padding: 0px 0px 15px;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        li{
+                            &:nth-of-type(1){
+                                margin-left: 0px;
+                            }
+                        }
                     }
                 }
             }

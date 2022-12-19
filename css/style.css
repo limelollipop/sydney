@@ -711,7 +711,6 @@ body #footer .inner .footNavWrap {
 body #footer .inner .footNavWrap h1 {
   width: 140px;
   height: 70px;
-  float: left;
   margin-right: 80px;
 }
 body #footer .inner .footNavWrap h1 a {
@@ -734,7 +733,6 @@ body #footer .inner .footNavWrap h1 a span {
   color: #fff;
 }
 body #footer .inner .footNavWrap nav {
-  float: left;
   width: 67%;
   display: flex;
   justify-content: space-between;
@@ -784,8 +782,7 @@ body #footer .inner .footNavWrap nav div:nth-of-type(2) {
   margin-right: 20px;
 }
 body #footer .inner .footNavWrap > ul {
-  float: right;
-  padding: 15px 0;
+  padding: 15px 0px;
 }
 body #footer .inner .footNavWrap > ul li {
   float: left;
@@ -1175,6 +1172,48 @@ body #footer .inner .footAddWrap > p {
   }
   body #deals .inner section:nth-of-type(2) article b {
     margin-bottom: 1.5vw;
+  }
+  body #footer .inner .footNavWrap {
+    display: block;
+  }
+  body #footer .inner .footNavWrap h1 {
+    margin: 0 auto;
+  }
+  body #footer .inner .footNavWrap nav {
+    width: 100%;
+    padding: 20px 0px 0px;
+  }
+  body #footer .inner .footNavWrap nav div {
+    width: 100%;
+  }
+  body #footer .inner .footNavWrap nav div h4 {
+    text-align: center;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(1) span {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(2) {
+    display: none;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(3) {
+    display: none;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(1) > p {
+    display: none;
+  }
+  body #footer .inner .footNavWrap nav div:nth-of-type(2), body #footer .inner .footNavWrap nav div:nth-of-type(3) {
+    display: none;
+  }
+  body #footer .inner .footNavWrap > ul {
+    padding: 0px 0px 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  body #footer .inner .footNavWrap > ul li:nth-of-type(1) {
+    margin-left: 0px;
   }
 }
 
