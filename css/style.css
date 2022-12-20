@@ -234,7 +234,7 @@ body .content .inner {
   width: 1180px;
   margin: 0 auto;
   min-height: 500px;
-  padding: 80px 0px 0px;
+  padding: 100px 0px 0px;
 }
 body .content .inner h2 {
   font: bold 40px/1 "Josifin Sans";
@@ -401,65 +401,71 @@ body #footerSub .inner .footAddWrap > p {
   width: 80%;
   margin: 0 auto;
 }
-.join .inner .joinForm div h3 {
+.join .inner .joinForm h3 {
   font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
   text-align: center;
+  color: #04ADBF;
 }
-.join .inner .joinForm div #member fieldset {
+.join .inner .joinForm #member fieldset {
   border: none;
 }
-.join .inner .joinForm div #member fieldset table {
+.join .inner .joinForm #member fieldset table {
   width: 100%;
   border-top: 3px solid #04ADBF;
   border-bottom: 3px solid #04ADBF;
 }
-.join .inner .joinForm div #member fieldset table tr th, .join .inner .joinForm div #member fieldset table tr td {
-  border-bottom: 1px solid #ddd;
+.join .inner .joinForm #member fieldset table tr th, .join .inner .joinForm #member fieldset table tr td {
+  border-bottom: 1px solid #eee;
   text-align: left;
 }
-.join .inner .joinForm div #member fieldset table tr th {
+.join .inner .joinForm #member fieldset table tr th {
   width: 20%;
   padding: 15px 30px;
-  background: #b3e6ec;
 }
-.join .inner .joinForm div #member fieldset table tr td {
+.join .inner .joinForm #member fieldset table tr td {
   padding: 15px 20px;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=text], .join .inner .joinForm div #member fieldset table tr td input[type=password], .join .inner .joinForm div #member fieldset table tr td select {
+.join .inner .joinForm #member fieldset table tr td input[type=text], .join .inner .joinForm #member fieldset table tr td input[type=password], .join .inner .joinForm #member fieldset table tr td select {
   width: 40%;
-  background: rgba(0, 0, 0, 0.03);
-  padding: 10px;
+  background: #b3e6ec;
+  padding: 15px;
   border: 1px solid #aaa;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=radio], .join .inner .joinForm div #member fieldset table tr td input[type=checkbox] {
-  margin-left: 30px;
-  padding: 10px 0px;
+.join .inner .joinForm #member fieldset table tr td input[type=radio], .join .inner .joinForm #member fieldset table tr td input[type=checkbox] {
+  margin: 15px 0px 15px 30px;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=radio]:nth-of-type(1) {
+.join .inner .joinForm #member fieldset table tr td input[type=radio]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=checkbox]:nth-of-type(1) {
+.join .inner .joinForm #member fieldset table tr td input[type=checkbox]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tr td textarea {
+.join .inner .joinForm #member fieldset table tr td textarea {
   resize: none;
   width: 60%;
   height: 200px;
+  background: #b3e6ec;
+  padding: 15px;
 }
-.join .inner .joinForm div #member fieldset .btnJoin {
+.join .inner .joinForm #member fieldset table tr td p {
+  font: 12px/1 "Josefin Sans";
+  color: hotpink;
+  margin-top: 8px;
+}
+.join .inner .joinForm #member fieldset .btnJoin {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
+  padding: 40px 0px 0px;
 }
-.join .inner .joinForm div #member fieldset .btnJoin input[type=reset], .join .inner .joinForm div #member fieldset .btnJoin input[type=submit] {
+.join .inner .joinForm #member fieldset .btnJoin input[type=reset], .join .inner .joinForm #member fieldset .btnJoin input[type=submit] {
   width: 20%;
   height: 60px;
   margin: 10px;
   font-size: 12px;
-  font-weight: bold;
   color: #fff;
+  font-weight: bold;
   line-height: 60px;
   border: none;
   border-radius: 3px;
@@ -468,10 +474,10 @@ body #footerSub .inner .footAddWrap > p {
   text-align: center;
   background: #04ADBF;
 }
-.join .inner .joinForm div #member fieldset .btnJoin input[type=reset]:hover, .join .inner .joinForm div #member fieldset .btnJoin input[type=submit]:hover {
-  background: #ddd;
+.join .inner .joinForm #member fieldset .btnJoin input[type=reset]:hover, .join .inner .joinForm #member fieldset .btnJoin input[type=submit]:hover {
+  background: #b3e6ec;
   color: #0d0d0d;
-  border: 1px solid #555;
+  border: 1px solid #0d0d0d;
 }
 
 body {
