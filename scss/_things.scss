@@ -203,22 +203,6 @@ body {
             height: 80vh;
             background: url(../img/subVisual.jpg) no-repeat center / cover;
         }
-
-        .inner{
-            h2{
-                font: bold 40px/1 'Josifin Sans';
-                margin-bottom: 60px;
-                span{
-                    font: normal 20px/1 'arial';
-                    color: #04ADBF;
-                    &::before{
-                        content: '/';
-                        margin-right: 20px;
-                        margin-left: 10px;
-                    }
-                }                
-            }
-        }
     }
 
     // footer sub

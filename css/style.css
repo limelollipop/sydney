@@ -21,10 +21,360 @@ body {
   color: #0d0d0d;
 }
 
+.hidden {
+  position: absolute;
+  top: -999999px;
+  opacity: 0;
+}
+
 .wrap::after {
   content: "";
   display: block;
   clear: both;
+}
+
+body #headerSub {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.05), rgb(51, 51, 51));
+  z-index: 10;
+}
+body #headerSub .inner {
+  width: 1180px;
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+body #headerSub .inner > h1 {
+  position: absolute;
+  width: 140px;
+  left: 0;
+  bottom: 10px;
+}
+body #headerSub .inner > h1 > a {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+body #headerSub .inner > h1 > a img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+body #headerSub .inner > h1 > a span {
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  top: 35px;
+  color: #fff;
+}
+body #headerSub .inner .menuWeb #gnb {
+  position: absolute;
+  right: 0;
+  bottom: 18px;
+}
+body #headerSub .inner .menuWeb #gnb li {
+  float: left;
+}
+body #headerSub .inner .menuWeb #gnb li a {
+  display: block;
+  padding: 12px 30px;
+  font: bold 18px/1 "Josefin Sans";
+  color: #fff;
+  text-shadow: 0px 0px 10px #000;
+}
+body #headerSub .inner .menuWeb #gnb li a:hover {
+  background-color: #fff;
+  color: #333;
+  text-shadow: none;
+}
+body #headerSub .inner .btnMenu {
+  display: none;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+body #headerSub .inner .btnMenu.on::before {
+  top: 50%;
+  margin-top: -2px;
+  transform: rotate(45deg);
+}
+body #headerSub .inner .btnMenu.on::after {
+  bottom: 50%;
+  margin-bottom: -2px;
+  transform: rotate(-45deg);
+}
+body #headerSub .inner .btnMenu.on span {
+  opacity: 0;
+}
+body #headerSub .inner .btnMenu::before, body #headerSub .inner .btnMenu::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 4px;
+}
+body #headerSub .inner .btnMenu::before {
+  top: 0;
+  transition: top 0.5s;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+body #headerSub .inner .btnMenu::after {
+  bottom: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+body #headerSub .inner .btnMenu span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -2px;
+  text-indent: -99999px;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+body #headerSub .inner .menuMo {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 270px;
+  height: 100vh;
+  background: #b3e6ec;
+  padding: 0 2vh;
+  left: -270px;
+  transition: 0.5s;
+}
+body #headerSub .inner .menuMo.on {
+  left: 0px;
+}
+body #headerSub .inner .menuMo > h1 {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding-top: 20px;
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+body #headerSub .inner .menuMo > h1 > a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+body #headerSub .inner .menuMo > h1 > a img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-right: 10px;
+}
+body #headerSub .inner .menuMo > h1 > a span {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  position: absolute;
+  top: 35px;
+  color: #0d0d0d;
+}
+body #headerSub .inner .menuMo #gnbMo {
+  position: relative;
+}
+body #headerSub .inner .menuMo #gnbMo li {
+  border-bottom: 1px solid #04ADBF;
+}
+body #headerSub .inner .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 3vh 0 2vh;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #0d0d0d;
+}
+body #headerSub .inner .menuMo #gnbMo li a b {
+  float: right;
+  padding-right: 1vw;
+}
+body .content {
+  width: 100%;
+  padding: 0 0 150px;
+  position: relative;
+  top: -100px;
+}
+body .content .visualSub {
+  width: 100%;
+  height: 80vh;
+  background: url(../img/subVisual.jpg) no-repeat center/cover;
+}
+body .content .inner h2 {
+  font: bold 40px/1 "Josifin Sans";
+  margin-bottom: 60px;
+}
+body .content .inner h2 span {
+  font: normal 20px/1 "arial";
+  color: #04ADBF;
+}
+body .content .inner h2 span::before {
+  content: "/";
+  margin-right: 20px;
+  margin-left: 10px;
+}
+body #footerSub {
+  width: 100%;
+  position: relative;
+  background: #04ADBF;
+  padding: 100px 0;
+}
+body #footerSub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+body #footerSub .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+body #footerSub .inner .footNavWrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+body #footerSub .inner .footNavWrap h1 {
+  width: 140px;
+  height: 70px;
+  margin-right: 80px;
+}
+body #footerSub .inner .footNavWrap h1 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+body #footerSub .inner .footNavWrap h1 a img {
+  width: 70px;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+body #footerSub .inner .footNavWrap h1 a span {
+  display: inline-block;
+  font-size: 18px;
+  position: absolute;
+  top: 35px;
+  color: #fff;
+}
+body #footerSub .inner .footNavWrap nav {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #fff;
+}
+body #footerSub .inner .footNavWrap nav div {
+  width: 33.33%;
+}
+body #footerSub .inner .footNavWrap nav div h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(1) span {
+  margin-right: 10px;
+  display: inline-block;
+  margin-bottom: 3px;
+  font-size: 12px;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(1) {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(1) > p {
+  margin-top: 20px;
+  font-size: 12px;
+  padding-right: 30px;
+  color: #eee;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(2) ul, body #footerSub .inner .footNavWrap nav div:nth-of-type(3) ul {
+  width: 100%;
+  padding: 0;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(2) ul li, body #footerSub .inner .footNavWrap nav div:nth-of-type(3) ul li {
+  width: 100%;
+  margin-left: 0;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(2) ul li a, body #footerSub .inner .footNavWrap nav div:nth-of-type(3) ul li a {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+body #footerSub .inner .footNavWrap nav div:nth-of-type(2) {
+  padding-left: 50px;
+  margin-right: 20px;
+}
+body #footerSub .inner .footNavWrap > ul {
+  padding: 15px 0px;
+}
+body #footerSub .inner .footNavWrap > ul li {
+  float: left;
+  margin-left: 20px;
+}
+body #footerSub .inner .footNavWrap > ul li a {
+  font-size: 25px;
+  color: #fff;
+}
+body #footerSub .inner .footAddWrap {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+body #footerSub .inner .footAddWrap address {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 0 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #eee;
+  text-align: center;
+}
+body #footerSub .inner .footAddWrap address::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin: 10px auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background: #fff;
+}
+body #footerSub .inner .footAddWrap > p {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "arial";
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.join .visualSub {
+  background: #b3e6ec;
 }
 
 body {
@@ -287,17 +637,6 @@ body #visual .inner a::before {
 body #visual .inner a:hover::before {
   background: #fff;
   width: 200px;
-}
-body::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 50%;
-  height: 1200px;
-  top: 100vh;
-  right: 0;
-  background: #b3e6ec;
-  z-index: -10;
 }
 body #event {
   width: 100%;
