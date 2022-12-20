@@ -1,5 +1,102 @@
 .join{
+    width: 100%;
+    position: relative;
+    // padding: 150px 0;
     .visualSub{
         background: #b3e6ec;
+    }
+    .inner{
+        h2{
+            position: absolute;
+        }
+        .joinForm{
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            div{
+                h3{
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    text-align: center;
+                }
+                #member{
+                    fieldset{
+                        border: none;
+                        table{
+                            width: 100%;
+                            border-top: 3px solid #04ADBF;
+                            border-bottom: 3px solid #04ADBF;
+
+                            tr{                                
+                                th,td{
+                                    border-bottom: 1px solid #ddd;
+                                    text-align: left;
+                                }
+                                th{
+                                    width: 20%;
+                                    padding: 15px 30px;
+                                    background: #b3e6ec;
+                                }
+                                td{
+                                    padding: 15px 20px;
+                                    input[type=text], input[type=password],select{
+                                        width: 40%;
+                                        background: rgba(0,0,0,0.03);
+                                        padding: 10px;
+                                        border: 1px solid #aaa;
+                                    }
+            
+                                    input[type=radio], input[type=checkbox]{
+                                        margin-left: 30px;
+                                        padding: 10px 0px;
+                                    }
+                                    input[type=radio]{
+                                        &:nth-of-type(1){
+                                            margin-left: 0px;
+                                        }
+                                    }
+                                    input[type=checkbox]{
+                                        &:nth-of-type(1){
+                                            margin-left: 0px;
+                                        }
+                                    }
+                                    textarea{
+                                        resize: none;
+                                        width: 60%;
+                                        height: 200px;
+                                    }
+                                }
+                            }
+                        }
+                        .btnJoin{
+                            display: flex;
+                            justify-content: center;
+                            padding: 20px 0px;
+                            input[type=reset], input[type=submit]{
+                                width: 20%;
+                                height: 60px;
+                                margin: 10px;
+                                font-size: 12px;
+                                font-weight: bold;
+                                color: #fff;
+                                line-height: 60px;
+                                border: none;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                transition: 0.3s;
+                                text-align: center;
+                                background: #04ADBF;
+                                &:hover{
+                                    background: #ddd;
+                                    color: #0d0d0d;
+                                    border: 1px solid #555;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

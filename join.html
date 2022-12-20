@@ -75,17 +75,115 @@
 
     <!-- subPage content -->
     <section class="content join">
-        <div class="visualSub"></div>
+        <div class="visualSub"><img src="img/subVisual.jpg" alt=""></div>
 
         <div class="inner">
-            <h2>Join <span>membership</span></h2>
+            <h2>Join our membership and See what's in</h2>
             <!-- 콘텐츠 들어갈 부분 -->
 
-            <form action="index.html"></form>
-            <fieldset>
-                <legend class="hidden">join membership form</legend>
-                <h3></h3>
-            </fieldset>
+            <section class="joinForm">
+                <div>
+                    <h3>MEMBERSHIP</h3>
+                    <form action="joinResult.html" method="get" id="member">
+                        <fieldset>
+                            <legend class="hidden">Membership form</legend>
+
+                            <table>
+                                <caption class="hidden">유저 이름, 비밀번호, 이메일, 국적, 성별, 시드니 관심사, 남기는 말</caption>
+
+                                <tbody>
+
+                                    <!-- user id -->
+                                    <tr>
+                                        <th scope="row"><label for="userName">User Name</label></th>
+                                        <td>
+                                            <input type="text" name="userName" id="userName" placeholder="User Name">
+                                        </td>
+                                    </tr>
+
+                                    <!-- email -->
+                                    <tr>
+                                        <th scope="row"><label for="email">E-mail</label></th>
+                                        <td>
+                                            <input type="text" name="email" id="email" placeholder="Email address">
+                                        </td>
+                                    </tr>
+
+                                    <!-- password -->
+                                    <tr>
+                                        <th scope="row"><label for="pwd1">Password</label></th>
+                                        <td>
+                                            <input type="password" name="pwd1" id="pwd1" placeholder="Create Password">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><label for="pwd2">Re Password</label></th>
+                                        <td>
+                                            <input type="password" name="pwd2" id="pwd2" placeholder="Confirm Password">
+                                        </td>
+                                    </tr>
+
+                                    <!-- country -->
+                                    <tr>
+                                        <th scope="row"><label for="country">Country</label></th>
+                                        <td>
+                                            <select name="country" id="country">
+                                                <option value="">Select...</option>
+                                                <option value="aus">Australia</option>
+                                                <option value="brz">Brazil</option>
+                                                <option value="chn">China</option>
+                                                <option value="jpn">Japan</option>
+                                                <option value="kor">Korea</option>
+                                                <option value="vit">Vietnam</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+
+                                    <!-- gender -->
+                                    <tr>
+                                        <th scope="row"><label for="gender">Gender</label></th>
+                                        <td>
+                                            <input type="radio" name="gender" id="male" value="male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" name="gender" id="female" value="female">
+                                            <label for="female">Female</label>
+                                        </td>
+                                    </tr>
+
+                                    <!-- interest -->
+                                    <tr>
+                                        <th scope="row"><label for="interest">Interested in</label></th>
+                                        <td>
+                                            <input type="checkbox" name="luxury" id="luxury">
+                                            <label for="luxury">Luxury Travels</label>
+                                            <input type="checkbox" name="road" id="road">
+                                            <label for="">Road Trips</label>
+                                            <input type="checkbox" name="festival" id="festival">
+                                            <label for="festival">Festivals</label>
+                                            <input type="checkbox" name="daal" id="deal">
+                                            <label for="eal">Deals&Offers</label>
+                                        </td>
+                                    </tr>
+
+                                    <!-- comments -->
+                                    <tr>
+                                        <th scope="row"><label for="comments">Comments</label></th>
+                                        <td>
+                                            <textarea name="comments" id="comments" placeholder="leave your comments"></textarea>
+                                        </td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+                            
+                            <!-- buttons -->
+                            <div class="btnJoin">
+                                <input type="reset" value="CANCEL">
+                                <input type="submit" value="SUBMIT">
+                            </div class="btnJoin">
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
 
         </div>
     </section>
