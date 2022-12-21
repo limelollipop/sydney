@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <script src="https://kit.fontawesome.com/6f60aa9a63.js" crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <!-- 
         참고사이트
@@ -67,6 +69,7 @@
                     <li><a href="accommodation.html">Accommodation<b>&gt;</b></a></li>
                     <li><a href="events.html">Events<b>&gt;</b></a></li>
                     <li><a href="deals.html">Deals<b>&gt;</b></a></li>
+                    <li><a href="join.html">Join<b>&gt;</b></a></li>
                 </ul>
             </nav>
 
@@ -76,117 +79,120 @@
 
     <!-- subPage content -->
     <section class="content join">
-        <div class="visualSub"><img src="img/subVisual.jpg" alt=""></div>
+        <div class="visualSub"><video src="img/visual.mov" autoplay muted loop></video></div>
 
         <div class="inner">
             <h2>Join our membership and See what's in</h2>
             <!-- 콘텐츠 들어갈 부분 -->
 
             <section class="joinForm">
-                    <h3>MEMBERSHIP</h3>
-                    <form action="joinResult.html" method="get" id="member">
-                        <fieldset>
-                            <legend class="hidden">Membership form</legend>
+                <h3>MEMBERSHIP</h3>
+                <form action="joinResult.html" method="get" id="member">
+                    <fieldset>
+                        <legend class="hidden">Membership form</legend>
 
-                            <table>
-                                <caption class="hidden">유저 이름, 비밀번호, 이메일, 국적, 성별, 시드니 관심사, 남기는 말</caption>
+                        <table>
+                            <caption class="hidden">유저 이름, 비밀번호, 이메일, 국적, 성별, 시드니 관심사, 남기는 말</caption>
 
-                                <tbody>
+                            <tbody>
 
-                                    <!-- user id -->
-                                    <tr>
-                                        <th scope="row"><label for="userName">User Name</label></th>
-                                        <td>
-                                            <input type="text" name="userName" id="userName" placeholder="User Name">
-                                        </td>
-                                    </tr>
+                                <!-- user id -->
+                                <tr>
+                                    <th scope="row"><label for="userName">User Name</label></th>
+                                    <td>
+                                        <input type="text" name="userName" id="userName" placeholder="User Name">
+                                    </td>
+                                </tr>
 
-                                    <!-- email -->
-                                    <tr>
-                                        <th scope="row"><label for="email">E-mail</label></th>
-                                        <td>
-                                            <input type="text" name="email" id="email" placeholder="Email address">
-                                        </td>
-                                    </tr>
+                                <!-- email -->
+                                <tr>
+                                    <th scope="row"><label for="email">E-mail</label></th>
+                                    <td>
+                                        <input type="text" name="email" id="email" placeholder="Email address">
+                                    </td>
+                                </tr>
 
-                                    <!-- password -->
-                                    <tr>
-                                        <th scope="row"><label for="pwd1">Password</label></th>
-                                        <td>
-                                            <input type="password" name="pwd1" id="pwd1" placeholder="Create Password" autocomplete="off">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><label for="pwd2">Re Password</label></th>
-                                        <td>
-                                            <input type="password" name="pwd2" id="pwd2" placeholder="Confirm Password" autocomplete="off">
-                                        </td>
-                                    </tr>
+                                <!-- password -->
+                                <tr>
+                                    <th scope="row"><label for="pwd1">Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd1" id="pwd1" placeholder="Create Password"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="pwd2">Re Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd2" id="pwd2" placeholder="Confirm Password"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
 
-                                    <!-- country -->
-                                    <tr>
-                                        <th scope="row"><label for="country">Country</label></th>
-                                        <td>
-                                            <select name="country" id="country">
-                                                <option value="">Select...</option>
-                                                <option value="aus">Australia</option>
-                                                <option value="brz">Brazil</option>
-                                                <option value="chn">China</option>
-                                                <option value="jpn">Japan</option>
-                                                <option value="kor">Korea</option>
-                                                <option value="vit">Vietnam</option>
-                                            </select>
-                                        </td>
-                                    </tr>
+                                <!-- country -->
+                                <tr>
+                                    <th scope="row"><label for="country">Country</label></th>
+                                    <td>
+                                        <select name="country" id="country">
+                                            <option value="">Select...</option>
+                                            <option value="aus">Australia</option>
+                                            <option value="brz">Brazil</option>
+                                            <option value="chn">China</option>
+                                            <option value="jpn">Japan</option>
+                                            <option value="kor">Korea</option>
+                                            <option value="vit">Vietnam</option>
+                                        </select>
+                                    </td>
+                                </tr>
 
-                                    <!-- gender -->
-                                    <tr>
-                                        <th scope="row"><label for="gender">Gender</label></th>
-                                        <td>
-                                            <input type="radio" name="gender" id="male" value="male">
-                                            <label for="male">Male</label>
-                                            <input type="radio" name="gender" id="female" value="female">
-                                            <label for="female">Female</label>
-                                        </td>
-                                    </tr>
+                                <!-- gender -->
+                                <tr>
+                                    <th scope="row"><label for="gender">Gender</label></th>
+                                    <td>
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="female">Female</label>
+                                    </td>
+                                </tr>
 
-                                    <!-- interest -->
-                                    <tr>
-                                        <th scope="row"><label for="interest">Interested in</label></th>
-                                        <td>
-                                            <input type="checkbox" name="interest" id="luxury">
-                                            <label for="luxury">Luxury Travels</label>
-                                            <input type="checkbox" name="interest" id="road">
-                                            <label for="">Road Trips</label>
-                                            <input type="checkbox" name="interest" id="festival">
-                                            <label for="festival">Festivals</label>
-                                            <input type="checkbox" name="interest" id="deal">
-                                            <label for="eal">Deals&Offers</label>
-                                        </td>
-                                    </tr>
+                                <!-- interest -->
+                                <tr>
+                                    <th scope="row"><label for="interest">Interested in</label></th>
+                                    <td>
+                                        <input type="checkbox" name="interest" id="luxury">
+                                        <label for="luxury">Luxury Travels</label>
+                                        <input type="checkbox" name="interest" id="road">
+                                        <label for="">Road Trips</label>
+                                        <input type="checkbox" name="interest" id="festival">
+                                        <label for="festival">Festivals</label>
+                                        <input type="checkbox" name="interest" id="deal">
+                                        <label for="eal">Deals&Offers</label>
+                                    </td>
+                                </tr>
 
-                                    <!-- comments -->
-                                    <tr>
-                                        <th scope="row"><label for="comments">Comments</label></th>
-                                        <td>
-                                            <textarea name="comments" id="comments" placeholder="leave your comments"></textarea>
-                                        </td>
-                                    </tr>                                    
-                                </tbody>
-                            </table>
-                            
-                            <!-- buttons -->
-                            <div class="btnJoin">
-                                <input type="reset" value="CANCEL">
-                                <input type="submit" value="SUBMIT">
-                            </div class="btnJoin">
-                        </fieldset>
-                    </form>
+                                <!-- comments -->
+                                <tr>
+                                    <th scope="row"><label for="comments">Comments</label></th>
+                                    <td>
+                                        <textarea name="comments" id="comments"
+                                            placeholder="leave your comments"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- buttons -->
+                        <div class="btnJoin">
+                            <input type="reset" value="CANCEL">
+                            <input type="submit" value="SUBMIT">
+                        </div class="btnJoin">
+                    </fieldset>
+                </form>
             </section>
 
         </div>
     </section>
-    
+
     <!-- footer sub -->
     <footer id="footerSub">
         <div class="inner">
@@ -197,13 +203,15 @@
                         <span>SYDNEY</span>
                     </a>
                 </h1>
-                
+
                 <nav>
                     <div>
                         <h4>CONTACT US</h4>
-                        <span>1800 067 676</span><br><span>Fex : 1800 067 677</span><br><span>sydenyservice@sydney.com</span><br>
-                        <p>                        
-                            Visitor information centres are conveniently located in Sydney and in major towns across New South Wales.<!-- Look for the distinctive blue and yellow ‘i’ signage.
+                        <span>1800 067 676</span><br><span>Fex : 1800 067
+                            677</span><br><span>sydenyservice@sydney.com</span><br>
+                        <p>
+                            Visitor information centres are conveniently located in Sydney and in major towns across New
+                            South Wales.<!-- Look for the distinctive blue and yellow ‘i’ signage.
                             The main Sydney Visitor Centre is in The Rocks. -->
                         </p>
                     </div>
@@ -222,50 +230,53 @@
                         <h4>OUR SITES</h4>
                         <ul>
                             <li><a href="https://www.visitnsw.com/" target="_blank">VisitNSW.com</a></li>
-                            <li><a href="https://www.destinationnsw.com.au/" target="_blank">Destination NSW Corporate</a></li>
+                            <li><a href="https://www.destinationnsw.com.au/" target="_blank">Destination NSW
+                                    Corporate</a></li>
                             <li><a href="https://www.meetinnsw.com.au/" target="_blank">Regional Conferencing</a></li>
-                            <li><a href="https://media.destinationnsw.com.au/" target="_blank">Destination NSW Media Centre</a></li>
+                            <li><a href="https://media.destinationnsw.com.au/" target="_blank">Destination NSW Media
+                                    Centre</a></li>
                             <li><a href="https://www.vividsydney.com/" target="_blank">Vivid Sydney</a></li>
                         </ul>
                     </div>
                 </nav>
-                
+
                 <ul>
                     <li>
                         <a href="https://www.facebook.com/sydney" target="_blank">
                             <i class="fab fa-facebook-square"></i><span></span>
                         </a>
                     </li>
-                        <li>
-                            <a href="https://twitter.com/sydney_sider" target="_blank">
-                                <i class="fab fa-twitter-square"></i><span></span>
-                            </a>
+                    <li>
+                        <a href="https://twitter.com/sydney_sider" target="_blank">
+                            <i class="fab fa-twitter-square"></i><span></span>
+                        </a>
                     </li>
-                        <li>
-                            <a href="https://www.youtube.com/user/seesydney" target="_blank">
-                                <i class="fab fa-youtube-square"></i><span></span>
-                            </a>
+                    <li>
+                        <a href="https://www.youtube.com/user/seesydney" target="_blank">
+                            <i class="fab fa-youtube-square"></i><span></span>
+                        </a>
                     </li>
                     </li>
-                        <li>
-                            <a href="https://www.pinterest.com/seesydney/" target="_blank">
-                                <i class="fab fa-pinterest-square"></i><span></span>
-                            </a>
+                    <li>
+                        <a href="https://www.pinterest.com/seesydney/" target="_blank">
+                            <i class="fab fa-pinterest-square"></i><span></span>
+                        </a>
                     </li>
-                </ul>  
-            </div>          
+                </ul>
+            </div>
 
             <div class="footAddWrap wrap">
                 <address>
                     address : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, saepe.
                 </address>
                 <p>
-                    Sydney.com is the official tourism site for Destination NSW. 
+                    Sydney.com is the official tourism site for Destination NSW.
                     © Copyright 2022 Destination NSW. All rights reserved
                 </p>
             </div>
-        
+
         </div>
     </footer>
 </body>
+
 </html>
