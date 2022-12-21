@@ -582,6 +582,16 @@ body #footerSub .inner .footAddWrap > p {
 body {
   background: #fff;
 }
+body > div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 1200px;
+  top: 100vh;
+  right: 0;
+  background: #b3e6ec;
+}
 body #header {
   width: 100%;
   height: 100px;
@@ -1382,6 +1392,9 @@ body #footer .inner .footAddWrap > p {
 }
 
 @media screen and (max-width: 1179px) {
+  body > div::before {
+    height: 800px;
+  }
   body #header .inner {
     width: 100%;
     height: 100px;
@@ -1412,9 +1425,6 @@ body #footer .inner .footAddWrap > p {
   }
   body #visual .inner a::before {
     height: 30px;
-  }
-  body::after {
-    height: 800px;
   }
   body #event {
     padding: 20px 0 100px;
@@ -1576,6 +1586,9 @@ body #footer .inner .footAddWrap > p {
   }
 }
 @media screen and (max-width: 1079px) {
+  body > div::before {
+    height: 1200px;
+  }
   body #header .inner .menuWeb {
     display: none;
   }

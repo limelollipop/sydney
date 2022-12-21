@@ -22,18 +22,19 @@ $mobile: 539px;
 
 body {
 	background: #fff;
-	//bg color
-	// &::after{
-	//     content: '';
-	//     display: block;
-	//     position: absolute;
-	//     width: 50%;
-	//     height: 1200px;
-	//     top: 100vh;
-	//     right: 0;
-	//     background: #b3e6ec;
-	//     z-index: -10;
-	// }
+	> div {
+		//bg color
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 50%;
+			height: 1200px;
+			top: 100vh;
+			right: 0;
+			background: #b3e6ec;
+		}
+	}
 	// header menu etc
 	#header {
 		width: 100%;
@@ -896,6 +897,11 @@ body {
 // media 1179px
 @media screen and (max-width: $tablet) {
 	body {
+		> div {
+			&::before {
+				height: 800px;
+			}
+		}
 		// 1179px header
 		#header {
 			.inner {
@@ -936,9 +942,6 @@ body {
 					}
 				}
 			}
-		}
-		&::after {
-			height: 800px;
 		}
 
 		// 1179px event
@@ -1133,6 +1136,11 @@ body {
 // media 1079px
 @media screen and (max-width: $tablet2) {
 	body {
+		> div {
+			&::before {
+				height: 1200px;
+			}
+		}
 		// 1079px header
 		#header {
 			.inner {
