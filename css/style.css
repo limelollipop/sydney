@@ -17,7 +17,7 @@ a {
 }
 
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   color: #0d0d0d;
 }
 
@@ -192,7 +192,7 @@ body #headerSub .inner .menuMo #gnbMo {
   position: relative;
 }
 body #headerSub .inner .menuMo #gnbMo li {
-  border-bottom: 1px solid #04ADBF;
+  border-bottom: 1px solid #04adbf;
 }
 body #headerSub .inner .menuMo #gnbMo li a {
   display: block;
@@ -237,18 +237,19 @@ body .content .inner {
   padding: 100px 0px 0px;
 }
 body .content .inner h2 {
-  font: bold 40px/1 "Josifin Sans";
+  font: bold 40px/1 "Josifin Sans", sans-serif;
   color: #fff;
   margin-bottom: 60px;
   top: -25%;
   width: 100%;
   text-align: center;
   text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.8);
+  letter-spacing: 1px;
 }
 body #footerSub {
   width: 100%;
   position: relative;
-  background: #04ADBF;
+  background: #04adbf;
   padding: 100px 0;
 }
 body #footerSub .inner {
@@ -386,6 +387,104 @@ body #footerSub .inner .footAddWrap > p {
   text-align: center;
 }
 
+@media screen and (max-width: 1179px) {
+  body #headerSub .inner {
+    width: 100%;
+  }
+  body #headerSub .inner > h1 {
+    left: 50px;
+  }
+  body #headerSub .inner .menuWeb #gnb {
+    right: 2%;
+  }
+  body #headerSub .inner .menuWeb #gnb li a {
+    font: bold 15px/1 "Josefin Sans", sans-serif;
+    text-shadow: 0px 0px 5px #000;
+  }
+  body .content .inner {
+    width: 100%;
+  }
+  body .content .inner h2 {
+    font: bold 35px/1 "Josefin Sans", sans-serif;
+  }
+  body #footerSub {
+    padding: 60px 0px;
+  }
+  body #footerSub .inner {
+    width: 100%;
+    padding: 0% 10%;
+  }
+  body #footerSub .inner .footNavWrap h1 {
+    margin-right: 60px;
+  }
+  body #footerSub .inner .footNavWrap nav {
+    width: 50%;
+  }
+  body #footerSub .inner .footNavWrap nav div {
+    width: 25%;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(2) {
+    padding-left: 10px;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 1079px) {
+  body #headerSub .inner .menuWeb {
+    display: none;
+  }
+  body #headerSub .inner .btnMenu {
+    display: block;
+  }
+  body #headerSub .inner .menuMo {
+    display: block;
+  }
+  body .content .inner h2 {
+    font: bold 30px/1.6 "Josefin Sans", sans-serif;
+    padding: 0px 120px 100px;
+  }
+  body #footerSub .inner .footNavWrap {
+    display: block;
+  }
+  body #footerSub .inner .footNavWrap h1 {
+    margin: 0 auto;
+  }
+  body #footerSub .inner .footNavWrap nav {
+    width: 100%;
+    padding: 20px 0px 0px;
+  }
+  body #footerSub .inner .footNavWrap nav div {
+    width: 100%;
+  }
+  body #footerSub .inner .footNavWrap nav div h4 {
+    text-align: center;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(1) span {
+    width: 100%;
+    margin-right: 0px;
+    text-align: center;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(2) {
+    display: none;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(1) span:nth-of-type(3) {
+    display: none;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(1) > p {
+    display: none;
+  }
+  body #footerSub .inner .footNavWrap nav div:nth-of-type(2), body #footerSub .inner .footNavWrap nav div:nth-of-type(3) {
+    display: none;
+  }
+  body #footerSub .inner .footNavWrap > ul {
+    padding: 0px 0px 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  body #footerSub .inner .footNavWrap > ul li:nth-of-type(1) {
+    margin-left: 0px;
+  }
+}
 .join {
   width: 100%;
   position: relative;
@@ -533,7 +632,7 @@ body #header .inner .menuWeb #gnb li {
 body #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 12px 30px;
-  font: bold 18px/1 "Josefin Sans";
+  font: bold 18px/1 "Josefin Sans", sans-serif;
   color: #fff;
   text-shadow: 0px 0px 10px #000;
 }
@@ -642,7 +741,7 @@ body #header .inner .menuMo #gnbMo {
   position: relative;
 }
 body #header .inner .menuMo #gnbMo li {
-  border-bottom: 1px solid #04ADBF;
+  border-bottom: 1px solid #04adbf;
 }
 body #header .inner .menuMo #gnbMo li a {
   display: block;
@@ -703,13 +802,13 @@ body #visual .inner {
   transform: translate(-50%, -50%);
 }
 body #visual .inner h2 {
-  font: normal 70px/1 "Josefin Sans";
+  font: normal 70px/1 "Josefin Sans", sans-serif;
   color: #fff;
   margin-bottom: 20px;
   text-shadow: 0px 0px 10px #000;
 }
 body #visual .inner p {
-  font: normal 20px/1 "arial";
+  font: normal 20px/1 "arial", sans-serif;
   color: #eee;
   margin-bottom: 80px;
 }
@@ -718,14 +817,14 @@ body #visual .inner a {
   position: relative;
   width: 200px;
   height: 40px;
-  font: bold 18px/40px "Josefin Sans";
+  font: bold 18px/40px "Josefin Sans", sans-serif;
   color: #fff;
   margin: 0 auto;
   text-align: center;
   transition: 0.3;
 }
 body #visual .inner a:hover {
-  color: #04ADBF;
+  color: #04adbf;
 }
 body #visual .inner a::before {
   content: "";
@@ -733,7 +832,7 @@ body #visual .inner a::before {
   position: absolute;
   width: 15px;
   height: 40px;
-  background: #04ADBF;
+  background: #04adbf;
   transition: 0.3s;
   z-index: -1;
 }
@@ -766,7 +865,7 @@ body #event .inner div.left h3 {
 body #event .inner div.left h2 {
   font-size: 100px;
   margin-bottom: 60px;
-  color: #04ADBF;
+  color: #04adbf;
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
 }
 body #event .inner div.left p {
@@ -985,7 +1084,7 @@ body #accommodation .inner .wrap article:nth-of-type(1) {
 body #accommodation .inner .wrap article:nth-of-type(1) h3 {
   font-size: 25px;
   margin-bottom: 30px;
-  color: #04ADBF;
+  color: #04adbf;
 }
 body #accommodation .inner .wrap article:nth-of-type(1) p {
   font-size: 18px;
@@ -1015,12 +1114,12 @@ body #accommodation .inner .wrap article:nth-of-type(1) a::before {
   position: absolute;
   width: 15px;
   height: 40px;
-  background: #04ADBF;
+  background: #04adbf;
   transition: 0.3s;
   z-index: -1;
 }
 body #accommodation .inner .wrap article:nth-of-type(1) a:hover::before {
-  background: #04ADBF;
+  background: #04adbf;
   width: 150px;
 }
 body #accommodation .inner .wrap article:nth-of-type(2) {
@@ -1121,7 +1220,7 @@ body #deals .inner section:nth-of-type(2) article b {
 body #deals .inner section:nth-of-type(2) article h3 {
   font-size: 1.4vw;
   margin-bottom: 20px;
-  color: #04ADBF;
+  color: #04adbf;
 }
 body #deals .inner section:nth-of-type(2) article p {
   font-size: 1.2vw;
@@ -1136,7 +1235,7 @@ body #deals .inner section:nth-of-type(2) article span {
 body #footer {
   width: 100%;
   position: relative;
-  background: #04ADBF;
+  background: #04adbf;
   padding: 100px 0;
 }
 body #footer .inner {
@@ -1294,14 +1393,14 @@ body #footer .inner .footAddWrap > p {
     right: 2%;
   }
   body #header .inner .menuWeb #gnb li a {
-    font: bold 15px/1 "Josefin Sans";
+    font: bold 15px/1 "Josefin Sans" sans-serif;
     text-shadow: 0px 0px 5px #000;
   }
   body #visual .inner {
     width: 100%;
   }
   body #visual .inner h2 {
-    font: normal 50px/1 "Josefin Sans";
+    font: normal 50px/1 "Josefin Sans", sans-serif;
     text-shadow: 0px 0px 5px #000;
   }
   body #visual .inner p {
@@ -1309,7 +1408,7 @@ body #footer .inner .footAddWrap > p {
   }
   body #visual .inner a {
     height: 30px;
-    font: bold 16px/30px "Josefin Sans";
+    font: bold 16px/30px "Josefin Sans", sans-serif;
   }
   body #visual .inner a::before {
     height: 30px;
@@ -1386,7 +1485,7 @@ body #footer .inner .footAddWrap > p {
     font-size: 25px;
   }
   body #banner .inner .wrap p {
-    font: normal 14px/1.4 "Josefin Sans";
+    font: normal 14px/1.4 "Josefin Sans", sans-serif;
   }
   body #accommodation {
     padding: 130px 0;
@@ -1415,7 +1514,7 @@ body #footer .inner .footAddWrap > p {
   }
   body #accommodation .inner .wrap article:nth-of-type(1) a {
     height: 30px;
-    font: bold 16px/30px "Josefin Sans";
+    font: bold 16px/30px "Josefin Sans", sans-serif;
   }
   body #accommodation .inner .wrap article:nth-of-type(1) a::before {
     height: 30px;
@@ -1487,7 +1586,7 @@ body #footer .inner .footAddWrap > p {
     display: block;
   }
   body #visual .inner h2 {
-    font: normal 50px/1 "Josefin Sans";
+    font: normal 50px/1 "Josefin Sans", sans-serif;
     padding: 0px 120px 100px;
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
   }
@@ -1496,7 +1595,7 @@ body #footer .inner .footAddWrap > p {
   }
   body #visual .inner a {
     height: 50px;
-    font: bold 20px/50px "Josefin Sans";
+    font: bold 20px/50px "Josefin Sans", sans-serif;
   }
   body #visual .inner a::before {
     height: 50px;

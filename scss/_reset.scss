@@ -1,28 +1,30 @@
 * {
-    margin: 0px; padding: 0px; box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 ul,
 ol,
 li {
-    list-style: none;
+	list-style: none;
 }
 a {
-    text-decoration: none;
-    outline: 0;
+	text-decoration: none;
+	outline: 0;
 }
 body {
-    font-family: 'Josefin Sans';
-    color: #0d0d0d;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #0d0d0d;
 }
 
-.hidden{
-    position: absolute;
-    top: -999999px;
-    opacity: 0;
+.hidden {
+	position: absolute;
+	top: -999999px;
+	opacity: 0;
 }
 
 .wrap::after {
-	content: "";
+	content: '';
 	display: block;
 	clear: both;
 }
