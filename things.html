@@ -6,21 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Things to do</title>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6f60aa9a63.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <script defer src="js/anime.js"></script>
+    <script defer src="js/things.js"></script>
 
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/6f60aa9a63.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
     <!-- 
         참고사이트
-        https://www.sydney.com/
-        참고레이아웃
-        http://co1071.shiningcorp.com/?device=pc   
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     -->
 
     <header id="headerSub">
@@ -79,21 +81,177 @@
     <section class="content things">
         <div class="visualSub"><video src="img/visual.mov" autoplay muted loop></video></div>
 
-        <div class="inner">
-            <h2>The <b>50</b> best things to do in Sydney</h2>
+        <div class="inner wrap">
+            <h2>The <b>20</b> best things to do in Sydney</h2>
             <!-- 콘텐츠 들어갈 부분 -->
-            <div id="thingsPics">
-                <!-- 검색창 -->
-                <article id="searchBox">
-                    <input type="text" id="search" placeholder="search by keyword">
-                    <button class="btnSearch">Search</button>
-                </article>
-
-                <!-- 사진 영역 -->
-                <article id="wrap">
-                    <img src="" alt="">
-                </article>
-            </div>
+            <!-- 50 things imgs -->
+            <main>
+                <section>
+                    <article>
+                        <div>
+                            <img src="img/things1.jpg" alt="1. Explore the inner workings of the Sydney Opera House">
+                            <h3>1. Explore the inner workings of the Sydney Opera House</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, voluptate?</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things2.jpg" alt="2. Splurge on a decadent degustation at Quay">
+                            <h3>2. Splurge on a decadent degustation at Quay</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aliquid corrupti iure.
+                                Cupiditate qui commodi recusandae! Eligendi aspernatur voluptatum quaerat nostrum natus
+                                obcaecati porro eos. Quis commodi quasi at repellat!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things3.jpg" alt="3. Swim at the oh-so-grammable Bondi Icebergs Pool">
+                            <h3>3. Swim at the oh-so-grammable Bondi Icebergs Pool</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, qui!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things4.jpg" alt="4. Sample the best Marg in town at Cantina OK">
+                            <h3>4. Sample the best Marg in town at Cantina OK</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique iure adipisci
+                                corporis.
+                                Aspernatur inventore unde ea eligendi fuga labore quisquam, quos, placeat quam
+                                asperiores
+                                vitae ducimus hic beatae nemo quibusdam.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things5.jpg" alt="5. Discover the hidden gem that is Wattamolla Beach">
+                            <h3>5. Discover the hidden gem that is Wattamolla Beach</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quaerat!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things6.jpg" alt="6. Ride the iconic Manly Ferry">
+                            <h3>6. Ride the iconic Manly Ferry</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sint.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things7.jpg"
+                                alt="7. Drink in panoramic views at Bar 83, Sydney's highest bar">
+                            <h3>7. Drink in panoramic views at Bar 83, Sydney's highest bar</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus fugit vero explicabo,
+                                temporibus debitis suscipit nesciunt accusamus perferendis enim omnis!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things8.jpg" alt="8. Climb Sydney Harbour Bridge">
+                            <h3>8. Climb Sydney Harbour Bridge</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, excepturi?</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things9.jpg" alt="9. Marvel at contemporary Chinese art at White Rabbit">
+                            <h3>9. Marvel at contemporary Chinese art at White Rabbit</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt sunt non atque placeat
+                                temporibus aliquid, nobis ad. Adipisci, architecto quas.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things10.jpg" alt="10. Sip a world-class cocktail at Maybe Sammy">
+                            <h3>10. Sip a world-class cocktail at Maybe Sammy</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, itaque.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things11.jpg"
+                                alt="11. Enjoy a fabulous feed at the Imperial Hotel's Drag'n'Dine">
+                            <h3>11. Enjoy a fabulous feed at the Imperial Hotel's Drag'n'Dine</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem a,
+                                provident
+                                nam voluptatibus iusto assumenda distinctio accusamus eligendi obcaecati perferendis
+                                quasi.
+                                Neque reiciendis praesentium quibusdam asperiores, voluptate culpa laborum.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things12.jpg"
+                                alt="12. Take an Indigenous walking tour of Dharawal National Park">
+                            <h3>12. Take an Indigenous walking tour of Dharawal National Park</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, facilis!.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things13.jpg"
+                                alt="13. Drool over the legendary cheesecake at Lorraine's Patisserie">
+                            <h3>13. Drool over the legendary cheesecake at Lorraine's Patisserie</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maiores blanditiis
+                                voluptatum
+                                illo minus, nemo quaerat quae eligendi officia adipisci?</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things14.jpg" alt="14. Watch the sunset from the Hornby Lighthouse">
+                            <h3>14. Watch the sunset from the Hornby Lighthouse</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, cum.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things15.jpg" alt="15. Experience game-changing seafood at Saint Peter">
+                            <h3>15. Experience game-changing seafood at Saint Peter</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum saepe corrupti natus hic,
+                                repellendus dolor porro sit maxime. Reprehenderit, officia?</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things16.jpg"
+                                alt="16. Seek out the hidden oasis that is Wendy's Secret Garden">
+                            <h3>16. Seek out the hidden oasis that is Wendy's Secret Garden</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quisquam.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things17.jpg" alt="17. Catch an STC show at the Walsh Bay arts precinct">
+                            <h3>17. Catch an STC show at the Walsh Bay arts precinct</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rerum temporibus
+                                distinctio dignissimos pariatur, ad architecto non aperiam recusandae magni ducimus
+                                exercitationem quae suscipit eius obcaecati explicabo voluptatibus odit similique!</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things18.jpg" alt="18. Paddle under the Coathanger with Sydney by Kayak">
+                            <h3>18. Paddle under the Coathanger with Sydney by Kayak</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, aperiam.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things19.jpg" alt="19. Cool down with scoop of gelato at Cow and the Moon">
+                            <h3>19. Cool down with scoop of gelato at Cow and the Moon</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque repellat accusantium, eum
+                                autem repudiandae blanditiis. Dignissimos itaque autem corrupti omnis.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <img src="img/things20.jpg" alt="20. Watch a cult indie flick at Golden Age Cinema">
+                            <h3>20. Watch a cult indie flick at Golden Age Cinema</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, nemo!</p>
+                        </div>
+                    </article>
+                </section>
+            </main>
         </div>
     </section>
 
@@ -114,7 +272,8 @@
                         <span>1800 067 676</span><br><span>Fex : 1800 067
                             677</span><br><span>sydenyservice@sydney.com</span><br>
                         <p>
-                            Visitor information centres are conveniently located in Sydney and in major towns across New
+                            Visitor information centres are conveniently located in Sydney and in major towns
+                            across New
                             South Wales.<!-- Look for the distinctive blue and yellow ‘i’ signage.
                             The main Sydney Visitor Centre is in The Rocks. -->
                         </p>
@@ -136,8 +295,10 @@
                             <li><a href="https://www.visitnsw.com/" target="_blank">VisitNSW.com</a></li>
                             <li><a href="https://www.destinationnsw.com.au/" target="_blank">Destination NSW
                                     Corporate</a></li>
-                            <li><a href="https://www.meetinnsw.com.au/" target="_blank">Regional Conferencing</a></li>
-                            <li><a href="https://media.destinationnsw.com.au/" target="_blank">Destination NSW Media
+                            <li><a href="https://www.meetinnsw.com.au/" target="_blank">Regional
+                                    Conferencing</a></li>
+                            <li><a href="https://media.destinationnsw.com.au/" target="_blank">Destination NSW
+                                    Media
                                     Centre</a></li>
                             <li><a href="https://www.vividsydney.com/" target="_blank">Vivid Sydney</a></li>
                         </ul>

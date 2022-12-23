@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap");
 * {
   margin: 0px;
@@ -238,7 +239,7 @@ body .content .inner {
 }
 body .content .inner h2 {
   position: absolute;
-  font: bold 40px/1 "Josifin Sans", sans-serif;
+  font: bold 40px/1 "Josefin Sans", sans-serif;
   color: #fff;
   margin-bottom: 60px;
   top: -250px;
@@ -486,6 +487,50 @@ body #footerSub .inner .footAddWrap > p {
     margin-left: 0px;
   }
 }
+.things > .inner section {
+  width: 100%;
+  position: relative;
+  float: left;
+  /*
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  을 주면 inner의 서브클래서 wrap도 불필요한데,
+  코딩이 적요이 안되어 일단 주석처리 했습니다
+  */
+}
+.things > .inner section > article {
+  width: 25%;
+  padding: 10px;
+  float: left;
+}
+.things > .inner section > article div {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 4px;
+}
+.things > .inner section > article div img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.things > .inner section > article div h3 {
+  font-size: 16px;
+  line-height: 1;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.things > .inner section > article div p {
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "arial", sans-serif;
+  color: #777;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
 .join {
   width: 100%;
   position: relative;
