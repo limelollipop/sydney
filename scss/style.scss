@@ -381,6 +381,28 @@ body {
 							height: 100%;
 							margin-right: 20px;
 							float: left;
+
+							&.on {
+								opacity: 1;
+								transform: scale(1);
+							}
+							&:nth-of-type(1) {
+								opacity: 1;
+								transform: translateX(0%) scale(1);
+							}
+							&:nth-of-type(2) {
+								opacity: 0.8;
+								transform: translateX(0%) scale(1);
+							}
+							&:nth-of-type(3) {
+								opacity: 0.6;
+								transform: translateX(0%) scale(1);
+							}
+							&:nth-of-type(4) {
+								opacity: 0.4;
+								transform: translateX(0%) scale(1);
+							}
+
 							a {
 								display: block;
 								width: 100%;
