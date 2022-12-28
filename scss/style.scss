@@ -357,6 +357,7 @@ body {
 						float: left;
 						width: 100px;
 						height: 40px;
+						color: #0d0d0d;
 						text-align: center;
 						line-height: 40px;
 						transition: 0.3s;
@@ -955,7 +956,7 @@ body {
 			opacity: 1;
 		}
 		100% {
-			left: -10%;
+			left: -20%;
 			opacity: 0;
 		}
 	}
@@ -965,7 +966,7 @@ body {
 			opacity: 1;
 		}
 		100% {
-			right: -10%;
+			right: -20%;
 			opacity: 0;
 		}
 	}
@@ -1086,7 +1087,6 @@ body {
 			margin: 0px 0px;
 			.inner {
 				width: 100%;
-				// padding: 0% 10%;
 				.wrap {
 					padding: 70px 50px 70px 60px;
 					h2 {
@@ -1463,8 +1463,35 @@ body {
 	}
 }
 
+@media screen and (max-width: 767px) {
+	body {
+		// 767px banner
+		#banner {
+			.inner {
+				.wrap {
+					width: 80vw;
+				}
+			}
+		}
+
+		// 767px accommodation
+		#accommodation {
+			.inner {
+				.wrap {
+					article {
+						&:nth-of-type(1) {
+							padding: 40px 50px 30px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: $mobile) {
 	body {
+		// 539px event
 		#event {
 			.inner {
 				div {
@@ -1482,5 +1509,18 @@ body {
 				}
 			}
 		}
+
+		// 539px accommodation
+		// #accommodation {
+		// 	.inner {
+		// 		.wrap {
+		// 			article {
+		// 				&: nth-of-type(1){
+
+		// 				}
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 }

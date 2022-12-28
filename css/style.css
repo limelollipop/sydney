@@ -939,6 +939,7 @@ body #event .inner div.left a {
   float: left;
   width: 100px;
   height: 40px;
+  color: #0d0d0d;
   text-align: center;
   line-height: 40px;
   transition: 0.3s;
@@ -1491,7 +1492,7 @@ body #footer .inner .footAddWrap > p {
     opacity: 1;
   }
   100% {
-    left: -10%;
+    left: -20%;
     opacity: 0;
   }
 }
@@ -1501,7 +1502,7 @@ body #footer .inner .footAddWrap > p {
     opacity: 1;
   }
   100% {
-    right: -10%;
+    right: -20%;
     opacity: 0;
   }
 }
@@ -1847,6 +1848,14 @@ body #footer .inner .footAddWrap > p {
   }
   body #footer .inner .footNavWrap > ul li:nth-of-type(1) {
     margin-left: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body #banner .inner .wrap {
+    width: 80vw;
+  }
+  body #accommodation .inner .wrap article:nth-of-type(1) {
+    padding: 40px 50px 30px;
   }
 }
 @media screen and (max-width: 539px) {
