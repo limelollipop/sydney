@@ -329,6 +329,7 @@ body {
 			justify-content: space-between;
 			div {
 				&.left {
+					// border: 1px solid blue;
 					width: 480px;
 					margin-right: 20px;
 					h3 {
@@ -350,15 +351,41 @@ body {
 						color: #888;
 					}
 					a {
-						border: 1px solid red;
+						// border: 1px solid red;
 						display: block;
+						position: relative;
 						float: left;
 						width: 100px;
 						height: 40px;
 						text-align: center;
 						line-height: 40px;
+						transition: 0.3s;
 						&.btnPrev {
 							margin-right: 2vw;
+							i {
+								position: relative;
+								left: 0%;
+							}
+							&:hover {
+								color: #04adbf;
+								i {
+									transform: scale(1.2);
+									animation: prevAni 0.3s;
+								}
+							}
+						}
+						&.btnNext {
+							i {
+								position: relative;
+								right: 0%;
+							}
+							&:hover {
+								color: #04adbf;
+								i {
+									transform: scale(1.2);
+									animation: nextAni 0.3s;
+								}
+							}
 						}
 					}
 				}
@@ -922,6 +949,26 @@ body {
 			scale: 1.2;
 		}
 	}
+	@keyframes prevAni {
+		0% {
+			left: 0%;
+			opacity: 1;
+		}
+		100% {
+			left: -10%;
+			opacity: 0;
+		}
+	}
+	@keyframes nextAni {
+		0% {
+			right: 0%;
+			opacity: 1;
+		}
+		100% {
+			right: -10%;
+			opacity: 0;
+		}
+	}
 }
 
 // media 1179px
@@ -982,7 +1029,7 @@ body {
 				padding: 0% 10%;
 				div {
 					&.left {
-						width: 36%;
+						width: 36vw;
 						h3 {
 							font-size: 18px;
 							margin-bottom: 30px;
@@ -997,40 +1044,38 @@ body {
 							font-size: 14px;
 						}
 					}
-					&.right {
-						width: 64%;
-						> p {
-							font-size: 20px;
-						}
-						.wrap {
-							width: 840px;
-							height: 250px;
-							margin-left: 40px;
-							article {
-								width: 200px;
-								margin-right: 10px;
-								a {
-									.imgEvent {
-										height: 200px;
-										span {
-											font-size: 25px;
-											top: -40px;
-										}
-									}
-									.txtEvent {
-										padding: 20px 10px;
-										h3 {
-											margin-bottom: 10px;
-											font-size: 15px;
-										}
-										p {
-											font-size: 12px;
-										}
-									}
-								}
-							}
-						}
-					}
+					// &.right {
+					// 	width: 64vw;
+					// 	> p {
+					// 		font-size: 20px;
+					// 	}
+					// 	.wrap {
+					// 		width: 85vw;
+					// 		height: 250px;
+					// 		article {
+					// 			width: 20vw;
+					// 			a {
+					// 				.imgEvent {
+					// 					height: 200px;
+					// 					span {
+					// 						font-size: 25px;
+					// 						top: -40px;
+					// 					}
+					// 				}
+					// 				.txtEvent {
+					// 					padding: 20px 10px;
+					// 					h3 {
+					// 						margin-bottom: 10px;
+					// 						font-size: 15px;
+					// 					}
+					// 					p {
+					// 						font-size: 12px;
+					// 					}
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+					// }
 				}
 			}
 		}
@@ -1222,36 +1267,44 @@ body {
 							display: none;
 						}
 						a {
-							display: none;
+							padding-top: 2vh;
 						}
 					}
 					&.right {
 						width: 100%;
 						> p {
+							position: relative;
 							opacity: 0;
-							padding: 0px;
+							z-index: -1;
 						}
 						.wrap {
-							margin-left: 0px;
 							width: 100%;
 							article {
-								width: 49%;
-								margin-right: 2%;
-								margin-bottom: 3vh;
-								box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
-								&:nth-of-type(even) {
-									margin-right: 0%;
-								}
+								width: 60%;
+								padding: 0vw 2vw 0vw 0vw;
 								a {
-									.txtEvent {
-										h3 {
-											margin-bottom: 0px;
-										}
-										p {
-											display: none;
+									.imgEvent {
+										span {
+											font-size: 4vw;
 										}
 									}
 								}
+								// 			margin-right: 2%;
+								// 			margin-bottom: 3vh;
+								// 			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+								// 			&:nth-of-type(even) {
+								// 				margin-right: 0%;
+								// 			}
+								// 			a {
+								// 				.txtEvent {
+								// 					h3 {
+								// 						margin-bottom: 0px;
+								// 					}
+								// 					p {
+								// 						display: none;
+								// 					}
+								// 				}
+								// 			}
 							}
 						}
 					}
@@ -1410,8 +1463,24 @@ body {
 	}
 }
 
-// @media screen and (max-width: $mobile){
-//     body{
-
-//     }
-// }
+@media screen and (max-width: $mobile) {
+	body {
+		#event {
+			.inner {
+				div {
+					&.right {
+						> p {
+							padding: 0px 0px 0px 0px;
+						}
+						.wrap {
+							width: 100%;
+							article {
+								width: 100%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
