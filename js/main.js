@@ -14,21 +14,20 @@ const frame = document.querySelector('#event .inner .right .wrap');
 const boxs = frame.querySelectorAll('article');
 const prev = document.querySelector('#event .inner .left .btnPrev');
 const next = document.querySelector('#event .inner .left .btnNext');
+// console.log(boxs);
+
+// frame.prepend(frame.lastElementchild);
+// frame.prepend(frame.lastelementchild);
+// boxs[0].classList.add('on');
 
 prev.addEventListener('click', (e) => {
 	e.preventDefault();
+	// const boxs = frame.querySelectorAll('article');
 
-	frame.prepend(frame.lastElementChild);
-	const boxs = frame.querySelectorAll('article');
-	for (const el of boxs) el.classList.remove('on');
-	boxs[0].classList.add('on');
+	frame.append(frame.firstElementChild);
 });
 
 next.addEventListener('click', (e) => {
 	e.preventDefault();
-
-	frame.prepend(frame.nextElementSibling);
-	const boxs = frame.querySelectorAll('article');
-	for (const el of boxs) el.classList.remove('on');
-	boxs[0].classList.add('on');
+	frame.prepend(frame.lastElementChild);
 });
