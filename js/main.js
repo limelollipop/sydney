@@ -16,6 +16,7 @@ const prev = document.querySelector('#event .inner .left .btnPrev');
 const next = document.querySelector('#event .inner .left .btnNext');
 // console.log(boxs);
 
+// Child 대문자 주의
 frame.prepend(frame.lastElementChild);
 
 prev.addEventListener('click', (e) => {

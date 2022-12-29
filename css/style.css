@@ -1322,7 +1322,7 @@ body #deals .inner section:nth-of-type(2) article {
 }
 body #deals .inner section:nth-of-type(2) article b {
   display: inline-block;
-  font: normal 1.3vw/1 "arial";
+  font: normal 1vw/1 "arial";
   color: #555;
   margin-bottom: 30px;
   letter-spacing: 1px;
@@ -1790,26 +1790,45 @@ body #footer .inner .footAddWrap > p {
   }
   body #deals .inner section:nth-of-type(1) {
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
   body #deals .inner section:nth-of-type(1) span {
-    width: 15%;
-    float: left;
+    display: block;
+    width: 100%;
+    font: bold 14px/1.2 "Josefin Sans";
   }
   body #deals .inner section:nth-of-type(1) > h2 {
-    float: left;
-    width: 40%;
+    font-size: 20px;
   }
-  body #deals .inner section:nth-of-type(1) p {
+  body #deals .inner section:nth-of-type(1) > p {
     display: none;
   }
   body #deals .inner section:nth-of-type(2) {
     width: 100%;
-    padding: 2vw 0vw 8vw 0vw;
-    display: flex;
-    justify-content: flex-end;
+    padding: 0px 0px 100px 0px;
+    display: block;
+  }
+  body #deals .inner section:nth-of-type(2) article {
+    float: right;
+    width: 70%;
   }
   body #deals .inner section:nth-of-type(2) article b {
-    margin-bottom: 1.5vw;
+    font: normal 13px/1 "arial";
+    margin-bottom: 20px;
+  }
+  body #deals .inner section:nth-of-type(2) article h3 {
+    font-size: 18px;
+  }
+  body #deals .inner section:nth-of-type(2) article p {
+    font-size: 16px;
+  }
+  body #deals .inner section:nth-of-type(2) article span {
+    display: none;
+  }
+  body #deals .inner section:nth-of-type(2) article:nth-of-type(1) {
+    margin-bottom: 2vw;
   }
   body #footer .inner .footNavWrap {
     display: block;
