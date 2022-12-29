@@ -16,13 +16,10 @@ const prev = document.querySelector('#event .inner .left .btnPrev');
 const next = document.querySelector('#event .inner .left .btnNext');
 // console.log(boxs);
 
-// frame.prepend(frame.lastElementchild);
-// frame.prepend(frame.lastelementchild);
-// boxs[0].classList.add('on');
+frame.prepend(frame.lastElementChild);
 
 prev.addEventListener('click', (e) => {
 	e.preventDefault();
-	// const boxs = frame.querySelectorAll('article');
 
 	frame.append(frame.firstElementChild);
 });

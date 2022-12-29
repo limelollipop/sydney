@@ -431,14 +431,13 @@ body {
 								transform: translateX(200%) scale(1);
 							}
 							&:nth-of-type(5) {
-								opacity: 0;
+								opacity: 1;
 								transform: translateX(300%) scale(1);
 							}
-							// &.on {
-							// 	opacity: 1;
-							// 	transform: scale(1);
-							// 	// transform: translateX(0%);
-							// }
+							&:nth-of-type(6) {
+								opacity: 1;
+								transform: translateX(400%) scale(1);
+							}
 
 							a {
 								display: block;
@@ -1481,6 +1480,21 @@ body {
 					article {
 						&:nth-of-type(1) {
 							padding: 40px 50px 30px;
+						}
+					}
+				}
+			}
+		}
+
+		// 767px deals & packages
+		#deals {
+			.inner {
+				section {
+					&:nth-of-type(2) {
+						// width: 66.67%;
+						// padding: 80px 0px;
+						article {
+							width: 100%;
 						}
 					}
 				}
