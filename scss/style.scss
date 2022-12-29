@@ -1523,10 +1523,31 @@ body {
 
 @media screen and (max-width: $mobile) {
 	body {
+		// 539px visual
+		#visual {
+			.inner {
+				h2 {
+					font: normal 6vh/1.2 'Josefin Sans', sans-serif;
+					padding: 0vw 12vw 10vw;
+				}
+				a {
+					font: bold 3vh/50px 'Josefin Sans', sans-serif;
+				}
+			}
+		}
+
 		// 539px event
 		#event {
 			.inner {
 				div {
+					&.left {
+						h3 {
+							font-size: 2.3vh;
+						}
+						h2 {
+							font-size: 18vw;
+						}
+					}
 					&.right {
 						> p {
 							padding: 0px 0px 0px 0px;
@@ -1541,18 +1562,5 @@ body {
 				}
 			}
 		}
-
-		// 539px accommodation
-		// #accommodation {
-		// 	.inner {
-		// 		.wrap {
-		// 			article {
-		// 				&: nth-of-type(1){
-
-		// 				}
-		// 			}
-		// 		}
-		// 	}
-		// }
 	}
 }

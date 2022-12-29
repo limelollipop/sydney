@@ -1885,6 +1885,19 @@ body #footer .inner .footAddWrap > p {
   }
 }
 @media screen and (max-width: 539px) {
+  body #visual .inner h2 {
+    font: normal 6vh/1.2 "Josefin Sans", sans-serif;
+    padding: 0vw 12vw 10vw;
+  }
+  body #visual .inner a {
+    font: bold 3vh/50px "Josefin Sans", sans-serif;
+  }
+  body #event .inner div.left h3 {
+    font-size: 2.3vh;
+  }
+  body #event .inner div.left h2 {
+    font-size: 18vw;
+  }
   body #event .inner div.right > p {
     padding: 0px 0px 0px 0px;
   }
