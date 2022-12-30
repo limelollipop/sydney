@@ -4,47 +4,118 @@
 // #F22727
 .things {
 	.inner {
+		.thingsBg {
+			position: absolute;
+			width: 30%;
+			height: 100%;
+			top: 0;
+			right: 22.5%;
+			background: #b3e6ec;
+			z-index: -1;
+		}
 		main {
 			.isoWrap {
+				// border: 1px solid orange;
 				width: 100%;
 				float: left;
 				position: relative;
 
 				article {
-					// border: 1px solid red;
+					// border: 1px solid blue;
 					width: 25%;
 					padding: 10px;
 					float: left;
+					&:hover {
+						span {
+							color: #b3e6ec;
+						}
+						p {
+							&::after {
+								width: 100%;
+								height: 3px;
+							}
+						}
+						a {
+							color: #04adbf;
+							i {
+								transform: scale(1.2);
+								animation: thingsAni 0.3s;
+							}
+						}
+					}
 					div {
-						// border: 1px solid blue;
+						// border: 1px solid green;
+						position: relative;
 						width: 100%;
 						background: #fff;
 						box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 						padding: 20px;
 						border-radius: 4px;
 
-						img {
-							width: 100%;
-							margin-bottom: 15px;
+						span {
+							// border: 1px solid hotpink;
+							font-size: 100px;
+							font-weight: bold;
+							color: rgba(179, 230, 236, 0.4);
+							transition: 0.3s;
 						}
 						h3 {
-							font-size: 16px;
+							// border: 1px solid hotpink;
+							position: relative;
+							top: -55px;
+							font-size: 18px;
 							line-height: 1;
 							font-weight: bold;
 							margin-bottom: 10px;
-							text-align: center;
 						}
 						p {
+							// border: 1px solid orange;
+							position: relative;
+							top: -40px;
 							font-size: 12px;
 							line-height: 1.4;
 							font-family: 'arial', sans-serif;
 							color: #777;
 							margin-bottom: 15px;
-							text-align: center;
+							&::after {
+								content: '';
+								display: block;
+								width: 20%;
+								height: 1px;
+								position: relative;
+								top: 20px;
+								background: #04adbf;
+								transition: 0.3s;
+							}
+						}
+						img {
+							width: 100%;
+							margin-bottom: 15px;
+						}
+						a {
+							display: block;
+							color: #0d0d0d;
+							i {
+								position: relative;
+								right: 0%;
+							}
+							&:hover {
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+}
+
+@keyframes thingsAni {
+	0% {
+		right: 0%;
+		opacity: 1;
+	}
+	100% {
+		right: -8%;
+		opacity: 0;
 	}
 }

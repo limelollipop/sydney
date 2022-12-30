@@ -2,6 +2,12 @@
 const btnMenu = document.querySelector('.btnMenu');
 const menuMo = document.querySelector('.menuMo');
 
+// event right slide script
+const eventFrame = document.querySelector('#event .inner .right .wrap');
+const prev = document.querySelector('#event .inner .left .btnPrev');
+const next = document.querySelector('#event .inner .left .btnNext');
+// console.log(boxs);
+
 // menuMo script
 btnMenu.addEventListener('click', (e) => {
 	e.preventDefault();
@@ -9,23 +15,17 @@ btnMenu.addEventListener('click', (e) => {
 	menuMo.classList.toggle('on');
 });
 
-// event right slide
-const frame = document.querySelector('#event .inner .right .wrap');
-const boxs = frame.querySelectorAll('article');
-const prev = document.querySelector('#event .inner .left .btnPrev');
-const next = document.querySelector('#event .inner .left .btnNext');
-// console.log(boxs);
-
+// event right slide script
 // Child 대문자 주의
-frame.prepend(frame.lastElementChild);
+eventFrame.prepend(eventFrame.lastElementChild);
 
 prev.addEventListener('click', (e) => {
 	e.preventDefault();
 
-	frame.append(frame.firstElementChild);
+	eventFrame.append(eventFrame.firstElementChild);
 });
 
 next.addEventListener('click', (e) => {
 	e.preventDefault();
-	frame.prepend(frame.lastElementChild);
+	eventFrame.prepend(eventFrame.lastElementChild);
 });
