@@ -572,6 +572,7 @@ body #footerSub .inner .footAddWrap > p {
   position: relative;
   right: 0%;
 }
+
 @keyframes thingsAni {
   0% {
     right: 0%;
@@ -580,6 +581,25 @@ body #footerSub .inner .footAddWrap > p {
   100% {
     right: -8%;
     opacity: 0;
+  }
+}
+@media screen and (max-width: 1179px) {
+  .things .inner main .isoWrap {
+    width: 80vw;
+    margin: 0 10vw;
+  }
+  .things .inner main .isoWrap article {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .things .inner main .isoWrap article {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .things .inner main .isoWrap article {
+    width: 100%;
   }
 }
 .vidList {

@@ -99,8 +99,6 @@
 								position: relative;
 								right: 0%;
 							}
-							&:hover {
-							}
 						}
 					}
 				}
@@ -117,5 +115,52 @@
 	100% {
 		right: -8%;
 		opacity: 0;
+	}
+}
+
+// media 1179px
+@media screen and (max-width: $tablet) {
+	.things {
+		.inner {
+			main {
+				.isoWrap {
+					width: 80vw;
+					margin: 0 10vw;
+					article {
+						width: 33.33%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// media 767px
+@media screen and (max-width: 767px) {
+	.things {
+		.inner {
+			main {
+				.isoWrap {
+					article {
+						width: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// media 539px
+@media screen and (max-width: $mobile) {
+	.things {
+		.inner {
+			main {
+				.isoWrap {
+					article {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
