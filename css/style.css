@@ -217,7 +217,7 @@ body .content .visualSub {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80vh;
+  height: 60vh;
   background: #000;
 }
 body .content .visualSub video {
@@ -227,7 +227,7 @@ body .content .visualSub video {
   height: 100%;
   opacity: 0.4;
   object-fit: cover;
-  object-position: center 30%;
+  object-position: center 40%;
 }
 body .content .inner {
   position: relative;
@@ -499,6 +499,13 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   float: left;
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.things .inner main .isoWrap.on {
+  opacity: 1;
+  transform: translateY(0px);
 }
 .things .inner main .isoWrap article {
   width: 25%;

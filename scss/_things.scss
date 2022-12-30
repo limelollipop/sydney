@@ -20,8 +20,16 @@
 				float: left;
 				position: relative;
 
+				// 전환효과
+				opacity: 0;
+				transform: translateY(100px);
+				transition: 1s;
+				&.on {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+
 				article {
-					// border: 1px solid blue;
 					width: 25%;
 					padding: 10px;
 					float: left;
@@ -44,7 +52,6 @@
 						}
 					}
 					div {
-						// border: 1px solid green;
 						position: relative;
 						width: 100%;
 						background: #fff;
@@ -53,14 +60,12 @@
 						border-radius: 4px;
 
 						span {
-							// border: 1px solid hotpink;
 							font-size: 100px;
 							font-weight: bold;
 							color: rgba(179, 230, 236, 0.4);
 							transition: 0.3s;
 						}
 						h3 {
-							// border: 1px solid hotpink;
 							position: relative;
 							top: -55px;
 							font-size: 18px;
@@ -69,7 +74,6 @@
 							margin-bottom: 10px;
 						}
 						p {
-							// border: 1px solid orange;
 							position: relative;
 							top: -40px;
 							font-size: 12px;
