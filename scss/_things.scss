@@ -3,7 +3,23 @@
 // #F2E30F
 // #F22727
 .things {
+	.visualSub {
+		height: 40vh;
+		img {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0.4;
+			object-fit: cover;
+			object-position: right 28%;
+			filter: saturate(120%) contrast(80%) brightness(110%);
+		}
+	}
 	.inner {
+		h2 {
+			top: -150px;
+		}
 		.thingsBg {
 			position: absolute;
 			width: 30%;
@@ -14,6 +30,20 @@
 			z-index: -1;
 		}
 		main {
+			// loading
+			.loading {
+				width: 100px;
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: opacity 0.5s;
+				opacity: 1;
+				&.off {
+					opacity: 0;
+				}
+			}
+
 			.isoWrap {
 				// border: 1px solid orange;
 				width: 100%;
@@ -29,6 +59,7 @@
 					transform: translateY(0px);
 				}
 
+				// 20 things images
 				article {
 					width: 25%;
 					padding: 10px;
@@ -69,7 +100,7 @@
 							position: relative;
 							top: -55px;
 							font-size: 18px;
-							line-height: 1;
+							line-height: 1.4;
 							font-weight: bold;
 							margin-bottom: 10px;
 						}
