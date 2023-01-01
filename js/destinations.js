@@ -17,26 +17,26 @@ fetch(url)
 		items.map((el) => {
 			let title = el.snippet.title;
 			if (title.length > 30) {
-				title = title.substr(0, 20) + '...';
+				title = title.substr(0, 30) + '...';
 			}
 
-			let con = el.snippet.description;
-			if (con.length > 100) {
-				con = con.substr(0, 40) + '...';
+			let txt = el.snippet.description;
+			if (txt.length > 100) {
+				txt = txt.substr(0, 40) + '...';
 			}
 			let date = el.snippet.publishedAt;
 			date = date.split('T')[0];
 
 			result += `
         <article>
+					<h3>${title}</h3>
+					<div class="txt">            
+							<p>${txt}</p>
+							<span>${date}</span>
+					</div>
           <a href="${el.snippet.resourceId.videoId}" class="pic">
             <img src="${el.snippet.thumbnails.high.url}">
-          </a>
-          <div class="con">
-            <h3>${title}</h3>
-            <p>${con}</p>
-            <span>${date}</span>
-          </div>
+          </a>          
         </article>
       `;
 		});
@@ -60,10 +60,11 @@ vidList.addEventListener('click', (e) => {
 });
 
 vidList.addEventListener('click', (e) => {
-	const pop = vidList.querySelector('pop');
+	const pop = vidList.querySelector('.pop');
 
 	if (pop) {
 		const close = pop.querySelector('span');
+		// console.log(close);
 		if (e.target == close) pop.remove();
 	}
 });

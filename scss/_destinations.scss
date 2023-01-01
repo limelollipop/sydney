@@ -1,10 +1,92 @@
+// #04ADBF
+// #b3e6ec
+// #F2E30F
+// #F22727
+
 .destinations {
-	.inner {
-		.vidList {
+	.visualSub {
+		height: 60vh;
+		img {
+			top: 0;
+			left: 0;
 			width: 100%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			height: 100%;
+			opacity: 0.4;
+			object-fit: cover;
+			object-position: center 5%;
+			filter: saturate(125%) contrast(80%) brightness(120%);
+		}
+	}
+	.inner {
+		h2 {
+			top: -300px;
+		}
+		.vidList {
+			article {
+				border-top: 2px solid #b3e6ec;
+				padding: 20px 0px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+
+				h3 {
+					width: 25%;
+					font-weight: bold;
+					font-size: 28px;
+					line-height: 1.2;
+					color: #04adbf;
+				}
+				.txt {
+					width: 35%;
+					display: flex;
+					align-content: space-between;
+
+					p {
+						font-size: 14px;
+						line-height: 1.2;
+						color: #999;
+					}
+					span {
+						font-size: 12px;
+						color: orange;
+					}
+				}
+				.pic {
+					display: block;
+					width: 35%;
+					height: 230px;
+					cursor: pointer;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+			figure.pop {
+				width: 100%;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				background: rgba(0, 0, 0, 0.8);
+				overflow: hidden;
+				padding: 5vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.btnClose {
+					font-size: 30px;
+					position: absolute;
+					top: 2.5vw;
+					right: 5vw;
+					color: #fff;
+					cursor: pointer;
+					&:hover {
+						color: #b3e6ec;
+					}
+				}
+			}
 		}
 	}
 }
