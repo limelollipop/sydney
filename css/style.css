@@ -1025,31 +1025,78 @@ body #visual {
   background: #000;
   overflow: hidden;
 }
-body #visual div:nth-of-type(1) {
+body #visual .panel > li {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
 }
-body #visual div:nth-of-type(1) img {
+body #visual .panel > li:nth-of-type(1) img {
+  opacity: 0.9;
+  object-position: center 80%;
+}
+body #visual .panel > li:nth-of-type(2) img {
+  opacity: 0.7;
+  object-position: center 20%;
+  filter: contrast(90%) brightness(110%);
+}
+body #visual .panel > li img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 80%;
-  opacity: 0.9;
   animation: visualAni 5s infinite;
 }
-body #visual div:nth-of-type(1) img:nth-child(1) {
-  width: 100%;
+body #visual .panel > li.on {
+  opacity: 1;
 }
-body #visual div:nth-of-type(1) img:nth-child(2) {
-  width: 100%;
-  display: none;
+body #visual .btns {
+  position: absolute;
+  left: 45%;
+  bottom: 6vh;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+body #visual .btns li {
+  width: 70px;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body #visual .btns li.on {
+  width: 150px;
+  background: rgba(4, 173, 191, 0.6);
+}
+body #visual nav {
+  position: absolute;
+  bottom: 5vh;
+  right: 43%;
+  display: flex;
+  gap: 40px;
+  transform: translateX(50%);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+body #visual nav i {
+  display: inline-block;
+  transition: 0.5s;
+}
+body #visual nav i:hover {
+  transform: scale(1.5);
+}
+body #visual nav i.on {
+  transform: scale(1.5);
+  color: rgba(4, 173, 191, 0.6);
 }
 body #visual .inner {
   width: 1180px;
