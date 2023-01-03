@@ -11,7 +11,7 @@ const btnPause = frame.querySelector('.fa-pause');
 const interval = 5000;
 const len = panels.length - 1;
 let timer = null;
-let num = 0;
+let visNum = 0;
 console.log(panels);
 
 // event right slide script
@@ -38,8 +38,8 @@ btnPlay.addEventListener('click', startRolling);
 btnPause.addEventListener('click', stopRolling);
 
 function rolling() {
-	num < len ? num++ : (num = 0);
-	activation(num);
+	visNum < len ? visNum++ : (visNum = 0);
+	activation(visNum);
 }
 function startRolling() {
 	timer = setInterval(rolling, interval);
@@ -57,7 +57,7 @@ function activation(index) {
 	panels[index].classList.add('on');
 	btns[index].classList.add('on');
 
-	num = index;
+	visNum = index;
 }
 
 // event right slide script

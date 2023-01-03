@@ -509,7 +509,7 @@ body #footerSub .inner .footAddWrap > p {
 .things .inner main .loading {
   width: 100px;
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: opacity 0.5s;
@@ -1041,8 +1041,8 @@ body #visual .panel > li:nth-of-type(1) img {
 }
 body #visual .panel > li:nth-of-type(2) img {
   opacity: 0.7;
-  object-position: center 20%;
-  filter: contrast(90%) brightness(110%);
+  object-position: center 28%;
+  filter: contrast(80%);
 }
 body #visual .panel > li img {
   position: absolute;
