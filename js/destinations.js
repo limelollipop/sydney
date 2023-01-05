@@ -63,7 +63,7 @@ vidList.addEventListener('click', (e) => {
 	const pop = vidList.querySelector('.pop');
 
 	if (pop) {
-		const close = pop.querySelector('span');
+		const close = pop.querySelector('span i');
 		// console.log(close);
 		if (e.target == close) pop.remove();
 	}

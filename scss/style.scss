@@ -285,7 +285,7 @@ body {
 		.btns {
 			position: absolute;
 			left: 45%;
-			bottom: 6vh;
+			bottom: 5.5vh;
 			display: flex;
 			gap: 10px;
 			transform: translateX(-50%);
@@ -293,13 +293,13 @@ body {
 
 			li {
 				width: 70px;
-				height: 5px;
+				height: 3px;
 				background: rgba(255, 255, 255, 0.6);
 				border-radius: 4px;
 				cursor: pointer;
 				transition: 0.5s;
 				&.on {
-					width: 150px;
+					width: 100px;
 					background: rgba(4, 173, 191, 0.6);
 				}
 			}
@@ -312,7 +312,7 @@ body {
 			display: flex;
 			gap: 40px;
 			transform: translateX(50%);
-			font-size: 20px;
+			font-size: 15px;
 			color: rgba(255, 255, 255, 0.6);
 			cursor: pointer;
 
@@ -1012,10 +1012,10 @@ body {
 	// animation
 	@keyframes visualAni {
 		0% {
-			scale: 1;
+			scale: 1.2;
 		}
 		100% {
-			scale: 1.2;
+			scale: 1;
 		}
 	}
 	@keyframes prevAni {
