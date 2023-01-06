@@ -557,42 +557,68 @@ body #footerSub .inner .footAddWrap > p {
   list-style-position: center bottom;
 }
 .things .inner main .thingsMiddle {
-  border: 1px solid red;
   position: relative;
   width: 100%;
-  padding: 8vh 0;
+  padding: 12vh 0 8vh;
   top: -100px;
   text-align: right;
 }
-.things .inner main .thingsMiddle::after {
-  background: #04adbf;
-  content: "";
-  display: block;
-  width: 10px;
-  height: 50%;
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-.things .inner main .thingsMiddle span {
-  border: 1px solid red;
+.things .inner main .thingsMiddle > span {
   font-size: 80px;
+  font-weight: bold;
   color: #04adbf;
   display: block;
   float: right;
-  padding-left: 30vw;
+  padding-left: 25vw;
   line-height: 1.1;
   letter-spacing: -2px;
+  text-shadow: -5px 0px 3px rgba(0, 0, 0, 0.1);
 }
 .things .inner main .thingsMiddle p {
-  border: 1px solid green;
   width: 100%;
+  font-family: "arial";
+  color: #555;
   float: right;
-  padding-left: 30vw;
+  padding-left: 25vw;
   line-height: 1.4;
+  letter-spacing: 1px;
+  text-shadow: -3px 0px 3px rgba(0, 0, 0, 0.1);
 }
-.things .inner main .thingsSearchBox {
+.things .inner main > h3 {
+  font-size: 30px;
   position: relative;
+  margin-bottom: 2vh;
+}
+.things .inner main ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1vh;
+  gap: 20px;
+}
+.things .inner main ul li {
+  width: 10%;
+  height: 30px;
+  text-align: center;
+}
+.things .inner main ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 30px;
+  color: #777;
+  background: #eee;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.things .inner main ul li.on a {
+  font-weight: bold;
+  color: #fff;
+  background: #04adbf;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.things .inner main ul li:hover a {
+  font-weight: bold;
 }
 .things .inner main .loading {
   width: 100px;
@@ -651,7 +677,7 @@ body #footerSub .inner .footAddWrap > p {
   color: rgba(179, 230, 236, 0.4);
   transition: 0.3s;
 }
-.things .inner main .isoWrap article div h3 {
+.things .inner main .isoWrap article div h4 {
   position: relative;
   top: -55px;
   font-size: 18px;
