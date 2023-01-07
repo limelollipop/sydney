@@ -497,14 +497,8 @@ body #footerSub .inner .footAddWrap > p {
 .things .inner h2 {
   top: -150px;
 }
-.things .inner .thingsBg {
-  position: absolute;
-  width: 30%;
-  height: 100%;
-  top: 0;
-  right: 22.5%;
-  background: #b3e6ec;
-  z-index: -1;
+.things .inner main {
+  width: 100%;
 }
 .things .inner main .thingsTop {
   background: #b3e6ec;
@@ -556,25 +550,35 @@ body #footerSub .inner .footAddWrap > p {
   object-fit: cover;
   list-style-position: center bottom;
 }
-.things .inner main .thingsMiddle {
+.things .inner main .thingsTxt {
   position: relative;
   width: 100%;
-  padding: 12vh 0 8vh;
+  padding: 200px 0 150px;
   top: -100px;
   text-align: right;
 }
-.things .inner main .thingsMiddle > span {
+.things .inner main .thingsTxt .thingsBg {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  left: 20%;
+  background: #b3e6ec;
+  z-index: -1;
+}
+.things .inner main .thingsTxt > span {
   font-size: 80px;
   font-weight: bold;
   color: #04adbf;
   display: block;
   float: right;
   padding-left: 25vw;
+  margin-bottom: 20px;
   line-height: 1.1;
   letter-spacing: -2px;
   text-shadow: -5px 0px 3px rgba(0, 0, 0, 0.1);
 }
-.things .inner main .thingsMiddle p {
+.things .inner main .thingsTxt p {
   width: 100%;
   font-family: "arial";
   color: #555;
@@ -588,25 +592,28 @@ body #footerSub .inner .footAddWrap > p {
   font-size: 30px;
   position: relative;
   margin-bottom: 2vh;
+  text-align: center;
+  padding-top: 80px;
 }
 .things .inner main ul {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 1vh;
+  padding: 2vh 0;
   gap: 20px;
 }
 .things .inner main ul li {
   width: 10%;
-  height: 30px;
+  height: 28px;
   text-align: center;
 }
 .things .inner main ul li a {
   display: block;
   width: 100%;
   height: 100%;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 28px;
   color: #777;
   background: #eee;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -634,7 +641,6 @@ body #footerSub .inner .footAddWrap > p {
 }
 .things .inner main .isoWrap {
   width: 100%;
-  float: left;
   position: relative;
   opacity: 0;
   transform: translateY(100px);
@@ -715,6 +721,51 @@ body #footerSub .inner .footAddWrap > p {
 .things .inner main .isoWrap article div a i {
   position: relative;
   right: 0%;
+}
+.things .inner main .thingsBottom {
+  width: 100%;
+  margin: 150px 0;
+  padding: 100px 0;
+  position: relative;
+  background: #eee;
+}
+.things .inner main .thingsBottom article {
+  width: 80%;
+  position: relative;
+  margin-bottom: 40px;
+}
+.things .inner main .thingsBottom article div {
+  position: absolute;
+  top: 50%;
+  width: 20vw;
+  height: 200px;
+  background: #fff;
+  margin-top: -100px;
+  padding: 85px 40px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.things .inner main .thingsBottom article div > h3 {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.things .inner main .thingsBottom article div > i {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  right: 0%;
+}
+.things .inner main .thingsBottom article div:hover h3 {
+  color: #04adbf;
+}
+.things .inner main .thingsBottom article div:hover i {
+  color: #04adbf;
+  transform: scale(1.2);
+  animation: thingsAni 0.3s;
 }
 
 @keyframes thingsAni {
@@ -857,70 +908,85 @@ body #footerSub .inner .footAddWrap > p {
   text-align: center;
   color: #04adbf;
 }
-.join .inner .joinForm #member fieldset {
-  border: none;
-}
-.join .inner .joinForm #member fieldset table {
+.join .inner .joinForm div {
   width: 100%;
-  border-top: 3px solid #04adbf;
-  border-bottom: 3px solid #04adbf;
+  display: flex;
+  justify-content: space-between;
 }
-.join .inner .joinForm #member fieldset table tr th,
-.join .inner .joinForm #member fieldset table tr td {
+.join .inner .joinForm div img {
+  width: 35%;
+  object-fit: cover;
+  box-shadow: 0px 0px 30px rgba(208, 208, 208, 0.6);
+}
+.join .inner .joinForm div #member {
+  width: 100%;
+}
+.join .inner .joinForm div #member fieldset {
+  border: none;
+  background: rgba(238, 238, 238, 0.2);
+}
+.join .inner .joinForm div #member fieldset table {
+  width: 100%;
+}
+.join .inner .joinForm div #member fieldset table tr th,
+.join .inner .joinForm div #member fieldset table tr td {
   border-bottom: 1px solid #eee;
+  text-align: right;
+}
+.join .inner .joinForm div #member fieldset table tr th {
+  width: 30%;
+  padding: 10px 30px;
+}
+.join .inner .joinForm div #member fieldset table tr td {
+  padding: 10px 20px;
   text-align: left;
 }
-.join .inner .joinForm #member fieldset table tr th {
-  width: 20%;
-  padding: 15px 30px;
-}
-.join .inner .joinForm #member fieldset table tr td {
-  padding: 15px 20px;
-}
-.join .inner .joinForm #member fieldset table tr td input[type=text],
-.join .inner .joinForm #member fieldset table tr td input[type=password],
-.join .inner .joinForm #member fieldset table tr td select {
-  width: 40%;
+.join .inner .joinForm div #member fieldset table tr td input[type=text],
+.join .inner .joinForm div #member fieldset table tr td input[type=password],
+.join .inner .joinForm div #member fieldset table tr td select {
+  width: 70%;
   background: #b3e6ec;
-  padding: 15px;
-  border: 1px solid #aaa;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm #member fieldset table tr td input[type=radio],
-.join .inner .joinForm #member fieldset table tr td input[type=checkbox] {
+.join .inner .joinForm div #member fieldset table tr td input[type=radio],
+.join .inner .joinForm div #member fieldset table tr td input[type=checkbox] {
   margin: 15px 0px 15px 30px;
 }
-.join .inner .joinForm #member fieldset table tr td input[type=radio]:nth-of-type(1) {
+.join .inner .joinForm div #member fieldset table tr td input[type=radio]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm #member fieldset table tr td input[type=checkbox]:nth-of-type(1) {
+.join .inner .joinForm div #member fieldset table tr td input[type=checkbox]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm #member fieldset table tr td textarea {
+.join .inner .joinForm div #member fieldset table tr td textarea {
   resize: none;
-  width: 60%;
-  height: 200px;
+  width: 70%;
+  height: 150px;
   background: #b3e6ec;
   padding: 15px;
+  border: none;
+  border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm #member fieldset table tr td p {
+.join .inner .joinForm div #member fieldset table tr td p {
   font: 12px/1 "Josefin Sans";
   color: hotpink;
   margin-top: 8px;
 }
-.join .inner .joinForm #member fieldset .btnJoin {
+.join .inner .joinForm div #member fieldset .btnJoin {
   display: flex;
   justify-content: center;
-  padding: 40px 0px 0px;
+  padding: 20px 0px;
 }
-.join .inner .joinForm #member fieldset .btnJoin input[type=reset],
-.join .inner .joinForm #member fieldset .btnJoin input[type=submit] {
-  width: 20%;
-  height: 60px;
+.join .inner .joinForm div #member fieldset .btnJoin input[type=submit] {
+  width: 40%;
+  height: 40px;
   margin: 10px;
   font-size: 12px;
   color: #fff;
   font-weight: bold;
-  line-height: 60px;
+  line-height: 40px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -928,8 +994,7 @@ body #footerSub .inner .footAddWrap > p {
   text-align: center;
   background: #04adbf;
 }
-.join .inner .joinForm #member fieldset .btnJoin input[type=reset]:hover,
-.join .inner .joinForm #member fieldset .btnJoin input[type=submit]:hover {
+.join .inner .joinForm div #member fieldset .btnJoin input[type=submit]:hover {
   background: #b3e6ec;
   color: #0d0d0d;
   border: 1px solid #0d0d0d;
