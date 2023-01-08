@@ -799,6 +799,199 @@ body #footerSub .inner .footAddWrap > p {
     width: 100%;
   }
 }
+.deals .visualSub {
+  height: 60vh;
+}
+.deals .visualSub img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  object-fit: cover;
+  object-position: center 45%;
+}
+.deals .inner h2 {
+  top: -250px;
+}
+.deals .inner section {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  margin-bottom: 150px;
+}
+.deals .inner section h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+.deals .inner section:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.deals .inner section:nth-of-type(1) article {
+  border: 1px solid #f5f5f5;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(1) {
+  width: 10%;
+  height: 100%;
+  position: relative;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(2) {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  padding: 2vw 4vw;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(2) span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #777;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(2) span b {
+  border: 1px solid #04adbf;
+  border-radius: 4px;
+  color: #04adbf;
+  padding: 3px;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(2) h4 {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.deals .inner section:nth-of-type(1) article div:nth-of-type(2) p {
+  color: #555;
+  line-height: 1.4;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(1) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1) img {
+  object-position: 50% center;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(2) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(2) div:nth-of-type(1) img {
+  object-position: 70% center;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(3) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(3) div:nth-of-type(1) img {
+  object-position: 10% center;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(4) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(4) div:nth-of-type(1) img {
+  object-position: 40% center;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(5) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(5) div:nth-of-type(1) img {
+  object-position: 40% center;
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(6) {
+  div: nth-of-type(2);
+}
+.deals .inner section:nth-of-type(1) article:nth-of-type(6) div:nth-of-type(1) img {
+  object-position: 50% center;
+}
+.deals .inner section:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.deals .inner section:nth-of-type(2) article {
+  width: 100%;
+  position: relative;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(1) {
+  width: 100%;
+  height: 600px;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(1) h3 {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 25%;
+  left: 10vw;
+  font: normal 80px/1 "Josefin Sans", sans-serif;
+  color: #b3e6ec;
+  z-index: 1;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(1) h3 span {
+  color: #04adbf;
+  padding-left: 5vw;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(1) div {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(1) div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(2) {
+  width: 100%;
+  height: 400px;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(2) p {
+  width: 28%;
+  height: 100%;
+  position: absolute;
+  top: -15%;
+  left: 10vw;
+  font: normal 16px/1.4 "Josefin Sans";
+  padding: 0 2vw;
+  text-align: center;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(2) div {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  top: -15%;
+  left: 43%;
+}
+.deals .inner section:nth-of-type(2) article:nth-of-type(2) div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% center;
+}
+.deals .inner section:nth-of-type(3) {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+}
+.deals .inner section:nth-of-type(3) div {
+  width: 100%;
+  height: 100%;
+  background: #b3e6ec;
+}
+
 .destinations .visualSub {
   height: 60vh;
 }
@@ -935,7 +1128,7 @@ body #footerSub .inner .footAddWrap > p {
   top: -15px;
   left: 130px;
   font-size: 100px;
-  color: #eee;
+  color: #b3e6ec;
   z-index: -1;
 }
 .events .inner section:nth-of-type(1) article div:nth-of-type(2) h3 {
@@ -1002,7 +1195,7 @@ body #footerSub .inner .footAddWrap > p {
   top: -20px;
   left: 130px;
   font-size: 100px;
-  color: #eee;
+  color: #b3e6ec;
   z-index: -1;
 }
 .events .inner section:nth-of-type(2) div:nth-of-type(1) h3 {
@@ -1059,7 +1252,7 @@ body #footerSub .inner .footAddWrap > p {
   position: absolute;
   top: 0;
   left: 0;
-  background: #eee;
+  background: #b3e6ec;
 }
 .events .inner section:nth-of-type(3) div:nth-of-type(2) {
   width: 70%;
@@ -1067,7 +1260,7 @@ body #footerSub .inner .footAddWrap > p {
   position: absolute;
   top: 0;
   right: 0;
-  background: #888;
+  background: #eee;
 }
 .events .inner section:nth-of-type(4) {
   border: 1px solid #f5f5f5;
@@ -1089,6 +1282,14 @@ body #footerSub .inner .footAddWrap > p {
   background: #fff;
   padding: 4.1vw 2vw;
   z-index: 1;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) span {
+  position: absolute;
+  top: 10px;
+  left: 130px;
+  font-size: 100px;
+  color: #b3e6ec;
+  z-index: -1;
 }
 .events .inner section:nth-of-type(4) article div:nth-of-type(1) h3 {
   font-size: 30px;
@@ -1156,6 +1357,14 @@ body #footerSub .inner .footAddWrap > p {
   width: 60%;
   height: 100%;
   padding: 2vw 4vw;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(2) span {
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  font-size: 100px;
+  color: #b3e6ec;
+  z-index: -1;
 }
 .events .inner section:nth-of-type(5) div:nth-of-type(2) h3 {
   font-size: 30px;
