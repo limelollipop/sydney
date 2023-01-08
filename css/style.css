@@ -1125,8 +1125,8 @@ body #footerSub .inner .footAddWrap > p {
 }
 .events .inner section:nth-of-type(1) article div:nth-of-type(2) span {
   position: absolute;
-  top: -15px;
-  left: 130px;
+  top: -13px;
+  left: 120px;
   font-size: 100px;
   color: #b3e6ec;
   z-index: -1;
@@ -1285,7 +1285,7 @@ body #footerSub .inner .footAddWrap > p {
 }
 .events .inner section:nth-of-type(4) article div:nth-of-type(1) span {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 130px;
   font-size: 100px;
   color: #b3e6ec;
