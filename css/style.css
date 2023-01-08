@@ -553,7 +553,7 @@ body #footerSub .inner .footAddWrap > p {
 .things .inner main .thingsTxt {
   position: relative;
   width: 100%;
-  padding: 200px 0 150px;
+  padding: 200px 0 200px;
   top: -100px;
   text-align: right;
 }
@@ -587,6 +587,53 @@ body #footerSub .inner .footAddWrap > p {
   line-height: 1.4;
   letter-spacing: 1px;
   text-shadow: -3px 0px 3px rgba(0, 0, 0, 0.1);
+}
+.things .inner main .thingsBottom {
+  width: 100%;
+  margin-top: -100px;
+  margin-bottom: 80px;
+  padding: 100px 0;
+  position: relative;
+  background: #eee;
+}
+.things .inner main .thingsBottom article {
+  width: 80%;
+  position: relative;
+  margin-bottom: 40px;
+}
+.things .inner main .thingsBottom article div {
+  position: absolute;
+  top: 50%;
+  width: 20vw;
+  height: 200px;
+  background: #fff;
+  margin-top: -100px;
+  padding: 85px 40px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.things .inner main .thingsBottom article div > h3 {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 30px;
+  transition: 0.3s;
+}
+.things .inner main .thingsBottom article div > i {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  right: 0%;
+  transform: scale(1);
+}
+.things .inner main .thingsBottom article div:hover h3 {
+  color: #04adbf;
+}
+.things .inner main .thingsBottom article div:hover i {
+  color: #04adbf;
+  transform: scale(1.2);
+  animation: thingsAni 0.3s;
 }
 .things .inner main > h3 {
   font-size: 30px;
@@ -722,51 +769,6 @@ body #footerSub .inner .footAddWrap > p {
   position: relative;
   right: 0%;
 }
-.things .inner main .thingsBottom {
-  width: 100%;
-  margin: 150px 0;
-  padding: 100px 0;
-  position: relative;
-  background: #eee;
-}
-.things .inner main .thingsBottom article {
-  width: 80%;
-  position: relative;
-  margin-bottom: 40px;
-}
-.things .inner main .thingsBottom article div {
-  position: absolute;
-  top: 50%;
-  width: 20vw;
-  height: 200px;
-  background: #fff;
-  margin-top: -100px;
-  padding: 85px 40px;
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
-}
-.things .inner main .thingsBottom article div > h3 {
-  font-size: 30px;
-  display: inline-block;
-  margin-right: 30px;
-  transition: 0.3s;
-}
-.things .inner main .thingsBottom article div > i {
-  display: inline-block;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  right: 0%;
-}
-.things .inner main .thingsBottom article div:hover h3 {
-  color: #04adbf;
-}
-.things .inner main .thingsBottom article div:hover i {
-  color: #04adbf;
-  transform: scale(1.2);
-  animation: thingsAni 0.3s;
-}
 
 @keyframes thingsAni {
   0% {
@@ -877,6 +879,311 @@ body #footerSub .inner .footAddWrap > p {
   color: #b3e6ec;
 }
 
+.events .visualSub {
+  height: 40vh;
+}
+.events .visualSub img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  object-fit: cover;
+  object-position: center 20%;
+}
+.events .inner {
+  width: 100%;
+}
+.events .inner h2 {
+  top: -150px;
+}
+.events .inner section {
+  position: relative;
+  width: 100%;
+}
+.events .inner section:nth-of-type(1) {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.events .inner section:nth-of-type(1) article {
+  width: 100%;
+  height: 100%;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(1) {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) {
+  width: 60%;
+  height: 50%;
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  padding: 2vw;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) span {
+  position: absolute;
+  top: -15px;
+  left: 130px;
+  font-size: 100px;
+  color: #eee;
+  z-index: -1;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) h3 {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.4;
+  padding-right: 10vw;
+  margin-bottom: 40px;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) a {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  font: bold 18px/40px "Josefin Sans", sans-serif;
+  color: #0d0d0d;
+  margin: 0 auto;
+  text-align: center;
+  transition: 0.3s;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) a:hover {
+  color: #fff;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 40px;
+  background: #04adbf;
+  transition: 0.3s;
+  z-index: -1;
+}
+.events .inner section:nth-of-type(1) article div:nth-of-type(2) a:hover::before {
+  background: #04adbf;
+  width: 200px;
+}
+.events .inner section:nth-of-type(2) {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin-top: -100px;
+  background: #fff;
+  padding: 2vw 4vw;
+  z-index: 1;
+  text-align: right;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) span {
+  position: absolute;
+  top: -20px;
+  left: 130px;
+  font-size: 100px;
+  color: #eee;
+  z-index: -1;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) a {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  color: #0d0d0d;
+  transition: 0.3s;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) a i {
+  font-size: 18px;
+  position: relative;
+  transform: scale(1);
+  right: 0%;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) a:hover {
+  color: #04adbf;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(1) a:hover i {
+  color: #04adbf;
+  transform: scale(1.2);
+  animation: eventsAni 0.3s;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(2) {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.events .inner section:nth-of-type(2) div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events .inner section:nth-of-type(3) {
+  margin-bottom: 150px;
+  width: 100%;
+  height: 600px;
+}
+.events .inner section:nth-of-type(3) div:nth-of-type(1) {
+  width: 30%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #eee;
+}
+.events .inner section:nth-of-type(3) div:nth-of-type(2) {
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #888;
+}
+.events .inner section:nth-of-type(4) {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 150px;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.events .inner section:nth-of-type(4) article {
+  width: 100%;
+  height: 100%;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) {
+  width: 40%;
+  height: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  padding: 4.1vw 2vw;
+  z-index: 1;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) h3 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) a {
+  display: block;
+  position: relative;
+  font-size: 18px;
+  color: #0d0d0d;
+  transition: 0.3s;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) a i {
+  font-size: 18px;
+  position: relative;
+  transform: scale(1);
+  right: 0%;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) a:hover {
+  color: #04adbf;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(1) a:hover i {
+  color: #04adbf;
+  transform: scale(1.2);
+  animation: eventsAni 0.3s;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(2) {
+  width: 80%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.events .inner section:nth-of-type(4) article div:nth-of-type(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events .inner section:nth-of-type(5) {
+  border: 1px solid #f5f5f5;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(1) {
+  width: 40%;
+  height: 100%;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(2) {
+  width: 60%;
+  height: 100%;
+  padding: 2vw 4vw;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(2) h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(2) div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.events .inner section:nth-of-type(5) div:nth-of-type(2) div p {
+  width: 44%;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.4;
+}
+
+@keyframes eventsAni {
+  0% {
+    right: 0%;
+    opacity: 1;
+  }
+  100% {
+    right: -5%;
+    opacity: 0;
+  }
+}
 .join {
   width: 100%;
   position: relative;

@@ -83,7 +83,7 @@
 			.thingsTxt {
 				position: relative;
 				width: 100%;
-				padding: 200px 0 150px;
+				padding: 200px 0 200px;
 				top: -100px;
 				text-align: right;
 				.thingsBg {
@@ -117,6 +117,58 @@
 					line-height: 1.4;
 					letter-spacing: 1px;
 					text-shadow: -3px 0px 3px rgba(0, 0, 0, 0.1);
+				}
+			}
+
+			.thingsBottom {
+				width: 100%;
+				margin-top: -100px;
+				margin-bottom: 80px;
+				padding: 100px 0;
+				position: relative;
+				background: #eee;
+
+				article {
+					width: 80%;
+					position: relative;
+					margin-bottom: 40px;
+
+					div {
+						position: absolute;
+						top: 50%;
+						width: 20vw;
+						height: 200px;
+						background: #fff;
+						margin-top: -100px;
+						padding: 85px 40px;
+						display: flex;
+						justify-content: flex-end;
+						cursor: pointer;
+						> h3 {
+							font-size: 30px;
+							display: inline-block;
+							margin-right: 30px;
+							transition: 0.3s;
+						}
+						> i {
+							display: inline-block;
+							font-size: 20px;
+							line-height: 30px;
+							position: relative;
+							right: 0%;
+							transform: scale(1);
+						}
+						&:hover {
+							h3 {
+								color: #04adbf;
+							}
+							i {
+								color: #04adbf;
+								transform: scale(1.2);
+								animation: thingsAni 0.3s;
+							}
+						}
+					}
 				}
 			}
 
@@ -265,56 +317,6 @@
 							i {
 								position: relative;
 								right: 0%;
-							}
-						}
-					}
-				}
-			}
-
-			.thingsBottom {
-				width: 100%;
-				margin: 150px 0;
-				padding: 100px 0;
-				position: relative;
-				background: #eee;
-
-				article {
-					width: 80%;
-					position: relative;
-					margin-bottom: 40px;
-
-					div {
-						position: absolute;
-						top: 50%;
-						width: 20vw;
-						height: 200px;
-						background: #fff;
-						margin-top: -100px;
-						padding: 85px 40px;
-						display: flex;
-						justify-content: flex-end;
-						cursor: pointer;
-						> h3 {
-							font-size: 30px;
-							display: inline-block;
-							margin-right: 30px;
-							transition: 0.3s;
-						}
-						> i {
-							display: inline-block;
-							font-size: 20px;
-							line-height: 30px;
-							position: relative;
-							right: 0%;
-						}
-						&:hover {
-							h3 {
-								color: #04adbf;
-							}
-							i {
-								color: #04adbf;
-								transform: scale(1.2);
-								animation: thingsAni 0.3s;
 							}
 						}
 					}
