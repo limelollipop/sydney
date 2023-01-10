@@ -21,23 +21,23 @@ function getYoutube(vidList, playlist, count) {
 
 			items.map((el) => {
 				let title = el.snippet.title;
-				if (title.length > 30) {
-					title = title.substr(0, 30) + '...';
+				if (title.length > 40) {
+					title = title.substr(0, 40) + '...';
 				}
 
 				let txt = el.snippet.description;
-				if (txt.length > 100) {
-					txt = txt.substr(0, 40) + '...';
+				if (txt.length > 120) {
+					txt = txt.substr(0, 120) + '...';
 				}
 				let date = el.snippet.publishedAt;
 				date = date.split('T')[0];
 
 				result += `
         <div>
-					<h3>${title}</h3>
-					<div class="txt">            
-							<p>${txt}</p>
-							<span>${date}</span>
+					<div>
+						<span>${date}</span>
+						<h3>${title}</h3>
+						<p>${txt}</p>
 					</div>
           <a href="${el.snippet.resourceId.videoId}" class="pic">
             <img src="${el.snippet.thumbnails.high.url}">

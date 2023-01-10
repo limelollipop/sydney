@@ -966,7 +966,6 @@ body #footerSub .inner .footAddWrap > p {
   position: relative;
 }
 .youtube .inner section:nth-of-type(1) {
-  background: #b3e6ec;
   position: relative;
   width: 100%;
   padding: 8vh 0;
@@ -1017,54 +1016,84 @@ body #footerSub .inner .footAddWrap > p {
 }
 .youtube .inner section:nth-of-type(2) {
   width: 100%;
-}
-.youtube .inner section:nth-of-type(2) .vidList1 {
-  width: 100%;
-  margin-top: -100px;
-  margin-bottom: 80px;
-  padding: 100px 0;
+  margin: 0 auto;
   position: relative;
   background: #b3e6ec;
 }
-.youtube .inner section:nth-of-type(2) .vidList1 article {
-  width: 80%;
+.youtube .inner section:nth-of-type(2) .vidList1 {
+  width: 90%;
+  height: 100%;
   position: relative;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div {
+  border-top: 3px solid #04adbf;
+  width: 100%;
+  height: 340px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div > div {
+  border: 1px solid green;
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 2vw 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div > div span {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  letter-spacing: 1px;
   margin-bottom: 40px;
 }
-.youtube .inner section:nth-of-type(2) .vidList1 article div {
-  position: absolute;
-  top: 50%;
-  width: 20vw;
-  height: 200px;
-  background: #fff;
-  margin-top: -100px;
-  padding: 85px 40px;
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
-  box-shadow: 10px 0px 10px rgba(13, 13, 13, 0.2);
-}
-.youtube .inner section:nth-of-type(2) .vidList1 article div > h3 {
+.youtube .inner section:nth-of-type(2) .vidList1 > div > div h3 {
   font-size: 30px;
-  display: inline-block;
-  margin-right: 30px;
-  transition: 0.3s;
+  line-height: 1.2;
+  margin-bottom: 80px;
 }
-.youtube .inner section:nth-of-type(2) .vidList1 article div > i {
-  display: inline-block;
-  font-size: 20px;
-  line-height: 30px;
-  position: relative;
-  right: 0%;
-  transform: scale(1);
+.youtube .inner section:nth-of-type(2) .vidList1 > div a {
+  display: block;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 2vw 0;
 }
-.youtube .inner section:nth-of-type(2) .vidList1 article div:hover h3 {
-  color: #04adbf;
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(1) > div {
+  left: 0;
 }
-.youtube .inner section:nth-of-type(2) .vidList1 article div:hover i {
-  color: #04adbf;
-  transform: scale(1.2);
-  animation: galleryAni 0.3s;
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(1) a {
+  right: 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(1) a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(2) > div {
+  right: 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(2) a {
+  left: 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(2) a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(3) > div {
+  left: 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(3) a {
+  right: 0;
+}
+.youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(3) a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .youtube .inner section:nth-of-type(2) .vidList1 figure.pop {
   width: 100%;
