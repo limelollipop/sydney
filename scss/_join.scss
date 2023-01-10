@@ -3,7 +3,7 @@
 	position: relative;
 	// padding: 150px 0;
 	.visualSub {
-		height: 60vh;
+		height: 40vh;
 		video {
 			top: 0;
 			left: 0;
@@ -11,12 +11,12 @@
 			height: 100%;
 			opacity: 0.4;
 			object-fit: cover;
-			object-position: center 40%;
+			object-position: center 38%;
 		}
 	}
 	.inner {
 		h2 {
-			top: -250px;
+			top: -150px;
 		}
 		.joinForm {
 			position: relative;

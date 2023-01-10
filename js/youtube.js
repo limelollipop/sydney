@@ -1,11 +1,8 @@
-const destinations = document.querySelector('.destinations');
-const vidList1 = destinations.querySelector('.vidList1');
-const playlistId1 = 'PLfcxYX4Y-1uIFMXAQaxOQeD3cAvYO7HB6';
-const vidList2 = destinations.querySelector('.vidList2');
-const playlistId2 = 'PLfcxYX4Y-1uKvy2NKs2xrMcOcUV2ZkW3G';
+const youtube = document.querySelector('.youtube');
+const vidList1 = youtube.querySelector('.vidList1');
+const playlistId1 = 'PLfcxYX4Y-1uKvy2NKs2xrMcOcUV2ZkW3G';
 
-getYoutube(vidList1, playlistId1, 1);
-getYoutube(vidList2, playlistId2, 8);
+getYoutube(vidList1, playlistId1, 3);
 
 function getYoutube(vidList, playlist, count) {
 	const key = 'AIzaSyBewxTQi8jQ69KRDZGs1D5GM1VWwj9ofSg';

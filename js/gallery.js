@@ -1,14 +1,14 @@
-const thingsBtns = document.querySelectorAll('.things .inner main ul li');
-const thingsFrame = document.querySelector('main .isoWrap');
-const thingsImgs = thingsFrame.querySelectorAll('article');
+const galleryBtns = document.querySelectorAll('.gallery .inner main ul li');
+const galleryFrame = document.querySelector('main .isoWrap');
+const galleryImgs = galleryFrame.querySelectorAll('article');
 
 const loading = document.querySelector('.loading');
 
-// console.log(Array.from(thingsFrame.querySelectorAll('article')));
+// console.log(Array.from(galleryFrame.querySelectorAll('article')));
 
 window.addEventListener('load', () => {
 	loading.classList.add('off');
-	thingsFrame.classList.add('on');
+	galleryFrame.classList.add('on');
 
 	const grid = new Isotope('.isoWrap', {
 		itemSelection: 'article',
@@ -16,16 +16,16 @@ window.addEventListener('load', () => {
 		transitionDuration: '0.5s',
 	});
 
-	for (let el of thingsBtns) {
+	for (let el of galleryBtns) {
 		el.addEventListener('click', (e) => {
 			e.preventDefault();
 
-			const thingsSort = e.currentTarget.querySelector('a').getAttribute('href');
+			const gallerySort = e.currentTarget.querySelector('a').getAttribute('href');
 			grid.arrange({
-				filter: thingsSort,
+				filter: gallerySort,
 			});
 
-			for (let el of thingsBtns) {
+			for (let el of galleryBtns) {
 				el.classList.remove('on');
 			}
 			e.currentTarget.classList.add('on');
