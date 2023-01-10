@@ -47,32 +47,35 @@ function getYoutube(vidList, playlist, count) {
 			});
 
 			vidList.innerHTML = result;
+
+			const pics = vidList.querySelectorAll('.pic');
+
+			pics.forEach((pic, idx) => {
+				pic.addEventListener('click', (e) => {
+					e.preventDefault();
+
+					const vidId = e.currentTarget.getAttribute('href');
+					let pop = document.createElement('figure');
+					pop.classList.add('pop');
+					pop.innerHTML = `
+					<iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+					<span class="btnClose"><i class="fa-solid fa-rectangle-xmark"></i></span>
+				`;
+
+					document.body.append(pop);
+				});
+			});
+
+			document.body.addEventListener('click', (e) => {
+				const pop = document.body.querySelector('.pop');
+
+				if (pop) {
+					const close = pop.querySelector('span i');
+					// console.log(close);
+					if (e.target == close) pop.remove();
+				}
+			});
 		});
-
-	vidList.addEventListener('click', (e) => {
-		e.preventDefault();
-
-		if (!e.target.closest('a')) return;
-		const vidId = e.target.closest('article').querySelector('a').getAttribute('href');
-
-		let pop = document.createElement('figure');
-		pop.classList.add('pop');
-		pop.innerHTML = `
-    <iframe src="https://www.youtube.com/embed/${vidId}" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
-    <span class="btnClose"><i class="fa-solid fa-rectangle-xmark"></i></span>
-  `;
-		vidList.append(pop);
-	});
-
-	vidList.addEventListener('click', (e) => {
-		const pop = vidList.querySelector('.pop');
-
-		if (pop) {
-			const close = pop.querySelector('span i');
-			// console.log(close);
-			if (e.target == close) pop.remove();
-		}
-	});
 }
 
 // ---------------------------------------------------- 선생님이 했던거
