@@ -126,7 +126,7 @@
 				margin-bottom: 80px;
 				padding: 100px 0;
 				position: relative;
-				background: #eee;
+				background: #b3e6ec;
 
 				article {
 					width: 80%;
@@ -144,6 +144,8 @@
 						display: flex;
 						justify-content: flex-end;
 						cursor: pointer;
+						box-shadow: 10px 0px 10px rgba(13, 13, 13, 0.2);
+
 						> h3 {
 							font-size: 30px;
 							display: inline-block;
@@ -177,7 +179,7 @@
 				font-size: 30px;
 				position: relative;
 				margin-bottom: 2vh;
-				text-align: center;
+				text-align: right;
 				padding-top: 80px;
 			}
 			ul {
@@ -229,10 +231,9 @@
 			}
 
 			.isoWrap {
-				// border: 1px solid orange;
 				width: 100%;
-				// float: left;
 				position: relative;
+				margin-bottom: 100px;
 
 				// 전환효과
 				opacity: 0;

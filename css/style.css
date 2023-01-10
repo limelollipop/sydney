@@ -594,7 +594,7 @@ body #footerSub .inner .footAddWrap > p {
   margin-bottom: 80px;
   padding: 100px 0;
   position: relative;
-  background: #eee;
+  background: #b3e6ec;
 }
 .things .inner main .thingsBottom article {
   width: 80%;
@@ -612,6 +612,7 @@ body #footerSub .inner .footAddWrap > p {
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
+  box-shadow: 10px 0px 10px rgba(13, 13, 13, 0.2);
 }
 .things .inner main .thingsBottom article div > h3 {
   font-size: 30px;
@@ -639,7 +640,7 @@ body #footerSub .inner .footAddWrap > p {
   font-size: 30px;
   position: relative;
   margin-bottom: 2vh;
-  text-align: center;
+  text-align: right;
   padding-top: 80px;
 }
 .things .inner main ul {
@@ -689,6 +690,7 @@ body #footerSub .inner .footAddWrap > p {
 .things .inner main .isoWrap {
   width: 100%;
   position: relative;
+  margin-bottom: 100px;
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
@@ -878,38 +880,20 @@ body #footerSub .inner .footAddWrap > p {
   color: #555;
   line-height: 1.4;
 }
-.deals .inner section:nth-of-type(1) article:nth-of-type(1) {
-  div: nth-of-type(2);
-}
 .deals .inner section:nth-of-type(1) article:nth-of-type(1) div:nth-of-type(1) img {
   object-position: 50% center;
-}
-.deals .inner section:nth-of-type(1) article:nth-of-type(2) {
-  div: nth-of-type(2);
 }
 .deals .inner section:nth-of-type(1) article:nth-of-type(2) div:nth-of-type(1) img {
   object-position: 70% center;
 }
-.deals .inner section:nth-of-type(1) article:nth-of-type(3) {
-  div: nth-of-type(2);
-}
 .deals .inner section:nth-of-type(1) article:nth-of-type(3) div:nth-of-type(1) img {
   object-position: 10% center;
-}
-.deals .inner section:nth-of-type(1) article:nth-of-type(4) {
-  div: nth-of-type(2);
 }
 .deals .inner section:nth-of-type(1) article:nth-of-type(4) div:nth-of-type(1) img {
   object-position: 40% center;
 }
-.deals .inner section:nth-of-type(1) article:nth-of-type(5) {
-  div: nth-of-type(2);
-}
 .deals .inner section:nth-of-type(1) article:nth-of-type(5) div:nth-of-type(1) img {
   object-position: 40% center;
-}
-.deals .inner section:nth-of-type(1) article:nth-of-type(6) {
-  div: nth-of-type(2);
 }
 .deals .inner section:nth-of-type(1) article:nth-of-type(6) div:nth-of-type(1) img {
   object-position: 50% center;
@@ -983,13 +967,79 @@ body #footerSub .inner .footAddWrap > p {
 }
 .deals .inner section:nth-of-type(3) {
   width: 100%;
-  height: 60vh;
   position: relative;
+  background: #f5f5f5;
+  padding: 100px 3vw 100px;
 }
-.deals .inner section:nth-of-type(3) div {
+.deals .inner section:nth-of-type(3) h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.deals .inner section:nth-of-type(3) .inputBox {
   width: 100%;
-  height: 100%;
+  position: relative;
+  border: 1px solid #eee;
+  padding: 0.5vw;
+  margin-bottom: 40px;
+}
+.deals .inner section:nth-of-type(3) .inputBox input[type=text],
+.deals .inner section:nth-of-type(3) .inputBox textarea {
+  width: 100%;
+  padding: 0.5vw 1vw;
+  border: 1px solid #aaa;
   background: #b3e6ec;
+  margin-bottom: 20px;
+  resize: none;
+}
+.deals .inner section:nth-of-type(3) .inputBox .btnSet button {
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  border: none;
+  background: #04adbf;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.deals .inner section:nth-of-type(3) .showBox {
+  width: 100%;
+  position: relative;
+  border: 1px solid #aaa;
+  padding: 4vw;
+}
+.deals .inner section:nth-of-type(3) .showBox article {
+  background: #b3e6ec;
+  padding: 3vw;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.deals .inner section:nth-of-type(3) .showBox article .txt {
+  width: calc(100% - 170px);
+}
+.deals .inner section:nth-of-type(3) .showBox article .txt h4 {
+  margin-bottom: 10px;
+}
+.deals .inner section:nth-of-type(3) .showBox article .btnSet {
+  width: 120px;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 20px;
+  gap: 10px;
+}
+.deals .inner section:nth-of-type(3) .showBox article .btnSet button {
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+.deals .inner section:nth-of-type(3) .showBox article .btnSet button:nth-of-type(1) {
+  color: orange;
+}
+.deals .inner section:nth-of-type(3) .showBox article .btnSet button:nth-of-type(2) {
+  color: orangered;
 }
 
 .destinations .visualSub {
@@ -1008,46 +1058,70 @@ body #footerSub .inner .footAddWrap > p {
 .destinations .inner h2 {
   top: -300px;
 }
-.destinations .inner .vidList article {
+.destinations .inner section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.destinations .inner section:nth-of-type(1) {
+  border: 1px solid red;
+}
+.destinations .inner section:nth-of-type(1) article:nth-of-type(1) {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.destinations .inner section:nth-of-type(1) article:nth-of-type(2) {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+.destinations .inner section:nth-of-type(2) {
+  width: 100%;
+}
+.destinations .inner section:nth-of-type(3) {
+  width: 100%;
+}
+.destinations .inner section:nth-of-type(3) .vidList2 div {
   border-top: 2px solid #b3e6ec;
   padding: 20px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.destinations .inner .vidList article h3 {
+.destinations .inner section:nth-of-type(3) .vidList2 div h3 {
   width: 25%;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.2;
   color: #04adbf;
 }
-.destinations .inner .vidList article .txt {
+.destinations .inner section:nth-of-type(3) .vidList2 div .txt {
   width: 35%;
   display: flex;
   align-content: space-between;
 }
-.destinations .inner .vidList article .txt p {
+.destinations .inner section:nth-of-type(3) .vidList2 div .txt p {
   font-size: 14px;
   line-height: 1.2;
   color: #999;
 }
-.destinations .inner .vidList article .txt span {
+.destinations .inner section:nth-of-type(3) .vidList2 div .txt span {
   font-size: 12px;
   color: orange;
 }
-.destinations .inner .vidList article .pic {
+.destinations .inner section:nth-of-type(3) .vidList2 div .pic {
   display: block;
   width: 35%;
   height: 230px;
   cursor: pointer;
 }
-.destinations .inner .vidList article .pic img {
+.destinations .inner section:nth-of-type(3) .vidList2 div .pic img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.destinations .inner .vidList figure.pop {
+.destinations .inner section:nth-of-type(3) .vidList2 figure.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -1060,7 +1134,7 @@ body #footerSub .inner .footAddWrap > p {
   justify-content: center;
   align-items: center;
 }
-.destinations .inner .vidList figure.pop .btnClose {
+.destinations .inner section:nth-of-type(3) .vidList2 figure.pop .btnClose {
   font-size: 30px;
   position: absolute;
   top: 2.5vw;
@@ -1068,7 +1142,7 @@ body #footerSub .inner .footAddWrap > p {
   color: #fff;
   cursor: pointer;
 }
-.destinations .inner .vidList figure.pop .btnClose:hover {
+.destinations .inner section:nth-of-type(3) .vidList2 figure.pop .btnClose:hover {
   color: #b3e6ec;
 }
 
