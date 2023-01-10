@@ -21,7 +21,7 @@
 			width: 100%;
 			position: relative;
 			height: 100%;
-			margin-bottom: 150px;
+			margin-bottom: 100px;
 
 			h3 {
 				font-size: 30px;
@@ -30,6 +30,173 @@
 
 			// section 1
 			&:nth-of-type(1) {
+				width: 100%;
+				height: 100%;
+				position: relative;
+
+				article {
+					width: 100%;
+					position: relative;
+
+					&:nth-of-type(1) {
+						width: 100%;
+						height: 600px;
+						// display: flex;
+						// justify-content: space-between;
+
+						h3 {
+							width: 70%;
+							height: 100%;
+							position: absolute;
+							top: 25%;
+							left: 10vw;
+							font: normal 80px/1 'Josefin Sans', sans-serif;
+							color: #b3e6ec;
+							z-index: 1;
+							span {
+								color: #04adbf;
+								padding-left: 5vw;
+							}
+						}
+						div {
+							width: 30%;
+							height: 100%;
+							position: absolute;
+							top: 0;
+							right: 0;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								object-position: 70% center;
+							}
+						}
+					}
+					&:nth-of-type(2) {
+						width: 100%;
+						height: 400px;
+
+						p {
+							width: 28%;
+							height: 100%;
+							position: absolute;
+							top: -15%;
+							left: 10vw;
+							font: normal 16px/1.4 'Josefin Sans';
+							padding: 0 2vw;
+							text-align: center;
+						}
+
+						div {
+							width: 25%;
+							height: 100%;
+							position: absolute;
+							top: -15%;
+							left: 43%;
+
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								object-position: 50% center;
+							}
+						}
+					}
+				}
+			}
+
+			// section 2
+			&:nth-of-type(2) {
+				width: 100%;
+				position: relative;
+				border-top: 3px solid #b3e6ec;
+				padding: 100px 3vw 100px;
+
+				h3 {
+					font-size: 30px;
+					text-align: center;
+					margin-bottom: 20px;
+				}
+
+				.inputBox {
+					width: 100%;
+					position: relative;
+					border: 1px solid #eee;
+					padding: 0.5vw;
+					margin-bottom: 40px;
+
+					input[type='text'],
+					textarea {
+						width: 100%;
+						padding: 0.5vw 1vw;
+						border: 1px solid #aaa;
+						background: #b3e6ec;
+						margin-bottom: 20px;
+						resize: none;
+					}
+
+					.btnSet {
+						button {
+							width: 150px;
+							height: 30px;
+							display: inline-block;
+							border: none;
+							background: #04adbf;
+							color: #fff;
+							cursor: pointer;
+							margin-right: 20px;
+						}
+					}
+				}
+
+				.showBox {
+					width: 100%;
+					position: relative;
+					border: 1px solid #aaa;
+					padding: 4vw;
+
+					article {
+						background: #b3e6ec;
+						padding: 3vw;
+						margin-bottom: 40px;
+						display: flex;
+						justify-content: space-between;
+						align-content: center;
+						flex-wrap: wrap;
+
+						.txt {
+							width: calc((100% - 170px));
+							h4 {
+								margin-bottom: 10px;
+							}
+						}
+
+						.btnSet {
+							width: 120px;
+							display: flex;
+							align-items: flex-end;
+							margin-top: 20px;
+							gap: 10px;
+
+							button {
+								background: transparent;
+								cursor: pointer;
+								border: none;
+
+								&:nth-of-type(1) {
+									color: orange;
+								}
+								&:nth-of-type(2) {
+									color: orangered;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			// section 3
+			&:nth-of-type(3) {
 				width: 100%;
 				height: 100%;
 				position: relative;
@@ -135,173 +302,6 @@
 						div:nth-of-type(1) {
 							img {
 								object-position: 50% center;
-							}
-						}
-					}
-				}
-			}
-
-			// section 2
-			&:nth-of-type(2) {
-				width: 100%;
-				height: 100%;
-				position: relative;
-
-				article {
-					width: 100%;
-					position: relative;
-
-					&:nth-of-type(1) {
-						width: 100%;
-						height: 600px;
-						// display: flex;
-						// justify-content: space-between;
-
-						h3 {
-							width: 70%;
-							height: 100%;
-							position: absolute;
-							top: 25%;
-							left: 10vw;
-							font: normal 80px/1 'Josefin Sans', sans-serif;
-							color: #b3e6ec;
-							z-index: 1;
-							span {
-								color: #04adbf;
-								padding-left: 5vw;
-							}
-						}
-						div {
-							width: 30%;
-							height: 100%;
-							position: absolute;
-							top: 0;
-							right: 0;
-							img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-								object-position: 70% center;
-							}
-						}
-					}
-					&:nth-of-type(2) {
-						width: 100%;
-						height: 400px;
-
-						p {
-							width: 28%;
-							height: 100%;
-							position: absolute;
-							top: -15%;
-							left: 10vw;
-							font: normal 16px/1.4 'Josefin Sans';
-							padding: 0 2vw;
-							text-align: center;
-						}
-
-						div {
-							width: 25%;
-							height: 100%;
-							position: absolute;
-							top: -15%;
-							left: 43%;
-
-							img {
-								width: 100%;
-								height: 100%;
-								object-fit: cover;
-								object-position: 50% center;
-							}
-						}
-					}
-				}
-			}
-
-			// section 3
-			&:nth-of-type(3) {
-				width: 100%;
-				position: relative;
-				background: #f5f5f5;
-				padding: 100px 3vw 100px;
-
-				h3 {
-					font-size: 30px;
-					text-align: center;
-					margin-bottom: 20px;
-				}
-
-				.inputBox {
-					width: 100%;
-					position: relative;
-					border: 1px solid #eee;
-					padding: 0.5vw;
-					margin-bottom: 40px;
-
-					input[type='text'],
-					textarea {
-						width: 100%;
-						padding: 0.5vw 1vw;
-						border: 1px solid #aaa;
-						background: #b3e6ec;
-						margin-bottom: 20px;
-						resize: none;
-					}
-
-					.btnSet {
-						button {
-							width: 150px;
-							height: 30px;
-							display: inline-block;
-							border: none;
-							background: #04adbf;
-							color: #fff;
-							cursor: pointer;
-							margin-right: 20px;
-						}
-					}
-				}
-
-				.showBox {
-					width: 100%;
-					position: relative;
-					border: 1px solid #aaa;
-					padding: 4vw;
-
-					article {
-						background: #b3e6ec;
-						padding: 3vw;
-						margin-bottom: 40px;
-						display: flex;
-						justify-content: space-between;
-						align-content: center;
-						flex-wrap: wrap;
-
-						.txt {
-							width: calc((100% - 170px));
-							h4 {
-								margin-bottom: 10px;
-							}
-						}
-
-						.btnSet {
-							width: 120px;
-							display: flex;
-							align-items: flex-end;
-							margin-top: 20px;
-							gap: 10px;
-
-							button {
-								background: transparent;
-								cursor: pointer;
-								border: none;
-
-								&:nth-of-type(1) {
-									color: orange;
-								}
-								&:nth-of-type(2) {
-									color: orangered;
-								}
 							}
 						}
 					}

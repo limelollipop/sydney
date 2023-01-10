@@ -1,7 +1,3 @@
-// menuMo script
-const btnMenu = document.querySelector('.btnMenu');
-const menuMo = document.querySelector('.menuMo');
-
 // visual slide
 const frame = document.querySelector('#visual');
 const panels = frame.querySelectorAll('.panel li');
@@ -18,13 +14,6 @@ console.log(panels);
 const eventFrame = document.querySelector('#event .inner .right .wrap');
 const prev = document.querySelector('#event .inner .left .btnPrev');
 const next = document.querySelector('#event .inner .left .btnNext');
-
-// menuMo script
-btnMenu.addEventListener('click', (e) => {
-	e.preventDefault();
-	btnMenu.classList.toggle('on');
-	menuMo.classList.toggle('on');
-});
 
 // visual slider script
 startRolling();
