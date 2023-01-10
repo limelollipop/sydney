@@ -24,6 +24,20 @@
 		main {
 			width: 100%;
 
+			// loading
+			.loading {
+				width: 100px;
+				position: absolute;
+				top: 5%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				transition: opacity 0.5s;
+				opacity: 1;
+				&.off {
+					opacity: 0;
+				}
+			}
+
 			// gallery txt
 			.galleryTxt {
 				position: relative;
@@ -69,8 +83,11 @@
 			> h3 {
 				font-size: 30px;
 				position: relative;
-				margin-bottom: 2vh;
+				margin: 0 auto 3vh;
+				padding-top: 3vw;
 				text-align: center;
+
+				border-top: 3px solid #b3e6ec;
 			}
 			ul {
 				// border: 1px solid red;
@@ -104,19 +121,6 @@
 					&:hover a {
 						font-weight: bold;
 					}
-				}
-			}
-			// loading
-			.loading {
-				width: 100px;
-				position: absolute;
-				top: 5%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				transition: opacity 0.5s;
-				opacity: 1;
-				&.off {
-					opacity: 0;
 				}
 			}
 
