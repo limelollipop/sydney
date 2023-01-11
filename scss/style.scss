@@ -1031,13 +1031,13 @@ body {
 
 	> ul {
 		position: fixed;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 5vw;
+		top: 30%;
+		// transform: translateY(-50%);
+		left: 5vw;
 
 		li {
 			width: 6px;
-			height: 6px;
+			height: 12px;
 			background: #aaa;
 			margin-bottom: 20px;
 			cursor: pointer;
