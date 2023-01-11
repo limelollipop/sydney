@@ -8,7 +8,7 @@ const interval = 4800;
 const len = panels.length - 1;
 let timer = null;
 let visNum = 0;
-console.log(panels);
+// console.log(panels);
 
 // event right slide script
 const eventFrame = document.querySelector('#event .inner .right .wrap');

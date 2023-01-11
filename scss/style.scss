@@ -1005,6 +1005,27 @@ body {
 		}
 	}
 
+	> ul {
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 5vw;
+
+		li {
+			width: 6px;
+			height: 6px;
+			background: rgba(255, 255, 255, 0.4);
+			margin-bottom: 20px;
+			cursor: pointer;
+			transition: 0.5s;
+
+			&.on {
+				background: #04adbf;
+				height: 100px;
+			}
+		}
+	}
+
 	// animation
 	@keyframes visualAni {
 		0% {
