@@ -5,16 +5,18 @@ const scrollBtns = document.querySelectorAll('body > ul li');
 const speed = 500;
 const base = -window.innerHeight / 2;
 let posArr = [];
+const scrollBtnsArr = Array.from(scrollBtns);
+console.log(scrollBtnsArr);
 
 getPos();
 
-window.addEventListener('resize', getPos);
+window.addEventListener('resize', modifyPos);
 window.addEventListener('scroll', scrollActivation);
 
 scrollBtns.forEach((btn, idx) => {
 	btn.addEventListener('click', (e) => {
 		const isOn = e.currentTarget.classList.contains('on');
-		if (isOn) return;
+		if (isOn && scroll === posArr[idx]) return;
 		moveScroll(idx);
 	});
 });
@@ -42,4 +44,10 @@ function moveScroll(index) {
 		value: posArr[index],
 		duration: speed,
 	});
+}
+function modifyPos() {
+	getPos();
+	const active = document.querySelector('body > ul li.on');
+	const activeIndex = scrollBtnsArr.indexOf(active);
+	window.scroll(0, posArr[activeIndex]);
 }

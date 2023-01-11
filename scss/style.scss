@@ -487,11 +487,11 @@ body {
 							top: 0;
 							left: 0;
 
-							@for $i from 0 through 3 {
-								&:nth-of-type(#{$i + 1}) {
-									transition-delay: $interval * $i;
-								}
-							}
+							// @for $i from 0 through 3 {
+							// 	&:nth-of-type(#{$i + 1}) {
+							// 		transition-delay: $interval * $i;
+							// 	}
+							// }
 
 							&:nth-of-type(1) {
 								opacity: 0;
