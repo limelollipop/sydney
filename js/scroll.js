@@ -6,7 +6,7 @@ const speed = 500;
 const base = -window.innerHeight / 2;
 let posArr = [];
 const scrollBtnsArr = Array.from(scrollBtns);
-console.log(scrollBtnsArr);
+// console.log(scrollBtnsArr);
 
 getPos();
 
@@ -20,6 +20,23 @@ scrollBtns.forEach((btn, idx) => {
 		moveScroll(idx);
 	});
 });
+
+window.addEventListener('mousewheel', moveWheel, { passive: false });
+
+function moveWheel(e) {
+	e.preventDefault();
+
+	const active = document.querySelector('body > ul li.on');
+	const activeIndex = scrollBtnsArr.indexOf(active);
+
+	if (e.deltaY < 0) {
+		if (activeIndex === 0) return;
+		moveScroll(activeIndex - 1);
+	} else {
+		if (activeIndex === scrollBtns.length - 1) return;
+		moveScroll(activeIndex + 1);
+	}
+}
 
 function getPos() {
 	posArr = [];
