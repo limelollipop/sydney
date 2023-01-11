@@ -153,13 +153,14 @@
 					li {
 						a {
 							display: block;
-							width: 200px;
+							width: 10vw;
 							height: 40px;
 							background: #04adbf;
-							font-size: 18px;
+							font-size: 16px;
 							line-height: 40px;
 							color: #fff;
 							text-align: center;
+							transition: 0.3s;
 						}
 						&.on a {
 							border: 1px solid #f5f5f5;

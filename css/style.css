@@ -1566,13 +1566,14 @@ figure.pop .btnClose:hover {
 }
 .join .inner section:nth-of-type(2) .traffic li a {
   display: block;
-  width: 200px;
+  width: 10vw;
   height: 40px;
   background: #04adbf;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
   color: #fff;
   text-align: center;
+  transition: 0.3s;
 }
 .join .inner section:nth-of-type(2) .traffic li.on a {
   border: 1px solid #f5f5f5;

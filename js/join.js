@@ -5,13 +5,45 @@ const btnSubmit = form.querySelector('input[type=submit');
 
 // join location
 var mapContainer = document.getElementById('map');
-
 var mapOption = {
-	center: new kakao.maps.LatLng(37.570636, 126.977596),
+	center: new kakao.maps.LatLng(37.571259, 126.9777623),
 	level: 3,
 };
-
 var map = new kakao.maps.Map(mapContainer, mapOption);
+var mapTypeControl = new kakao.maps.MapTypeControl();
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+var markerPosition = new kakao.maps.LatLng(37.571259, 126.9777623);
+var marker = new kakao.maps.Marker({
+	position: markerPosition,
+});
+var zoomControl = new kakao.maps.ZoomControl();
+
+marker.setMap(map);
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+const joinFrame = document.querySelector('.join');
+// console.log(trficOn);
+const trficOn = joinFrame.querySelectorAll('.inner section .traffic li')[0];
+const trficOff = joinFrame.querySelectorAll('.inner section .traffic li')[1];
+
+trficOn.addEventListener('click', (e) => {
+	e.preventDefault();
+	if (trficOn.classList.contains('on')) return;
+	map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+	trficOn.classList.add('on');
+	trficOff.classList.remove('on');
+});
+
+trficOff.addEventListener('click', (e) => {
+	e.preventDefault();
+	if (trficOff.classList.contains('on')) return;
+	map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+	trficOff.classList.add('on');
+	trficOn.classList.remove('on');
+});
 
 // join form
 btnSubmit.addEventListener('click', (e) => {
