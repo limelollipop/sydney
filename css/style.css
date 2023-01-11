@@ -1546,6 +1546,61 @@ figure.pop .btnClose:hover {
   color: #0d0d0d;
   border: 1px solid #0d0d0d;
 }
+.join .inner section:nth-of-type(2) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.join .inner section:nth-of-type(2) #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #0d0d0d;
+  margin-bottom: 20px;
+}
+.join .inner section:nth-of-type(2) .traffic {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  float: left;
+  gap: 20px;
+}
+.join .inner section:nth-of-type(2) .traffic li a {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background: #04adbf;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+.join .inner section:nth-of-type(2) .traffic li.on a {
+  border: 1px solid #f5f5f5;
+  background: #b3e6ec;
+  color: #0d0d0d;
+}
+.join .inner section:nth-of-type(2) .branch {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  float: left;
+  gap: 20px;
+}
+.join .inner section:nth-of-type(2) .branch li a {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background: #04adbf;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+}
+.join .inner section:nth-of-type(2) .branch li.on a {
+  border: 1px solid #f5f5f5;
+  background: #b3e6ec;
+  color: #0d0d0d;
+}
 
 body {
   background: #fff;
