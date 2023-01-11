@@ -1,6 +1,6 @@
 // mainPage scroll
 // const visualBox = document.querySelector('#visual');
-const scrollBoxs = document.querySelectorAll('body > section');
+const scrollBoxs = document.querySelectorAll('body > section, figure');
 const scrollBtns = document.querySelectorAll('body > ul li');
 const speed = 500;
 const base = -window.innerHeight / 2;
@@ -22,21 +22,6 @@ scrollBtns.forEach((btn, idx) => {
 });
 
 window.addEventListener('mousewheel', moveWheel, { passive: false });
-
-function moveWheel(e) {
-	e.preventDefault();
-
-	const active = document.querySelector('body > ul li.on');
-	const activeIndex = scrollBtnsArr.indexOf(active);
-
-	if (e.deltaY < 0) {
-		if (activeIndex === 0) return;
-		moveScroll(activeIndex - 1);
-	} else {
-		if (activeIndex === scrollBtns.length - 1) return;
-		moveScroll(activeIndex + 1);
-	}
-}
 
 function getPos() {
 	posArr = [];
@@ -67,4 +52,18 @@ function modifyPos() {
 	const active = document.querySelector('body > ul li.on');
 	const activeIndex = scrollBtnsArr.indexOf(active);
 	window.scroll(0, posArr[activeIndex]);
+}
+function moveWheel(e) {
+	e.preventDefault();
+
+	const active = document.querySelector('body > ul li.on');
+	const activeIndex = scrollBtnsArr.indexOf(active);
+
+	if (e.deltaY < 0) {
+		if (activeIndex === 0) return;
+		moveScroll(activeIndex - 1);
+	} else {
+		if (activeIndex === scrollBtns.length - 1) return;
+		moveScroll(activeIndex + 1);
+	}
 }
