@@ -1943,6 +1943,9 @@ body #event .inner {
 body #event .inner div.left {
   width: 480px;
   margin-right: 20px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition-duration: 0.3s;
 }
 body #event .inner div.left h3 {
   font-size: 28px;
@@ -2000,6 +2003,10 @@ body #event .inner div.left a.btnNext:hover i {
 }
 body #event .inner div.right {
   width: 680px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition-duration: 0.3s;
+  transition-delay: 0.3s;
 }
 body #event .inner div.right > p {
   width: 100%;
@@ -2021,6 +2028,18 @@ body #event .inner div.right .wrap article {
   position: absolute;
   top: 0;
   left: 0;
+}
+body #event .inner div.right .wrap article:nth-of-type(1) {
+  transition-delay: 0s;
+}
+body #event .inner div.right .wrap article:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+body #event .inner div.right .wrap article:nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+body #event .inner div.right .wrap article:nth-of-type(4) {
+  transition-delay: 0.6s;
 }
 body #event .inner div.right .wrap article:nth-of-type(1) {
   opacity: 0;
@@ -2096,6 +2115,14 @@ body #event .inner div.right .wrap article a:hover .txtEvent p {
   overflow: visible;
   max-height: 100vh;
   background: #fff;
+}
+body #event.on .inner .left {
+  opacity: 1;
+  transform: translateX(0);
+}
+body #event.on .inner .right {
+  opacity: 1;
+  transform: translateY(0px);
 }
 body #banner {
   width: 100%;
@@ -2520,7 +2547,7 @@ body > ul {
 body > ul li {
   width: 6px;
   height: 6px;
-  background: rgba(255, 255, 255, 0.4);
+  background: #aaa;
   margin-bottom: 20px;
   cursor: pointer;
   transition: 0.5s;
