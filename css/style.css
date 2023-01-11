@@ -1589,10 +1589,10 @@ figure.pop .btnClose:hover {
 }
 .join .inner section:nth-of-type(2) .branch li a {
   display: block;
-  width: 100px;
+  width: 15vw;
   height: 40px;
   background: #04adbf;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
   color: #fff;
   text-align: center;
