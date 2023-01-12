@@ -245,6 +245,13 @@ body {
 		background: #000;
 		overflow: hidden;
 
+		&.on .inner {
+			h2,
+			p {
+				opacity: 1;
+			}
+		}
+
 		.panel {
 			> li {
 				position: absolute;
@@ -338,16 +345,21 @@ body {
 			top: 55%;
 			left: 50%;
 			transform: translate(-50%, -50%);
+
 			h2 {
 				font: normal 70px/1 'Josefin Sans', sans-serif;
 				color: #fff;
-				margin-bottom: 20px;
+				margin: 0 auto 20px;
 				text-shadow: 0px 0px 10px #000;
+				opacity: 0;
+				transition: opacity 1s;
 			}
 			p {
 				font: normal 20px/1 'arial', sans-serif;
 				color: #eee;
-				margin-bottom: 80px;
+				margin: 0 auto 80px;
+				opacity: 0;
+				transition: opacity 1s 0.5s;
 			}
 			a {
 				display: block;
@@ -387,6 +399,24 @@ body {
 		padding: 50px 0 150px;
 		position: relative;
 		overflow: hidden;
+
+		&.on {
+			.inner {
+				div {
+					&.left {
+						opacity: 1;
+						transform: translateX(0);
+					}
+					&.right {
+						.wrap {
+							opacity: 1;
+							transform: translateY(0px);
+						}
+					}
+				}
+			}
+		}
+
 		.inner {
 			width: 1180px;
 			margin: 0 auto;
@@ -398,7 +428,7 @@ body {
 					width: 480px;
 					margin-right: 20px;
 					opacity: 0;
-					transform: translateX(-100px);
+					transform: translateX(-20px);
 					transition-duration: 0.3s;
 
 					h3 {
@@ -429,7 +459,7 @@ body {
 						color: #0d0d0d;
 						text-align: center;
 						line-height: 40px;
-						transition: 0.3s;
+						transition: 0.3s ease-in-out;
 						&.btnPrev {
 							margin-right: 2vw;
 							i {
@@ -461,10 +491,6 @@ body {
 				}
 				&.right {
 					width: 680px;
-					opacity: 0;
-					transform: translateY(100px);
-					transition-duration: 0.3s;
-					transition-delay: 0.3s;
 
 					> p {
 						width: 100%;
@@ -476,6 +502,10 @@ body {
 						width: 1600px;
 						height: 340px;
 						position: relative;
+						border: 1px solid red;
+						opacity: 0;
+						transform: translateY(20px);
+						transition: 0.3s 0.3s;
 						article {
 							width: 300px;
 							height: 100%;
@@ -485,12 +515,6 @@ body {
 							position: absolute;
 							top: 0;
 							left: 0;
-
-							// @for $i from 0 through 3 {
-							// 	&:nth-of-type(#{$i + 1}) {
-							// 		transition-delay: $interval * $i;
-							// 	}
-							// }
 
 							&:nth-of-type(1) {
 								opacity: 0;
@@ -574,15 +598,6 @@ body {
 				}
 			}
 		}
-
-		&.on .inner .left {
-			opacity: 1;
-			transform: translateX(0);
-		}
-		&.on .inner .right {
-			opacity: 1;
-			transform: translateY(0px);
-		}
 	}
 
 	// banner
@@ -593,6 +608,21 @@ body {
 		margin: 20px 0;
 		background: url(../img/bannerBg.jpg) no-repeat left center fixed;
 		background-size: 50%;
+
+		&.on .inner {
+			.wrap {
+				opacity: 1;
+
+				h2 {
+					opacity: 1;
+					transform: translateX(0%);
+				}
+				p {
+					opacity: 1;
+					transform: translateX(0%);
+				}
+			}
+		}
 		.inner {
 			width: 1180px;
 			margin: 0 auto;
@@ -603,14 +633,28 @@ body {
 				padding: 100px 80px 100px 100px;
 				background: #fff;
 				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+				opacity: 0;
+				transition: 0.3s;
 				h2 {
 					font-size: 30px;
 					font-weight: bold;
 					padding-bottom: 25px;
+					opacity: 0;
+					transform: translateX(50%);
+					transition: 0.3s;
 				}
 				p {
 					font: normal 18px/1.4 'Josefin Sans';
 					color: #888;
+					opacity: 0;
+					transform: translateX(50%);
+					transition: 0.6s;
+					@for $i from 0 through 1 {
+						&:nth-of-type(#{$i + 1}) {
+							transition-delay: $interval * $i;
+						}
+					}
+
 					&:nth-of-type(1) {
 						margin-bottom: 20px;
 					}
@@ -626,7 +670,8 @@ body {
 			width: 50%;
 			height: 100%;
 			background: #f5f5f5;
-			z-index: -10;
+			z-index: -1;
+			// opacity: 0;
 		}
 	}
 
@@ -1053,7 +1098,7 @@ body {
 	// animation
 	@keyframes visualAni {
 		0% {
-			scale: 1.2;
+			scale: 1.1;
 		}
 		100% {
 			scale: 1;

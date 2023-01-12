@@ -1833,6 +1833,10 @@ body #visual {
   background: #000;
   overflow: hidden;
 }
+body #visual.on .inner h2,
+body #visual.on .inner p {
+  opacity: 1;
+}
 body #visual .panel > li {
   position: absolute;
   top: 0;
@@ -1918,13 +1922,17 @@ body #visual .inner {
 body #visual .inner h2 {
   font: normal 70px/1 "Josefin Sans", sans-serif;
   color: #fff;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   text-shadow: 0px 0px 10px #000;
+  opacity: 0;
+  transition: opacity 1s;
 }
 body #visual .inner p {
   font: normal 20px/1 "arial", sans-serif;
   color: #eee;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  opacity: 0;
+  transition: opacity 1s 0.5s;
 }
 body #visual .inner a {
   display: block;
@@ -1960,6 +1968,14 @@ body #event {
   position: relative;
   overflow: hidden;
 }
+body #event.on .inner div.left {
+  opacity: 1;
+  transform: translateX(0);
+}
+body #event.on .inner div.right .wrap {
+  opacity: 1;
+  transform: translateY(0px);
+}
 body #event .inner {
   width: 1180px;
   margin: 0 auto;
@@ -1971,7 +1987,7 @@ body #event .inner div.left {
   width: 480px;
   margin-right: 20px;
   opacity: 0;
-  transform: translateX(-100px);
+  transform: translateX(-20px);
   transition-duration: 0.3s;
 }
 body #event .inner div.left h3 {
@@ -2001,7 +2017,7 @@ body #event .inner div.left a {
   color: #0d0d0d;
   text-align: center;
   line-height: 40px;
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 body #event .inner div.left a.btnPrev {
   margin-right: 2vw;
@@ -2030,10 +2046,6 @@ body #event .inner div.left a.btnNext:hover i {
 }
 body #event .inner div.right {
   width: 680px;
-  opacity: 0;
-  transform: translateY(100px);
-  transition-duration: 0.3s;
-  transition-delay: 0.3s;
 }
 body #event .inner div.right > p {
   width: 100%;
@@ -2045,6 +2057,10 @@ body #event .inner div.right .wrap {
   width: 1600px;
   height: 340px;
   position: relative;
+  border: 1px solid red;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s 0.3s;
 }
 body #event .inner div.right .wrap article {
   width: 300px;
@@ -2131,14 +2147,6 @@ body #event .inner div.right .wrap article a:hover .txtEvent p {
   max-height: 100vh;
   background: #fff;
 }
-body #event.on .inner .left {
-  opacity: 1;
-  transform: translateX(0);
-}
-body #event.on .inner .right {
-  opacity: 1;
-  transform: translateY(0px);
-}
 body #banner {
   width: 100%;
   position: relative;
@@ -2146,6 +2154,17 @@ body #banner {
   margin: 20px 0;
   background: url(../img/bannerBg.jpg) no-repeat left center fixed;
   background-size: 50%;
+}
+body #banner.on .inner .wrap {
+  opacity: 1;
+}
+body #banner.on .inner .wrap h2 {
+  opacity: 1;
+  transform: translateX(0%);
+}
+body #banner.on .inner .wrap p {
+  opacity: 1;
+  transform: translateX(0%);
 }
 body #banner .inner {
   width: 1180px;
@@ -2158,15 +2177,29 @@ body #banner .inner .wrap {
   padding: 100px 80px 100px 100px;
   background: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: 0.3s;
 }
 body #banner .inner .wrap h2 {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 25px;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 0.3s;
 }
 body #banner .inner .wrap p {
   font: normal 18px/1.4 "Josefin Sans";
   color: #888;
+  opacity: 0;
+  transform: translateX(50%);
+  transition: 0.6s;
+}
+body #banner .inner .wrap p:nth-of-type(1) {
+  transition-delay: 0s;
+}
+body #banner .inner .wrap p:nth-of-type(2) {
+  transition-delay: 0.2s;
 }
 body #banner .inner .wrap p:nth-of-type(1) {
   margin-bottom: 20px;
@@ -2180,7 +2213,7 @@ body #banner::after {
   width: 50%;
   height: 100%;
   background: #f5f5f5;
-  z-index: -10;
+  z-index: -1;
 }
 body #accommodation {
   width: 100%;
@@ -2573,7 +2606,7 @@ body > ul li.on {
 }
 @keyframes visualAni {
   0% {
-    scale: 1.2;
+    scale: 1.1;
   }
   100% {
     scale: 1;

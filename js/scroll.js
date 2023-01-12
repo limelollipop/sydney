@@ -1,22 +1,23 @@
 // main page scroll
 const scrollBoxs = document.querySelectorAll('body > section, figure');
 const scrollBtns = document.querySelectorAll('body > ul li');
+const whatsOn = document.querySelector('body #visual .inner .btn');
 const speed = 500;
 const base = -window.innerHeight / 2;
 let posArr = [];
 const scrollBtnsArr = Array.from(scrollBtns);
 // console.log(scrollBtnsArr);
-const whatsOn = document.querySelector('body #visual .inner .btn');
-whatsOn.addEventListener('click', () => {
-	const scroll = window.scrollY || window.pageYOffset;
-
-	moveScroll();
-});
 
 getPos();
+window.onload = function () {
+	scrollBoxs[0].classList.add('on');
+};
 
 window.addEventListener('resize', modifyPos);
 window.addEventListener('scroll', scrollActivation);
+whatsOn.addEventListener('click', () => {
+	moveScroll(1);
+});
 
 // scrollBtns.forEach((btn, idx) => {
 // 	btn.addEventListener('click', (e) => {
@@ -31,7 +32,7 @@ window.addEventListener('scroll', scrollActivation);
 function getPos() {
 	posArr = [];
 	for (const box of scrollBoxs) posArr.push(box.offsetTop);
-	console.log(posArr);
+	// console.log(posArr);
 }
 function scrollActivation() {
 	const scroll = window.scrollY || window.pageYOffset;
