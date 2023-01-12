@@ -45,6 +45,7 @@
 				padding: 200px 0 200px;
 				top: -100px;
 				text-align: right;
+				margin-bottom: 50px;
 				.galleryBg {
 					position: absolute;
 					width: 30%;
@@ -84,10 +85,7 @@
 				font-size: 30px;
 				position: relative;
 				margin: 0 auto 3vh;
-				padding-top: 3vw;
-				text-align: center;
-
-				border-top: 3px solid #b3e6ec;
+				text-align: left;
 			}
 			ul {
 				// border: 1px solid red;
@@ -128,6 +126,7 @@
 				width: 100%;
 				position: relative;
 				margin-bottom: 100px;
+				border-top: 3px solid #04adbf;
 
 				// 전환효과
 				opacity: 0;

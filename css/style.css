@@ -101,12 +101,11 @@ body #headerSub .inner .menuWeb #gnb li:hover::after {
 }
 body #headerSub .inner .btnMenu {
   display: none;
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 5%;
-  transform: translateY(-50%);
 }
 body #headerSub .inner .btnMenu.on::before {
   top: 50%;
@@ -518,6 +517,7 @@ body #footerSub .inner .footAddWrap > p {
   padding: 200px 0 200px;
   top: -100px;
   text-align: right;
+  margin-bottom: 50px;
 }
 .gallery .inner main .galleryTxt .galleryBg {
   position: absolute;
@@ -554,9 +554,7 @@ body #footerSub .inner .footAddWrap > p {
   font-size: 30px;
   position: relative;
   margin: 0 auto 3vh;
-  padding-top: 3vw;
-  text-align: center;
-  border-top: 3px solid #b3e6ec;
+  text-align: left;
 }
 .gallery .inner main ul {
   position: relative;
@@ -594,6 +592,7 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   position: relative;
   margin-bottom: 100px;
+  border-top: 3px solid #04adbf;
   opacity: 0;
   transform: translateY(100px);
   transition: 1s;
@@ -733,6 +732,7 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-bottom: 130px;
 }
 .community .inner section:nth-of-type(1) article {
   width: 100%;
@@ -799,18 +799,19 @@ body #footerSub .inner .footAddWrap > p {
 .community .inner section:nth-of-type(2) {
   width: 100%;
   position: relative;
-  border-top: 3px solid #b3e6ec;
-  padding: 100px 3vw 100px;
+  padding: 0px 3vw;
+  margin-bottom: 150px;
 }
 .community .inner section:nth-of-type(2) h3 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .community .inner section:nth-of-type(2) .inputBox {
   width: 100%;
   position: relative;
   border: 1px solid #eee;
+  border-top: 3px solid #04adbf;
   padding: 0.5vw;
   margin-bottom: 40px;
 }
@@ -1019,7 +1020,7 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  border: 1px solid #f5f5f5;
+  border-top: 3px solid #04adbf;
 }
 .youtube .inner section:nth-of-type(2) .vidList1 {
   width: 90%;
@@ -1029,7 +1030,7 @@ body #footerSub .inner .footAddWrap > p {
   padding: 40px 0 80px;
 }
 .youtube .inner section:nth-of-type(2) .vidList1 > div {
-  border-top: 3px solid #b3e6ec;
+  border: 1px solid #f5f5f5;
   width: 100%;
   height: 415px;
   position: relative;
@@ -1151,7 +1152,7 @@ figure.pop .btnClose:hover {
 .member .inner h3 {
   font-size: 30px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
 .member .inner section {
   position: relative;
@@ -1159,7 +1160,6 @@ figure.pop .btnClose:hover {
 }
 .member .inner section:nth-of-type(1) {
   border: 1px solid #f5f5f5;
-  border-top: 3px solid #b3e6ec;
   margin-bottom: 150px;
   width: 100%;
   height: 400px;
@@ -1243,6 +1243,7 @@ figure.pop .btnClose:hover {
   position: relative;
   display: flex;
   justify-content: space-between;
+  border-top: 4px solid #04adbf;
   gap: 10px;
 }
 .member .inner section:nth-of-type(2) article {
@@ -1445,87 +1446,82 @@ figure.pop .btnClose:hover {
 }
 .join .inner .joinForm {
   position: relative;
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 auto 150px;
 }
 .join .inner .joinForm h3 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 400;
   margin-bottom: 40px;
-  text-align: center;
-  color: #04adbf;
 }
-.join .inner .joinForm div {
+.join .inner .joinForm #member {
   width: 100%;
+  border: 1px solid #f5f5f5;
+  border-top: 3px solid #04adbf;
 }
-.join .inner .joinForm div #member {
-  width: 100%;
-}
-.join .inner .joinForm div #member fieldset {
+.join .inner .joinForm #member fieldset {
   border: none;
   background: rgba(238, 238, 238, 0.2);
 }
-.join .inner .joinForm div #member fieldset table {
+.join .inner .joinForm #member fieldset table {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.join .inner .joinForm div #member fieldset table tbody {
-  width: 50%;
+.join .inner .joinForm #member fieldset table tbody {
+  width: 49%;
 }
-.join .inner .joinForm div #member fieldset table tbody tr th,
-.join .inner .joinForm div #member fieldset table tbody tr td {
+.join .inner .joinForm #member fieldset table tbody tr th,
+.join .inner .joinForm #member fieldset table tbody tr td {
   border-bottom: 1px solid #eee;
   text-align: left;
 }
-.join .inner .joinForm div #member fieldset table tbody tr th {
+.join .inner .joinForm #member fieldset table tbody tr th {
   width: 30%;
   padding: 10px 30px;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td {
+.join .inner .joinForm #member fieldset table tbody tr td {
   padding: 10px 20px;
   text-align: left;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=text],
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=password],
-.join .inner .joinForm div #member fieldset table tbody tr td select {
+.join .inner .joinForm #member fieldset table tbody tr td input[type=text],
+.join .inner .joinForm #member fieldset table tbody tr td input[type=password],
+.join .inner .joinForm #member fieldset table tbody tr td select {
   width: 70%;
   background: #b3e6ec;
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=radio],
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=checkbox] {
+.join .inner .joinForm #member fieldset table tbody tr td input[type=radio],
+.join .inner .joinForm #member fieldset table tbody tr td input[type=checkbox] {
   margin: 15px 0px 15px 30px;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=radio]:nth-of-type(1) {
+.join .inner .joinForm #member fieldset table tbody tr td input[type=radio]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td input[type=checkbox]:nth-of-type(1) {
+.join .inner .joinForm #member fieldset table tbody tr td input[type=checkbox]:nth-of-type(1), .join .inner .joinForm #member fieldset table tbody tr td input[type=checkbox]:nth-of-type(3) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td textarea {
+.join .inner .joinForm #member fieldset table tbody tr td textarea {
   resize: none;
-  width: 70%;
-  height: 150px;
+  width: 100%;
+  height: 100px;
   background: #b3e6ec;
   padding: 15px;
   border: none;
-  border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm div #member fieldset table tbody tr td p {
+.join .inner .joinForm #member fieldset table tbody tr td p {
   font: 12px/1 "Josefin Sans";
   color: hotpink;
   margin-top: 8px;
 }
-.join .inner .joinForm div #member fieldset .btnJoin {
+.join .inner .joinForm #member fieldset .btnJoin {
   display: flex;
   justify-content: center;
   padding: 20px 0px;
 }
-.join .inner .joinForm div #member fieldset .btnJoin input[type=submit] {
-  width: 40%;
+.join .inner .joinForm #member fieldset .btnJoin input[type=submit] {
+  width: 20%;
   height: 40px;
   margin: 10px;
   font-size: 12px;
@@ -1539,7 +1535,7 @@ figure.pop .btnClose:hover {
   text-align: center;
   background: #04adbf;
 }
-.join .inner .joinForm div #member fieldset .btnJoin input[type=submit]:hover {
+.join .inner .joinForm #member fieldset .btnJoin input[type=submit]:hover {
   background: #b3e6ec;
   color: #0d0d0d;
   border: 1px solid #0d0d0d;
@@ -1548,6 +1544,7 @@ figure.pop .btnClose:hover {
   width: 100%;
   height: 100%;
   position: relative;
+  margin-bottom: 150px;
 }
 .join .inner section:nth-of-type(2) #map {
   width: 100%;
@@ -1599,6 +1596,38 @@ figure.pop .btnClose:hover {
   border: 1px solid #f5f5f5;
   background: #b3e6ec;
   color: #0d0d0d;
+}
+.join .inner section:nth-of-type(3) {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.join .inner section:nth-of-type(3) h3 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.join .inner section:nth-of-type(3) div {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  border: 1px solid #f5f5f5;
+  border-top: 3px solid #04adbf;
+  padding: 4vw 2vw;
+}
+.join .inner section:nth-of-type(3) div article {
+  width: 30%;
+  margin-bottom: 40px;
+}
+.join .inner section:nth-of-type(3) div article h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.join .inner section:nth-of-type(3) div article p {
+  color: #555;
+  line-height: 1.4;
 }
 
 body {
@@ -1685,7 +1714,7 @@ body #header .inner .btnMenu {
   width: 40px;
   height: 30px;
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 5%;
 }
 body #header .inner .btnMenu.on::before {
@@ -1837,27 +1866,28 @@ body #visual .panel > li.on {
 }
 body #visual .btns {
   position: absolute;
-  left: 28%;
-  bottom: 5.5vh;
+  left: 18%;
+  bottom: 5vh;
   display: flex;
   gap: 10px;
-  transform: translateX(-50%);
 }
 body #visual .btns li {
-  width: 70px;
-  height: 5px;
-  background: rgba(255, 255, 255, 0.6);
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   transition: 0.5s;
 }
 body #visual .btns li.on {
-  width: 100px;
-  background: rgb(4, 173, 191);
+  font-weight: bold;
+  color: #04adbf;
 }
 body #visual nav {
   position: absolute;
   bottom: 5vh;
-  left: 34%;
+  right: 18%;
   display: flex;
   gap: 40px;
   transform: translateX(50%);
@@ -1870,10 +1900,10 @@ body #visual nav i {
   transition: 0.5s;
 }
 body #visual nav i:hover {
-  transform: scale(1.8);
+  transform: scale(1.5);
 }
 body #visual nav i.on {
-  transform: scale(1.8);
+  transform: scale(1.5);
   color: rgb(4, 173, 191);
 }
 body #visual .inner {
@@ -2524,6 +2554,7 @@ body #footer .inner .footAddWrap > p {
   text-align: center;
 }
 body > ul {
+  display: none;
   position: fixed;
   top: 30%;
   left: 5vw;

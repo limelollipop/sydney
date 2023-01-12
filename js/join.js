@@ -9,82 +9,6 @@ const trficOff = joinFrame.querySelectorAll('.inner section .traffic li')[1];
 const branchBtns = joinFrame.querySelectorAll('.inner section .branch li');
 // console.log(trficOn);
 
-// join location
-var mapContainer = document.getElementById('map');
-var mapOption = {
-	center: new kakao.maps.LatLng(37.571259, 126.9777623),
-	level: 3,
-};
-var map = new kakao.maps.Map(mapContainer, mapOption);
-var mapTypeControl = new kakao.maps.MapTypeControl();
-var markerPosition = new kakao.maps.LatLng(37.571259, 126.9777623);
-var marker = new kakao.maps.Marker({
-	position: markerPosition,
-});
-var zoomControl = new kakao.maps.ZoomControl();
-var markerOptions = [
-	{
-		title: 'City Hall',
-		latlng: new kakao.maps.LatLng(37.571259, 126.9777623),
-		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
-		botton: branchBtns[0],
-	},
-	{
-		title: 'Sydney city',
-		latlng: new kakao.maps.LatLng(37.4996743, 127.0350644),
-		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
-		botton: branchBtns[1],
-	},
-	{
-		title: 'Service NSW',
-		latlng: new kakao.maps.LatLng(37.5132332, 127.1039062),
-		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
-		botton: branchBtns[2],
-	},
-];
-var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png';
-
-for (var i = 0; i < markerOptions.length; i++) {
-	var imageSize = new kakao.maps.Size(24, 35);
-	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
-	var marker = new kakao.maps.Marker({
-		map: map,
-		position: markerOptions[i].latlng,
-		title: markerOptions[i].title,
-		image: markerImage,
-	});
-
-	// markerOptions[i].botton.onClick = (e) => {
-	// 	e.preventDefault();
-
-	// 	for (let i = 0; i < markerOptions.length; i++) {
-	// 		markerOptions[i].botton.classList.remove('on');
-	// 	}
-	// 	markerOptions[i].botton.classList.add('on');
-	// };
-}
-
-marker.setMap(map);
-map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
-map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
-
-trficOn.addEventListener('click', (e) => {
-	e.preventDefault();
-	if (trficOn.classList.contains('on')) return;
-	map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
-
-	trficOn.classList.add('on');
-	trficOff.classList.remove('on');
-});
-trficOff.addEventListener('click', (e) => {
-	e.preventDefault();
-	if (trficOff.classList.contains('on')) return;
-	map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
-
-	trficOff.classList.add('on');
-	trficOn.classList.remove('on');
-});
-
 // join form
 btnSubmit.addEventListener('click', (e) => {
 	if (!isTxt('userName', 5)) e.preventDefault();
@@ -219,3 +143,79 @@ function isCheck(el) {
 		return false;
 	}
 }
+
+// join location
+var mapContainer = document.getElementById('map');
+var mapOption = {
+	center: new kakao.maps.LatLng(37.571259, 126.9777623),
+	level: 3,
+};
+var map = new kakao.maps.Map(mapContainer, mapOption);
+var mapTypeControl = new kakao.maps.MapTypeControl();
+var markerPosition = new kakao.maps.LatLng(37.571259, 126.9777623);
+var marker = new kakao.maps.Marker({
+	position: markerPosition,
+});
+var zoomControl = new kakao.maps.ZoomControl();
+var markerOptions = [
+	{
+		title: 'City Hall',
+		latlng: new kakao.maps.LatLng(37.571259, 126.9777623),
+		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
+		botton: branchBtns[0],
+	},
+	{
+		title: 'Sydney city',
+		latlng: new kakao.maps.LatLng(37.4996743, 127.0350644),
+		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
+		botton: branchBtns[1],
+	},
+	{
+		title: 'Service NSW',
+		latlng: new kakao.maps.LatLng(37.5132332, 127.1039062),
+		imgSrc: 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png',
+		botton: branchBtns[2],
+	},
+];
+var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png';
+
+for (var i = 0; i < markerOptions.length; i++) {
+	var imageSize = new kakao.maps.Size(24, 35);
+	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
+	var marker = new kakao.maps.Marker({
+		map: map,
+		position: markerOptions[i].latlng,
+		title: markerOptions[i].title,
+		image: markerImage,
+	});
+
+	// markerOptions[i].botton.onClick = (e) => {
+	// 	e.preventDefault();
+
+	// 	for (let i = 0; i < markerOptions.length; i++) {
+	// 		markerOptions[i].botton.classList.remove('on');
+	// 	}
+	// 	markerOptions[i].botton.classList.add('on');
+	// };
+}
+
+marker.setMap(map);
+map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+
+trficOn.addEventListener('click', (e) => {
+	e.preventDefault();
+	if (trficOn.classList.contains('on')) return;
+	map.addOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+	trficOn.classList.add('on');
+	trficOff.classList.remove('on');
+});
+trficOff.addEventListener('click', (e) => {
+	e.preventDefault();
+	if (trficOff.classList.contains('on')) return;
+	map.removeOverlayMapTypeId(kakao.maps.MapTypeId.TRAFFIC);
+
+	trficOff.classList.add('on');
+	trficOn.classList.remove('on');
+});

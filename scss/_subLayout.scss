@@ -71,14 +71,12 @@ body {
 			// 모바일 메뉴
 			// 디자인 참고 사이트주소 : https://webclub.tistory.com/448
 			.btnMenu {
-				// border: 1px solid red;
 				display: none;
-				width: 50px;
-				height: 40px;
+				width: 40px;
+				height: 30px;
 				position: absolute;
-				top: 50%;
+				top: 45%;
 				right: 5%;
-				transform: translateY(-50%);
 				&.on {
 					&::before {
 						top: 50%;

@@ -110,12 +110,11 @@ body {
 			// 모바일 메뉴
 			// 디자인 참고 사이트주소 : https://webclub.tistory.com/448
 			.btnMenu {
-				// border: 1px solid red;
 				display: none;
 				width: 40px;
 				height: 30px;
 				position: absolute;
-				top: 50%;
+				top: 45%;
 				right: 5%;
 				&.on {
 					&::before {
@@ -284,22 +283,23 @@ body {
 
 		.btns {
 			position: absolute;
-			left: 28%;
-			bottom: 5.5vh;
+			left: 18%;
+			bottom: 5vh;
 			display: flex;
 			gap: 10px;
-			transform: translateX(-50%);
+			// transform: translateX(-50%);
 
 			li {
-				width: 70px;
-				height: 5px;
-				background: rgba(255, 255, 255, 0.6);
-				// border-radius: 4px;
+				width: 20px;
+				height: 20px;
+				font-size: 20px;
+				line-height: 20px;
+				color: rgba(255, 255, 255, 0.6);
 				cursor: pointer;
 				transition: 0.5s;
 				&.on {
-					width: 100px;
-					background: rgba(4, 173, 191, 1);
+					font-weight: bold;
+					color: #04adbf;
 				}
 			}
 		}
@@ -307,7 +307,7 @@ body {
 		nav {
 			position: absolute;
 			bottom: 5vh;
-			left: 34%;
+			right: 18%;
 			display: flex;
 			gap: 40px;
 			transform: translateX(50%);
@@ -320,11 +320,11 @@ body {
 				transition: 0.5s;
 
 				&:hover {
-					transform: scale(1.8);
+					transform: scale(1.5);
 				}
 
 				&.on {
-					transform: scale(1.8);
+					transform: scale(1.5);
 					color: rgba(4, 173, 191, 1);
 				}
 			}
@@ -1028,10 +1028,11 @@ body {
 		}
 	}
 
+	// scroll side botton
 	> ul {
+		display: none;
 		position: fixed;
 		top: 30%;
-		// transform: translateY(-50%);
 		left: 5vw;
 
 		li {

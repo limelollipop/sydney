@@ -88,120 +88,118 @@
 
 
             <section class="joinForm">
-                <h3>MEMBERSHIP</h3>
-                <div>
-                    <!-- <img src="img/visualJoin.png" alt="joing image"> -->
+                <h3>Membership</h3>
 
-                    <form action="joinResult.html" method="get" id="member">
-                        <fieldset>
-                            <legend class="hidden">Membership form</legend>
+                <form action="joinResult.html" method="get" id="member">
+                    <fieldset>
+                        <legend class="hidden">Membership form</legend>
 
-                            <table>
-                                <caption class="hidden">유저 이름, 비밀번호, 이메일, 국적, 성별, 시드니 관심사, 남기는 말</caption>
+                        <table>
+                            <caption class="hidden">유저 이름, 비밀번호, 이메일, 국적, 성별, 시드니 관심사, 남기는 말</caption>
 
-                                <tbody>
+                            <tbody>
 
-                                    <!-- user id -->
-                                    <th scope="row"><label for="userName">User Name</label></th>
+                                <!-- user id -->
+                                <th scope="row"><label for="userName">User Name</label></th>
+                                <td>
+                                    <input type="text" name="userName" id="userName" placeholder="User Name">
+                                </td>
+                                </tr>
+
+                                <!-- email -->
+                                <tr>
+                                    <th scope="row"><label for="email">E-mail</label></th>
                                     <td>
-                                        <input type="text" name="userName" id="userName" placeholder="User Name">
+                                        <input type="text" name="email" id="email" placeholder="Email address">
                                     </td>
-                                    </tr>
+                                </tr>
 
-                                    <!-- email -->
-                                    <tr>
-                                        <th scope="row"><label for="email">E-mail</label></th>
-                                        <td>
-                                            <input type="text" name="email" id="email" placeholder="Email address">
-                                        </td>
-                                    </tr>
+                                <!-- password -->
+                                <tr>
+                                    <th scope="row"><label for="pwd1">Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd1" id="pwd1" placeholder="Create Password"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="pwd2">Re Password</label></th>
+                                    <td>
+                                        <input type="password" name="pwd2" id="pwd2" placeholder="Confirm Password"
+                                            autocomplete="off">
+                                    </td>
+                                </tr>
 
-                                    <!-- password -->
-                                    <tr>
-                                        <th scope="row"><label for="pwd1">Password</label></th>
-                                        <td>
-                                            <input type="password" name="pwd1" id="pwd1" placeholder="Create Password"
-                                                autocomplete="off">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><label for="pwd2">Re Password</label></th>
-                                        <td>
-                                            <input type="password" name="pwd2" id="pwd2" placeholder="Confirm Password"
-                                                autocomplete="off">
-                                        </td>
-                                    </tr>
+                                <!-- country -->
+                                <tr>
+                                    <th scope="row"><label for="country">Country</label></th>
+                                    <td>
+                                        <select name="country" id="country">
+                                            <option value="">Select...</option>
+                                            <option value="aus">Australia</option>
+                                            <option value="brz">Brazil</option>
+                                            <option value="chn">China</option>
+                                            <option value="jpn">Japan</option>
+                                            <option value="kor">Korea</option>
+                                            <option value="vit">Vietnam</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <br />
 
-                                    <!-- country -->
-                                    <tr>
-                                        <th scope="row"><label for="country">Country</label></th>
-                                        <td>
-                                            <select name="country" id="country">
-                                                <option value="">Select...</option>
-                                                <option value="aus">Australia</option>
-                                                <option value="brz">Brazil</option>
-                                                <option value="chn">China</option>
-                                                <option value="jpn">Japan</option>
-                                                <option value="kor">Korea</option>
-                                                <option value="vit">Vietnam</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <br />
+                            <tbody>
+                                <!-- gender -->
+                                <tr>
+                                    <th scope="row"><label for="gender">Gender</label></th>
+                                    <td>
+                                        <input type="radio" name="gender" id="male" value="male">
+                                        <label for="male">Male</label>
+                                        <input type="radio" name="gender" id="female" value="female">
+                                        <label for="female">Female</label>
+                                    </td>
+                                </tr>
 
-                                <tbody>
-                                    <!-- gender -->
-                                    <tr>
-                                        <th scope="row"><label for="gender">Gender</label></th>
-                                        <td>
-                                            <input type="radio" name="gender" id="male" value="male">
-                                            <label for="male">Male</label>
-                                            <input type="radio" name="gender" id="female" value="female">
-                                            <label for="female">Female</label>
-                                        </td>
-                                    </tr>
+                                <!-- interest -->
+                                <tr>
+                                    <th scope="row"><label for="interest">Interested in</label></th>
+                                    <td>
+                                        <input type="checkbox" name="interest" id="luxury">
+                                        <label for="luxury">Luxury Travels</label>
+                                        <input type="checkbox" name="interest" id="deal">
+                                        <label for="deal">Deals&Offers</label>
+                                        <br />
+                                        <input type="checkbox" name="interest" id="festival">
+                                        <label for="festival">Festivals</label>
+                                        <input type="checkbox" name="interest" id="road">
+                                        <label for="">Road Trips</label>
+                                        <input type="checkbox" name="interest" id="beach">
+                                        <label for="beach">Beach Style</label>
+                                    </td>
+                                </tr>
 
-                                    <!-- interest -->
-                                    <tr>
-                                        <th scope="row"><label for="interest">Interested in</label></th>
-                                        <td>
-                                            <input type="checkbox" name="interest" id="luxury">
-                                            <label for="luxury">Luxury Travels</label>
-                                            <input type="checkbox" name="interest" id="road">
-                                            <label for="">Road Trips</label>
-                                            <input type="checkbox" name="interest" id="festival">
-                                            <label for="festival">Festivals</label>
-                                            <input type="checkbox" name="interest" id="deal">
-                                            <label for="eal">Deals&Offers</label>
-                                            <input type="checkbox" name="interest" id="deal">
-                                            <label for="eal">Beach Style</label>
-                                        </td>
-                                    </tr>
+                                <!-- comments -->
+                                <tr>
+                                    <th scope="row"><label for="comments">Comments</label></th>
+                                    <td>
+                                        <textarea name="comments" id="comments"
+                                            placeholder="leave your comments"></textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
 
-                                    <!-- comments -->
-                                    <tr>
-                                        <th scope="row"><label for="comments">Comments</label></th>
-                                        <td>
-                                            <textarea name="comments" id="comments"
-                                                placeholder="leave your comments"></textarea>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                            <!-- buttons -->
-                            <div class="btnJoin">
-                                <!-- <input type="reset" value="CANCEL"> -->
-                                <input type="submit" value="JOIN">
-                            </div class="btnJoin">
-                        </fieldset>
-                    </form>
-                </div>
+                        <!-- buttons -->
+                        <div class="btnJoin">
+                            <!-- <input type="reset" value="CANCEL"> -->
+                            <input type="submit" value="JOIN">
+                        </div class="btnJoin">
+                    </fieldset>
+                </form>
             </section>
 
-            <section>
-                <h3>Location</h3>
+            <section class="wrap">
+                <!-- <h3>Location</h3> -->
                 <div id="map"></div>
 
                 <ul class="traffic">
@@ -213,6 +211,60 @@
                     <li><a href="#" data-index="1">Sydney city</a></li>
                     <li><a href="#" data-index="2">Service NSW</a></li>
                 </ul>
+            </section>
+
+            <section>
+                <h3>Visitor Information Centres</h3>
+
+                <div>
+                    <article>
+                        <h4>Manly Visitor Information Centre</h4>
+                        <p>
+                            Live like a local, explore like a tourist with inside information on all things Manly at the
+                            Booking and Information Centre, a 'one stop shop' for visitors, locals and travellers for
+                            Manly
+                            and the Northern Beaches.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Customs House Sydney Visitor Information Centre</h4>
+                        <p>
+                            Customs House is the only accredited visitor information centre in the Sydney CBD.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Hawkesbury Visitor Information Centre</h4>
+                        <p>
+                            The welcoming staff at the Visitor Information Centre will provide you with local
+                            information,
+                            maps, books, heritage walks, things to do and a whole lot more.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Campbelltown Visitor Information Centre</h4>
+                        <p>
+                            Start your visit to Campbelltown and the Macarthur region by stopping in at the Campbelltown
+                            Visitor Centre.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Camden Visitor Information Centre</h4>
+                        <p>
+                            Camden Visitor Information Centre provides a range of information for the tourist and
+                            traveller
+                            alike, including accommodation in the area, local attractions, upcoming events, and other
+                            services as required.
+                        </p>
+                    </article>
+                    <article>
+                        <h4>Royal National Park Visitor Centre</h4>
+                        <p>
+                            Call into the newly-refurbished Royal National Park Visitor Centre, located on the ground
+                            floor
+                            of the Audley Dance Hall.
+                        </p>
+                    </article>
+                </div>
             </section>
 
         </div>
