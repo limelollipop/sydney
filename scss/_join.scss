@@ -3,20 +3,20 @@
 	position: relative;
 	// padding: 150px 0;
 	.visualSub {
-		height: 40vh;
-		video {
+		height: 60vh;
+		img {
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
 			opacity: 0.4;
 			object-fit: cover;
-			object-position: center 38%;
+			object-position: center 50%;
 		}
 	}
 	.inner {
 		h2 {
-			top: -150px;
+			top: -250px;
 		}
 		.joinForm {
 			position: relative;
@@ -32,14 +32,12 @@
 			}
 			div {
 				width: 100%;
-				display: flex;
-				justify-content: space-between;
 
-				img {
-					width: 35%;
-					object-fit: cover;
-					box-shadow: 0px 0px 30px rgba(208, 208, 208, 0.6);
-				}
+				// img {
+				// 	width: 35%;
+				// 	object-fit: cover;
+				// 	box-shadow: 0px 0px 30px rgba(208, 208, 208, 0.6);
+				// }
 				#member {
 					width: 100%;
 					fieldset {
@@ -47,57 +45,62 @@
 						background: rgba(238, 238, 238, 0.2);
 						table {
 							width: 100%;
+							display: flex;
+							justify-content: space-between;
 
-							tr {
-								th,
-								td {
-									border-bottom: 1px solid #eee;
-									text-align: right;
-								}
-								th {
-									width: 30%;
-									padding: 10px 30px;
-								}
-								td {
-									padding: 10px 20px;
-									text-align: left;
-									input[type='text'],
-									input[type='password'],
-									select {
-										width: 70%;
-										background: #b3e6ec;
-										padding: 10px;
-										border: none;
-										border-bottom: 1px solid #aaa;
+							tbody {
+								width: 50%;
+								tr {
+									th,
+									td {
+										border-bottom: 1px solid #eee;
+										text-align: left;
 									}
+									th {
+										width: 30%;
+										padding: 10px 30px;
+									}
+									td {
+										padding: 10px 20px;
+										text-align: left;
+										input[type='text'],
+										input[type='password'],
+										select {
+											width: 70%;
+											background: #b3e6ec;
+											padding: 10px;
+											border: none;
+											border-bottom: 1px solid #aaa;
+										}
 
-									input[type='radio'],
-									input[type='checkbox'] {
-										margin: 15px 0px 15px 30px;
-									}
-									input[type='radio'] {
-										&:nth-of-type(1) {
-											margin-left: 0px;
+										input[type='radio'],
+										input[type='checkbox'] {
+											margin: 15px 0px 15px 30px;
 										}
-									}
-									input[type='checkbox'] {
-										&:nth-of-type(1) {
-											margin-left: 0px;
+										input[type='radio'] {
+											&:nth-of-type(1) {
+												margin-left: 0px;
+											}
 										}
-									}
-									textarea {
-										resize: none;
-										width: 70%;
-										height: 150px;
-										background: #b3e6ec;
-										padding: 15px;
-										border: none;
-										border-bottom: 1px solid #aaa;
-									}
-									p {
-										font: 12px/1 'Josefin Sans';
-										color: hotpink;
-										margin-top: 8px;
+										input[type='checkbox'] {
+											&:nth-of-type(1) {
+												margin-left: 0px;
+											}
+										}
+										textarea {
+											resize: none;
+											width: 70%;
+											height: 150px;
+											background: #b3e6ec;
+											padding: 15px;
+											border: none;
+											border-bottom: 1px solid #aaa;
+										}
+										p {
+											font: 12px/1 'Josefin Sans';
+											color: hotpink;
+											margin-top: 8px;
+										}
 									}
 								}
 							}

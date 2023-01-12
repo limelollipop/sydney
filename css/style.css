@@ -1429,19 +1429,19 @@ figure.pop .btnClose:hover {
   position: relative;
 }
 .join .visualSub {
-  height: 40vh;
+  height: 60vh;
 }
-.join .visualSub video {
+.join .visualSub img {
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0.4;
   object-fit: cover;
-  object-position: center 38%;
+  object-position: center 50%;
 }
 .join .inner h2 {
-  top: -150px;
+  top: -250px;
 }
 .join .inner .joinForm {
   position: relative;
@@ -1457,13 +1457,6 @@ figure.pop .btnClose:hover {
 }
 .join .inner .joinForm div {
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.join .inner .joinForm div img {
-  width: 35%;
-  object-fit: cover;
-  box-shadow: 0px 0px 30px rgba(208, 208, 208, 0.6);
 }
 .join .inner .joinForm div #member {
   width: 100%;
@@ -1474,40 +1467,45 @@ figure.pop .btnClose:hover {
 }
 .join .inner .joinForm div #member fieldset table {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-.join .inner .joinForm div #member fieldset table tr th,
-.join .inner .joinForm div #member fieldset table tr td {
+.join .inner .joinForm div #member fieldset table tbody {
+  width: 50%;
+}
+.join .inner .joinForm div #member fieldset table tbody tr th,
+.join .inner .joinForm div #member fieldset table tbody tr td {
   border-bottom: 1px solid #eee;
-  text-align: right;
+  text-align: left;
 }
-.join .inner .joinForm div #member fieldset table tr th {
+.join .inner .joinForm div #member fieldset table tbody tr th {
   width: 30%;
   padding: 10px 30px;
 }
-.join .inner .joinForm div #member fieldset table tr td {
+.join .inner .joinForm div #member fieldset table tbody tr td {
   padding: 10px 20px;
   text-align: left;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=text],
-.join .inner .joinForm div #member fieldset table tr td input[type=password],
-.join .inner .joinForm div #member fieldset table tr td select {
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=text],
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=password],
+.join .inner .joinForm div #member fieldset table tbody tr td select {
   width: 70%;
   background: #b3e6ec;
   padding: 10px;
   border: none;
   border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=radio],
-.join .inner .joinForm div #member fieldset table tr td input[type=checkbox] {
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=radio],
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=checkbox] {
   margin: 15px 0px 15px 30px;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=radio]:nth-of-type(1) {
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=radio]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tr td input[type=checkbox]:nth-of-type(1) {
+.join .inner .joinForm div #member fieldset table tbody tr td input[type=checkbox]:nth-of-type(1) {
   margin-left: 0px;
 }
-.join .inner .joinForm div #member fieldset table tr td textarea {
+.join .inner .joinForm div #member fieldset table tbody tr td textarea {
   resize: none;
   width: 70%;
   height: 150px;
@@ -1516,7 +1514,7 @@ figure.pop .btnClose:hover {
   border: none;
   border-bottom: 1px solid #aaa;
 }
-.join .inner .joinForm div #member fieldset table tr td p {
+.join .inner .joinForm div #member fieldset table tbody tr td p {
   font: 12px/1 "Josefin Sans";
   color: hotpink;
   margin-top: 8px;
@@ -1684,12 +1682,11 @@ body #header .inner .menuWeb #gnb li:hover::after {
 }
 body #header .inner .btnMenu {
   display: none;
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   position: absolute;
   top: 50%;
   right: 5%;
-  transform: translateY(-50%);
 }
 body #header .inner .btnMenu.on::before {
   top: 50%;
