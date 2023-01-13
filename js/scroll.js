@@ -39,9 +39,9 @@ function scrollActivation() {
 
 	scrollBoxs.forEach((_, idx) => {
 		if (scroll >= posArr[idx] + base) {
-			for (const el of scrollBtns) el.classList.remove('on');
+			// for (const el of scrollBtns) el.classList.remove('on');
 			for (const el of scrollBoxs) el.classList.remove('on');
-			scrollBtns[idx].classList.add('on');
+			// scrollBtns[idx].classList.add('on');
 			scrollBoxs[idx].classList.add('on');
 		}
 	});

@@ -47,6 +47,14 @@
 			top: -100px;
 			text-align: right;
 			margin-bottom: 50px;
+			overflow: hidden;
+
+			&.on {
+				> span {
+					opacity: 1;
+					transform: translateX(0%);
+				}
+			}
 			.galleryBg {
 				position: absolute;
 				width: 30%;
@@ -68,6 +76,9 @@
 				line-height: 1.1;
 				letter-spacing: -2px;
 				text-shadow: -5px 0px 3px rgba(0, 0, 0, 0.1);
+				opacity: 0;
+				transform: translateX(15%);
+				transition: 0.7s;
 			}
 			p {
 				width: 100%;
@@ -131,8 +142,8 @@
 
 			// 전환효과
 			opacity: 0;
-			transform: translateY(100px);
-			transition: 1s;
+			transform: translateY(5%);
+			transition: 0.7s;
 			&.on {
 				opacity: 1;
 				transform: translateY(0px);
