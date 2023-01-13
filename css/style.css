@@ -2445,7 +2445,9 @@ body #accommodation .inner .wrap article:nth-of-type(4) {
 }
 body #deals {
   width: 100%;
+  height: 100%;
   position: relative;
+  padding-bottom: 150px;
 }
 body #deals.on .inner section:nth-of-type(2) article {
   opacity: 1;
@@ -2475,6 +2477,7 @@ body #deals::after {
 }
 body #deals .inner {
   width: 1180px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
   display: flex;

@@ -3,6 +3,7 @@ const scrollBoxs = document.querySelectorAll('figure, body > section');
 const scrollBtns = document.querySelectorAll('body > ul li');
 const whatsOn = document.querySelector('body #visual .inner .btn');
 const speed = 500;
+// 나누기 3이나 고정값
 const base = -window.innerHeight / 3;
 let posArr = [];
 const scrollBtnsArr = Array.from(scrollBtns);
