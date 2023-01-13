@@ -500,13 +500,13 @@ body #footerSub .inner .footAddWrap > p {
   object-position: right 28%;
   filter: saturate(120%) contrast(80%) brightness(110%);
 }
+.gallery .inner {
+  width: 100%;
+}
 .gallery .inner h2 {
   top: -150px;
 }
-.gallery .inner main {
-  width: 100%;
-}
-.gallery .inner main .loading {
+.gallery .inner .loading {
   width: 100px;
   position: absolute;
   top: 5%;
@@ -515,10 +515,10 @@ body #footerSub .inner .footAddWrap > p {
   transition: opacity 0.5s;
   opacity: 1;
 }
-.gallery .inner main .loading.off {
+.gallery .inner .loading.off {
   opacity: 0;
 }
-.gallery .inner main .galleryTxt {
+.gallery .inner .galleryTxt {
   position: relative;
   width: 100%;
   padding: 200px 0 200px;
@@ -526,7 +526,7 @@ body #footerSub .inner .footAddWrap > p {
   text-align: right;
   margin-bottom: 50px;
 }
-.gallery .inner main .galleryTxt .galleryBg {
+.gallery .inner .galleryTxt .galleryBg {
   position: absolute;
   width: 30%;
   height: 100%;
@@ -535,7 +535,7 @@ body #footerSub .inner .footAddWrap > p {
   background: #b3e6ec;
   z-index: -1;
 }
-.gallery .inner main .galleryTxt > span {
+.gallery .inner .galleryTxt > span {
   font-size: 80px;
   font-weight: bold;
   color: #04adbf;
@@ -547,7 +547,7 @@ body #footerSub .inner .footAddWrap > p {
   letter-spacing: -2px;
   text-shadow: -5px 0px 3px rgba(0, 0, 0, 0.1);
 }
-.gallery .inner main .galleryTxt p {
+.gallery .inner .galleryTxt p {
   width: 100%;
   font-family: "arial";
   color: #555;
@@ -557,13 +557,13 @@ body #footerSub .inner .footAddWrap > p {
   letter-spacing: 1px;
   text-shadow: -3px 0px 3px rgba(0, 0, 0, 0.1);
 }
-.gallery .inner main > h3 {
+.gallery .inner > h3 {
   font-size: 30px;
   position: relative;
   margin: 0 auto 3vh;
   text-align: left;
 }
-.gallery .inner main ul {
+.gallery .inner ul {
   position: relative;
   width: 100%;
   display: flex;
@@ -571,12 +571,12 @@ body #footerSub .inner .footAddWrap > p {
   padding: 2vh 0;
   gap: 20px;
 }
-.gallery .inner main ul li {
+.gallery .inner ul li {
   width: 10%;
   height: 28px;
   text-align: center;
 }
-.gallery .inner main ul li a {
+.gallery .inner ul li a {
   display: block;
   width: 100%;
   height: 100%;
@@ -586,16 +586,16 @@ body #footerSub .inner .footAddWrap > p {
   background: #eee;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.gallery .inner main ul li.on a {
+.gallery .inner ul li.on a {
   font-weight: bold;
   color: #fff;
   background: #04adbf;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.gallery .inner main ul li:hover a {
+.gallery .inner ul li:hover a {
   font-weight: bold;
 }
-.gallery .inner main .isoWrap {
+.gallery .inner .isoWrap {
   width: 100%;
   position: relative;
   margin-bottom: 100px;
@@ -604,30 +604,30 @@ body #footerSub .inner .footAddWrap > p {
   transform: translateY(100px);
   transition: 1s;
 }
-.gallery .inner main .isoWrap.on {
+.gallery .inner .isoWrap.on {
   opacity: 1;
   transform: translateY(0px);
 }
-.gallery .inner main .isoWrap article {
+.gallery .inner .isoWrap article {
   width: 25%;
   padding: 10px;
   float: left;
 }
-.gallery .inner main .isoWrap article:hover span {
+.gallery .inner .isoWrap article:hover span {
   color: #b3e6ec;
 }
-.gallery .inner main .isoWrap article:hover p::after {
+.gallery .inner .isoWrap article:hover p::after {
   width: 100%;
   height: 3px;
 }
-.gallery .inner main .isoWrap article:hover a {
+.gallery .inner .isoWrap article:hover a {
   color: #04adbf;
 }
-.gallery .inner main .isoWrap article:hover a i {
+.gallery .inner .isoWrap article:hover a i {
   transform: scale(1.2);
   animation: galleryAni 0.3s;
 }
-.gallery .inner main .isoWrap article div {
+.gallery .inner .isoWrap article div {
   position: relative;
   width: 100%;
   background: #fff;
@@ -635,13 +635,13 @@ body #footerSub .inner .footAddWrap > p {
   padding: 20px;
   border-radius: 4px;
 }
-.gallery .inner main .isoWrap article div span {
+.gallery .inner .isoWrap article div span {
   font-size: 100px;
   font-weight: bold;
   color: rgba(179, 230, 236, 0.4);
   transition: 0.3s;
 }
-.gallery .inner main .isoWrap article div h4 {
+.gallery .inner .isoWrap article div h4 {
   position: relative;
   top: -55px;
   font-size: 18px;
@@ -649,7 +649,7 @@ body #footerSub .inner .footAddWrap > p {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.gallery .inner main .isoWrap article div p {
+.gallery .inner .isoWrap article div p {
   position: relative;
   top: -40px;
   font-size: 12px;
@@ -658,7 +658,7 @@ body #footerSub .inner .footAddWrap > p {
   color: #777;
   margin-bottom: 15px;
 }
-.gallery .inner main .isoWrap article div p::after {
+.gallery .inner .isoWrap article div p::after {
   content: "";
   display: block;
   width: 20%;
@@ -668,15 +668,15 @@ body #footerSub .inner .footAddWrap > p {
   background: #04adbf;
   transition: 0.3s;
 }
-.gallery .inner main .isoWrap article div img {
+.gallery .inner .isoWrap article div img {
   width: 100%;
   margin-bottom: 15px;
 }
-.gallery .inner main .isoWrap article div a {
+.gallery .inner .isoWrap article div a {
   display: block;
   color: #0d0d0d;
 }
-.gallery .inner main .isoWrap article div a i {
+.gallery .inner .isoWrap article div a i {
   position: relative;
   right: 0%;
 }
@@ -692,21 +692,21 @@ body #footerSub .inner .footAddWrap > p {
   }
 }
 @media screen and (max-width: 1179px) {
-  .gallery .inner main .isoWrap {
+  .gallery .inner .isoWrap {
     width: 80vw;
     margin: 0 10vw;
   }
-  .gallery .inner main .isoWrap article {
+  .gallery .inner .isoWrap article {
     width: 33.33%;
   }
 }
 @media screen and (max-width: 767px) {
-  .gallery .inner main .isoWrap article {
+  .gallery .inner .isoWrap article {
     width: 50%;
   }
 }
 @media screen and (max-width: 539px) {
-  .gallery .inner main .isoWrap article {
+  .gallery .inner .isoWrap article {
     width: 100%;
   }
 }

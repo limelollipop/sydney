@@ -5,7 +5,7 @@ const scrollBoxs2 = subFrame.querySelectorAll('section');
 const speed = 500;
 const base = -window.innerHeight / 3;
 let posArr = [];
-console.log(subH2);
+// console.log(subH2);
 
 getPos();
 

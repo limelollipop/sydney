@@ -1,5 +1,5 @@
-const galleryBtns = document.querySelectorAll('.gallery .inner main ul li');
-const galleryFrame = document.querySelector('main .isoWrap');
+const galleryBtns = document.querySelectorAll('.gallery .inner ul li');
+const galleryFrame = document.querySelector('.gallery .inner .isoWrap');
 const galleryImgs = galleryFrame.querySelectorAll('article');
 
 const loading = document.querySelector('.loading');
