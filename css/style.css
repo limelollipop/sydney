@@ -970,20 +970,31 @@ body #footerSub .inner .footAddWrap > p {
 .youtube .inner h2 {
   top: -250px;
 }
+.youtube .inner h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
 .youtube .inner section {
   width: 100%;
   height: 100%;
   position: relative;
 }
-.youtube .inner section.on:nth-of-type(2) img {
-  opacity: 1;
-  transform: translateY(0%);
-}
 .youtube .inner section:nth-of-type(1) {
   position: relative;
   width: 100%;
-  padding: 8vh 0;
+  padding: 20vh 0 10vh;
   top: -100px;
+}
+.youtube .inner section:nth-of-type(1).on > div:nth-of-type(1) {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.youtube .inner section:nth-of-type(1).on > div:nth-of-type(1)::after {
+  width: 40%;
+}
+.youtube .inner section:nth-of-type(1).on > div:nth-of-type(2) img {
+  filter: grayscale(0.5);
 }
 .youtube .inner section:nth-of-type(1) > div {
   position: relative;
@@ -992,23 +1003,27 @@ body #footerSub .inner .footAddWrap > p {
   background: #fff;
   padding: 3vw;
   width: 40%;
-  top: 35%;
+  top: 40%;
   left: 10%;
   box-shadow: 0px 0px 10px rgba(13, 13, 13, 0.2);
   position: absolute;
   z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20%);
 }
 .youtube .inner section:nth-of-type(1) > div:nth-of-type(1)::after {
   content: "";
   display: block;
   background: #04adbf;
-  width: 40%;
+  width: 0%;
   height: 10px;
   position: absolute;
   left: 90%;
   top: 50%;
   box-shadow: 0px 0px 80px rgba(13, 13, 13, 0.4);
   z-index: 2;
+  transition: 0.3s 0.2s;
 }
 .youtube .inner section:nth-of-type(1) > div:nth-of-type(1) h3 {
   font-size: 30px;
@@ -1026,20 +1041,26 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  list-style-position: center bottom;
 }
 .youtube .inner section:nth-of-type(2) {
   width: 100%;
   margin: 0 auto;
   position: relative;
   border-top: 3px solid #04adbf;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: 1s;
+}
+.youtube .inner section:nth-of-type(2).on {
+  opacity: 1;
+  transform: translateY(0%);
 }
 .youtube .inner section:nth-of-type(2) .vidList1 {
   width: 90%;
   height: 100%;
   position: relative;
   margin: 0 auto;
-  padding: 40px 0 80px;
+  padding: 40px 0 0px;
 }
 .youtube .inner section:nth-of-type(2) .vidList1 > div {
   border: 1px solid #f5f5f5;
@@ -1090,9 +1111,6 @@ body #footerSub .inner .footAddWrap > p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0;
-  transition: 0.5s;
-  transform: translateY(0%);
 }
 .youtube .inner section:nth-of-type(2) .vidList1 > div:nth-of-type(2) > div {
   left: 0;
