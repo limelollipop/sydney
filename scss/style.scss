@@ -606,6 +606,7 @@ body {
 		margin: 20px 0;
 		background: url(../img/bannerBg.jpg) no-repeat left center fixed;
 		background-size: 50%;
+		overflow: hidden;
 
 		&.on .inner {
 			.wrap {
@@ -714,6 +715,7 @@ body {
 						opacity: 0;
 						scale: 1.1;
 						transition-duration: 0.8s;
+						transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 						@for $i from 0 through 3 {
 							&:nth-of-type(#{$i + 1}) {
 								transition-delay: $interval * $i;
@@ -891,6 +893,7 @@ body {
 			position: relative;
 			display: flex;
 			justify-content: space-between;
+			overflow: hidden;
 
 			section {
 				position: relative;
@@ -934,6 +937,7 @@ body {
 						opacity: 0;
 						transform: translateX(10%);
 						transition-duration: 0.3s;
+						transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
 						b {
 							display: inline-block;
 							font: normal 1vw/1 'arial';

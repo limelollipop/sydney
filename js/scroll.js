@@ -1,5 +1,5 @@
 // main page scroll
-const scrollBoxs = document.querySelectorAll('body > section, figure');
+const scrollBoxs = document.querySelectorAll('figure, body > section');
 const scrollBtns = document.querySelectorAll('body > ul li');
 const whatsOn = document.querySelector('body #visual .inner .btn');
 const speed = 500;
@@ -32,7 +32,7 @@ whatsOn.addEventListener('click', () => {
 function getPos() {
 	posArr = [];
 	for (const box of scrollBoxs) posArr.push(box.offsetTop);
-	// console.log(posArr);
+	console.log(posArr);
 }
 function scrollActivation() {
 	const scroll = window.scrollY || window.pageYOffset;

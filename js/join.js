@@ -27,13 +27,10 @@ function isTxt(el, len) {
 	let txt = input.value;
 
 	if (txt.length >= len) {
-		// value값이 조건에 부합한다면
-		// 중복 오류메시지 방지
 		const errMsgs = input.closest('td').querySelectorAll('p');
 		if (errMsgs.length > 0) input.closest('td').querySelector('p').remove();
 		return true;
 	} else {
-		// value값이 조건에 부합하지 않는다면
 		const errMsgs = input.closest('td').querySelectorAll('p');
 		if (errMsgs.length > 0) return false;
 
@@ -103,7 +100,7 @@ function isPwd(el1, el2, len) {
 // select 함수
 function isSelect(el) {
 	let sel = form.querySelector(`[name=${el}]`);
-	let sel_index = sel.options.selectedIndex; // 해당 index number를 가져옴
+	let sel_index = sel.options.selectedIndex;
 	let val = sel[sel_index].value;
 
 	if (val !== '') {

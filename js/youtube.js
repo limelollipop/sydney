@@ -16,7 +16,7 @@ function getYoutube(vidList, playlist, count) {
 		})
 		.then((json) => {
 			let items = json.items;
-			console.log(items);
+			// console.log(items);
 			let result = '';
 
 			items.map((el) => {
