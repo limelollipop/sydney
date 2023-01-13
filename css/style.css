@@ -1844,7 +1844,7 @@ body #visual .panel > li {
   width: 100%;
   height: 100%;
   position: absolute;
-  transition: opacity 1s;
+  transition: opacity 1s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   opacity: 0;
 }
 body #visual .panel > li:nth-of-type(1) img {
@@ -1987,8 +1987,8 @@ body #event .inner div.left {
   width: 480px;
   margin-right: 20px;
   opacity: 0;
-  transform: translateX(-20px);
-  transition-duration: 0.3s;
+  transform: translateX(-10%);
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body #event .inner div.left h3 {
   font-size: 28px;
@@ -2057,10 +2057,9 @@ body #event .inner div.right .wrap {
   width: 1600px;
   height: 340px;
   position: relative;
-  border: 1px solid red;
   opacity: 0;
-  transform: translateY(20px);
-  transition: 0.3s 0.3s;
+  transform: translateY(5%);
+  transition: 0.3s 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body #event .inner div.right .wrap article {
   width: 300px;
@@ -2178,7 +2177,7 @@ body #banner .inner .wrap {
   background: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  transition: 0.3s;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 body #banner .inner .wrap h2 {
   font-size: 30px;
@@ -2192,7 +2191,7 @@ body #banner .inner .wrap p {
   font: normal 18px/1.4 "Josefin Sans";
   color: #888;
   opacity: 0;
-  transform: translateX(50%);
+  transform: translateX(10%);
   transition: 0.6s;
 }
 body #banner .inner .wrap p:nth-of-type(1) {
@@ -2219,6 +2218,10 @@ body #accommodation {
   width: 100%;
   padding: 150px 0;
 }
+body #accommodation.on .inner .wrap article:nth-of-type(1), body #accommodation.on .inner .wrap article:nth-of-type(2), body #accommodation.on .inner .wrap article:nth-of-type(3), body #accommodation.on .inner .wrap article:nth-of-type(4) {
+  opacity: 1;
+  scale: 1;
+}
 body #accommodation .inner {
   width: 1180px;
   margin: 0 auto;
@@ -2235,6 +2238,21 @@ body #accommodation .inner .wrap {
 }
 body #accommodation .inner .wrap article:nth-of-type(1), body #accommodation .inner .wrap article:nth-of-type(2), body #accommodation .inner .wrap article:nth-of-type(3), body #accommodation .inner .wrap article:nth-of-type(4) {
   float: left;
+  opacity: 0;
+  scale: 1.1;
+  transition-duration: 0.8s;
+}
+body #accommodation .inner .wrap article:nth-of-type(1):nth-of-type(1), body #accommodation .inner .wrap article:nth-of-type(2):nth-of-type(1), body #accommodation .inner .wrap article:nth-of-type(3):nth-of-type(1), body #accommodation .inner .wrap article:nth-of-type(4):nth-of-type(1) {
+  transition-delay: 0s;
+}
+body #accommodation .inner .wrap article:nth-of-type(1):nth-of-type(2), body #accommodation .inner .wrap article:nth-of-type(2):nth-of-type(2), body #accommodation .inner .wrap article:nth-of-type(3):nth-of-type(2), body #accommodation .inner .wrap article:nth-of-type(4):nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+body #accommodation .inner .wrap article:nth-of-type(1):nth-of-type(3), body #accommodation .inner .wrap article:nth-of-type(2):nth-of-type(3), body #accommodation .inner .wrap article:nth-of-type(3):nth-of-type(3), body #accommodation .inner .wrap article:nth-of-type(4):nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+body #accommodation .inner .wrap article:nth-of-type(1):nth-of-type(4), body #accommodation .inner .wrap article:nth-of-type(2):nth-of-type(4), body #accommodation .inner .wrap article:nth-of-type(3):nth-of-type(4), body #accommodation .inner .wrap article:nth-of-type(4):nth-of-type(4) {
+  transition-delay: 0.6s;
 }
 body #accommodation .inner .wrap article:nth-of-type(2), body #accommodation .inner .wrap article:nth-of-type(3), body #accommodation .inner .wrap article:nth-of-type(4) {
   position: relative;
@@ -2354,6 +2372,10 @@ body #deals {
   width: 100%;
   position: relative;
 }
+body #deals.on .inner section:nth-of-type(2) article {
+  opacity: 1;
+  transform: translateX(0%);
+}
 body #deals::before {
   content: "";
   display: block;
@@ -2423,6 +2445,9 @@ body #deals .inner section:nth-of-type(2) {
 body #deals .inner section:nth-of-type(2) article {
   padding-left: 5%;
   width: 44%;
+  opacity: 0;
+  transform: translateX(10%);
+  transition-duration: 0.3s;
 }
 body #deals .inner section:nth-of-type(2) article b {
   display: inline-block;
