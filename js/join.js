@@ -186,14 +186,14 @@ for (var i = 0; i < markerOptions.length; i++) {
 		image: markerImage,
 	});
 
-	// markerOptions[i].botton.onClick = (e) => {
-	// 	e.preventDefault();
+	markerOptions[i].botton.onClick = (e) => {
+		e.preventDefault();
 
-	// 	for (let i = 0; i < markerOptions.length; i++) {
-	// 		markerOptions[i].botton.classList.remove('on');
-	// 	}
-	// 	markerOptions[i].botton.classList.add('on');
-	// };
+		for (let i = 0; i < markerOptions.length; i++) {
+			markerOptions[i].botton.classList.remove('on');
+		}
+		markerOptions[i].botton.classList.add('on');
+	};
 }
 
 marker.setMap(map);
