@@ -176,7 +176,7 @@ var markerOptions = [
 ];
 var imageSrc = 'https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png';
 
-for (var i = 0; i < markerOptions.length; i++) {
+for (let i = 0; i < markerOptions.length; i++) {
 	var imageSize = new kakao.maps.Size(24, 35);
 	var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize);
 	var marker = new kakao.maps.Marker({
@@ -186,13 +186,14 @@ for (var i = 0; i < markerOptions.length; i++) {
 		image: markerImage,
 	});
 
-	markerOptions[i].botton.onClick = (e) => {
+	markerOptions[i].botton.onclick = (e) => {
 		e.preventDefault();
 
-		for (let i = 0; i < markerOptions.length; i++) {
-			markerOptions[i].botton.classList.remove('on');
+		for (let j = 0; j < markerOptions.length; j++) {
+			markerOptions[j].botton.classList.remove('on');
 		}
 		markerOptions[i].botton.classList.add('on');
+		map.setCenter(markerOptions[i].latlng);
 	};
 }
 
