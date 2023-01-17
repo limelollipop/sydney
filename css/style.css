@@ -819,75 +819,96 @@ body #footerSub .inner .footAddWrap > p {
 }
 .community .inner section:nth-of-type(2) h3 {
   font-size: 30px;
-  text-align: center;
-  padding-bottom: 40px;
-  margin-bottom: 40px;
-  border-bottom: 3px solid #04adbf;
-}
-.community .inner section:nth-of-type(2) .inputBox {
-  width: 100%;
-  position: relative;
-  border: 1px solid #eee;
-  padding: 0.5vw;
-  margin-bottom: 40px;
-}
-.community .inner section:nth-of-type(2) .inputBox input[type=text],
-.community .inner section:nth-of-type(2) .inputBox textarea {
-  width: 100%;
-  padding: 0.5vw 1vw;
-  border: 1px solid #aaa;
-  background: #b3e6ec;
   margin-bottom: 20px;
-  resize: none;
 }
-.community .inner section:nth-of-type(2) .inputBox .btnSet button {
-  width: 150px;
-  height: 30px;
-  display: inline-block;
-  border: none;
-  background: #04adbf;
-  color: #fff;
-  cursor: pointer;
-  margin-right: 20px;
-}
-.community .inner section:nth-of-type(2) .showBox {
+.community .inner section:nth-of-type(2) > ul {
   width: 100%;
   position: relative;
-  border: 1px solid #aaa;
-  padding: 4vw;
-}
-.community .inner section:nth-of-type(2) .showBox article {
-  background: #b3e6ec;
-  padding: 3vw;
-  margin-bottom: 40px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
 }
-.community .inner section:nth-of-type(2) .showBox article .txt {
-  width: calc(100% - 170px);
+.community .inner section:nth-of-type(2) > ul li {
+  width: 15%;
 }
-.community .inner section:nth-of-type(2) .showBox article .txt h4 {
-  margin-bottom: 10px;
+.community .inner section:nth-of-type(2) > ul li a {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color: #777;
+  background: #eee;
+  text-align: center;
+  padding: 10px 10px;
 }
-.community .inner section:nth-of-type(2) .showBox article .btnSet {
-  width: 120px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 20px;
-  gap: 10px;
+.community .inner section:nth-of-type(2) > ul li.on a {
+  font-weight: bold;
+  color: #fff;
+  background: #04adbf;
 }
-.community .inner section:nth-of-type(2) .showBox article .btnSet button {
-  background: transparent;
-  cursor: pointer;
-  border: none;
+.community .inner section:nth-of-type(2) table {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-top: 3px solid #04adbf;
+  margin-bottom: 20px;
 }
-.community .inner section:nth-of-type(2) .showBox article .btnSet button:nth-of-type(1) {
-  color: orange;
+.community .inner section:nth-of-type(2) table tbody {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
 }
-.community .inner section:nth-of-type(2) .showBox article .btnSet button:nth-of-type(2) {
-  color: orangered;
+.community .inner section:nth-of-type(2) table tbody.on {
+  display: block;
+}
+.community .inner section:nth-of-type(2) table tbody tr td {
+  width: 1180px;
+  padding: 20px 40px;
+  border-bottom: 1px solid #b3e6ec;
+  font-size: 16px;
+}
+.community .inner section:nth-of-type(2) table tbody tr td:nth-of-type(1) {
+  width: 10%;
+  color: #04adbf;
+}
+.community .inner section:nth-of-type(2) table tbody tr td:nth-of-type(2) {
+  width: 20%;
+  color: #555;
+}
+.community .inner section:nth-of-type(2) table tbody tr td:nth-of-type(3) a {
+  display: block;
+  width: 100%;
+  color: #0d0d0d;
+}
+.community .inner section:nth-of-type(2) .pagination {
+  width: 100%;
+  text-align: center;
+}
+.community .inner section:nth-of-type(2) .pagination .numbers {
+  display: inline-block;
+}
+.community .inner section:nth-of-type(2) .pagination .numbers a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #777;
+  margin: 0 5px;
+}
+.community .inner section:nth-of-type(2) .pagination .numbers a.on {
+  font-weight: bold;
+  color: #04adbf;
+}
+.community .inner section:nth-of-type(2) .pagination .next,
+.community .inner section:nth-of-type(2) .pagination .nextEnd {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: #777;
+  border: 1px solid #eee;
 }
 .community .inner section:nth-of-type(3) {
   width: 100%;

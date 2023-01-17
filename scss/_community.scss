@@ -115,85 +115,112 @@
 
 				h3 {
 					font-size: 30px;
-					text-align: center;
-					padding-bottom: 40px;
-					margin-bottom: 40px;
-					border-bottom: 3px solid #04adbf;
+					// text-align: center;
+					// padding-bottom: 40px;
+					margin-bottom: 20px;
 				}
 
-				.inputBox {
+				> ul {
 					width: 100%;
 					position: relative;
-					border: 1px solid #eee;
-					padding: 0.5vw;
-					margin-bottom: 40px;
-
-					input[type='text'],
-					textarea {
-						width: 100%;
-						padding: 0.5vw 1vw;
-						border: 1px solid #aaa;
-						background: #b3e6ec;
-						margin-bottom: 20px;
-						resize: none;
-					}
-
-					.btnSet {
-						button {
-							width: 150px;
-							height: 30px;
-							display: inline-block;
-							border: none;
-							background: #04adbf;
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					li {
+						width: 15%;
+						a {
+							width: 100%;
+							display: block;
+							font-size: 14px;
+							color: #777;
+							background: #eee;
+							text-align: center;
+							padding: 10px 10px;
+						}
+						&.on a {
+							font-weight: bold;
 							color: #fff;
-							cursor: pointer;
-							margin-right: 20px;
+							background: #04adbf;
 						}
 					}
 				}
 
-				.showBox {
+				table {
 					width: 100%;
+					height: 100%;
 					position: relative;
-					border: 1px solid #aaa;
-					padding: 4vw;
+					border-top: 3px solid #04adbf;
+					margin-bottom: 20px;
 
-					article {
-						background: #b3e6ec;
-						padding: 3vw;
-						margin-bottom: 40px;
-						display: flex;
-						justify-content: space-between;
-						align-content: center;
-						flex-wrap: wrap;
+					tbody {
+						width: 100%;
+						height: 100%;
+						position: relative;
+						display: none;
 
-						.txt {
-							width: calc((100% - 170px));
-							h4 {
-								margin-bottom: 10px;
-							}
+						&.on {
+							display: block;
 						}
 
-						.btnSet {
-							width: 120px;
-							display: flex;
-							align-items: flex-end;
-							margin-top: 20px;
-							gap: 10px;
-
-							button {
-								background: transparent;
-								cursor: pointer;
-								border: none;
+						tr {
+							td {
+								width: 1180px;
+								padding: 20px 40px;
+								border-bottom: 1px solid #b3e6ec;
+								font-size: 16px;
 
 								&:nth-of-type(1) {
-									color: orange;
+									width: 10%;
+									color: #04adbf;
 								}
 								&:nth-of-type(2) {
-									color: orangered;
+									width: 20%;
+									color: #555;
+								}
+								&:nth-of-type(3) {
+									// width: 70%;
+									a {
+										display: block;
+										width: 100%;
+										color: #0d0d0d;
+									}
 								}
 							}
 						}
+					}
+				}
+
+				.pagination {
+					width: 100%;
+					text-align: center;
+
+					.numbers {
+						display: inline-block;
+						a {
+							display: inline-block;
+							width: 30px;
+							height: 30px;
+							line-height: 30px;
+							font-size: 16px;
+							color: #777;
+							margin: 0 5px;
+
+							&.on {
+								font-weight: bold;
+								color: #04adbf;
+							}
+						}
+					}
+
+					.next,
+					.nextEnd {
+						display: inline-block;
+						width: 30px;
+						height: 30px;
+						line-height: 30px;
+						font-size: 16px;
+						color: #777;
+						border: 1px solid #eee;
 					}
 				}
 			}
