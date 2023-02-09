@@ -1,5 +1,4 @@
 @import 'reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500&display=swap');
 // #04ADBF
 // #b3e6ec
 // #F2E30F
@@ -294,7 +293,6 @@ body {
 			bottom: 5vh;
 			display: flex;
 			gap: 10px;
-			// transform: translateX(-50%);
 
 			li {
 				width: 20px;
@@ -1737,7 +1735,7 @@ body {
 					padding: 0vw 12vw 10vw;
 				}
 				a {
-					font: bold 3vh/50px 'Josefin Sans', sans-serif;
+					font: bold 2vh/50px 'Josefin Sans', sans-serif;
 				}
 			}
 		}

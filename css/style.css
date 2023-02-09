@@ -241,7 +241,7 @@ body .content .inner h2 {
   text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.8);
   letter-spacing: 1px;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.7s;
   transform: translateX(-5%);
 }
 body .content .inner h2.on {
@@ -592,13 +592,12 @@ body #footerSub .inner .footAddWrap > p {
   line-height: 28px;
   color: #777;
   background: #eee;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .gallery .inner ul li.on a {
   font-weight: bold;
   color: #fff;
   background: #04adbf;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 .gallery .inner ul li:hover a {
   font-weight: bold;
@@ -639,7 +638,7 @@ body #footerSub .inner .footAddWrap > p {
   position: relative;
   width: 100%;
   background: #fff;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 3px 5px rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 4px;
 }
@@ -1322,6 +1321,9 @@ figure.pop .btnClose:hover {
   border-top: 4px solid #04adbf;
   gap: 10px;
 }
+.member .inner section:nth-of-type(2).on article:nth-of-type(1) {
+  display: block;
+}
 .member .inner section:nth-of-type(2) article {
   width: 33.33%;
   position: relative;
@@ -1351,6 +1353,37 @@ figure.pop .btnClose:hover {
   position: absolute;
   top: 0;
   left: 0;
+}
+.member .inner section:nth-of-type(2) article div:hover .memberTxt {
+  opacity: 1;
+}
+.member .inner section:nth-of-type(2) article div .memberTxt {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #fff;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+}
+.member .inner section:nth-of-type(2) article div .memberTxt::after {
+  display: none;
+}
+.member .inner section:nth-of-type(2) article div .memberTxt h4 {
+  font-size: 28px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.member .inner section:nth-of-type(2) article div .memberTxt p {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.member .inner section:nth-of-type(2) article div .memberTxt p b {
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 .member .inner section:nth-of-type(2) article:nth-of-type(1) {
   height: 600px;
@@ -3142,7 +3175,7 @@ body > ul li.on {
     padding: 0vw 12vw 10vw;
   }
   body #visual .inner a {
-    font: bold 3vh/50px "Josefin Sans", sans-serif;
+    font: bold 2vh/50px "Josefin Sans", sans-serif;
   }
   body #event .inner div.left h3 {
     font-size: 2.3vh;
